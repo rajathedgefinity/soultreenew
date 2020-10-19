@@ -110,11 +110,11 @@
 
     <div class="menu-pages" id="navbar2">
         <div>
-            <a class="active-menu" href="#explore-soultree">Explore Soultree</a>
-            <a href="#master-plan">Master Plan</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#contact">Contact</a>
+            <a class="active-menu" href="#explore-soultree" id="Exp-explore">Explore Soultree</a>
+            <a href="#master-plan" id="Mplan">Master Plan</a>
+            <a href="#gallery" id="Gall-gallery">Gallery</a>
+            <a href="#amenities" id="Amne">Amenities</a>
+            <a href="#contact" id="Cont">Contact</a>
         </div>
         <div class="brochure">
             <div class="call"><i class="fa fa-phone" aria-hidden="true"></i>+91 9008 288 288</div>
@@ -872,7 +872,7 @@
     </div>
 
     <!-- #################################################################################### -->
-    <div class="contact content-desktop">
+    <div class="contact content-desktop" id="contact">
         <p class="contact-title">
             We’d love to hear from you!
         </p>
@@ -1094,6 +1094,50 @@
     return diff;
     }
     </script>
+
+
+<!-- Smooth Scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+    var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} /* speed */ );
+});
+
+
+var a1 = document.getElementById('Exp-explore');
+var a2 = document.getElementById('Mplan');
+var a3 = document.getElementById('Gall-gallery');
+var a4 = document.getElementById('Amne');
+var a5 = document.getElementById('Cont');
+function tabFunc1() {
+    if (al.style.display === 'none') {
+        al.style.display = 'block';
+        a2.style.display = 'none';
+        a3.style.display = 'none';
+        a4.style.display = 'none';
+        a5.style.display = 'none';
+        a1.classList.add('active-menu')
+    }
+}
+
+function tabFunc2() {
+    if (a2.style.display === 'none') {
+        al.style.display = 'none';
+        a2.style.display = 'block';
+        a3.style.display = 'none';
+        a4.style.display = 'none';
+        a5.style.display = 'none';
+        a2.classList.add('active-menu')
+    }
+}
+</script>
+
 
 
 

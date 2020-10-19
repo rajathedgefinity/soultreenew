@@ -39,6 +39,8 @@ $fontThin: 300;
 body {
   overflow-x: hidden;
   font-family: Titillium Web, sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 
@@ -490,11 +492,18 @@ body {
       font-size: 0.94vw;
       color: #b2b2b2;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .active-menu {
       color: $black;
       font-weight: $fontBold;
+    }
+
+    a:hover {
+      color: $black;
+      font-weight: $fontBold;
+      text-decoration: none;
     }
   }
 
@@ -1644,21 +1653,26 @@ body {
               display: flex;
               justify-content: center;
               align-items: center;
+              text-decoration: none;
+              border-radius: 2.08vw 0 0 2.08vw;
         
               .fa-angle-left {
                 font-size: 2.4vw;
+                border-radius: 2.08vw 0 0 2.08vw;
               }
           }
         }
         
-        // .left-box:hover{
-        //   height: 3.54vw;
-        //   width: 3.54vw;
+        .left-box:hover{
+          height: 3.54vw;
+          width: 3.54vw;
+          border-radius: 2.08vw 0 0 2.08vw;
         
-        //   a {
-        //       color: #fff;
-        //   }
-        // }
+          a {
+              color: #fff;
+              border-radius: 2.08vw 0 0 2.08vw;
+          }
+        }
 
 
         .right-box {
@@ -1677,6 +1691,7 @@ body {
               display: flex;
               justify-content: center;
               align-items: center;
+              text-decoration: none;
         
               .fa-angle-right {
                 font-size: 2.4vw;
@@ -1684,14 +1699,14 @@ body {
           }
         }
         
-        // .right-box:hover{
-        //   height: 3.54vw;
-        //   width: 3.54vw;
+        .right-box:hover{
+          height: 3.54vw;
+          width: 3.54vw;
         
-        //   a {
-        //       color: #fff;
-        //   }
-        // }
+          a {
+              color: #fff;
+          }
+        }
       }
     }
   }
