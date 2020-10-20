@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://creativemarket.com/typeline/4248727-Amalfi-Coast-Chic-Calligraphy..">
 
     <!-- Google Fonts: Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <!-- AOS(Animation On Scroll) -->
@@ -68,6 +69,17 @@
 
 <body>
 
+    <!-- <div class="lines animate__animated animate__slideOutUp animate__delay-4s"> -->
+        <!-- <p class="animate__animated animate__flipInX animate__delay-1s">SOULTREE</p> -->
+        <!-- <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
+            <img src="images/Soul-tree_G.png" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div> -->
+      
+
     <!-- Navbar Starts [Desktop]-->
     <div class="nav-bar content-desktop" id="navbar">
         <div class="logo-container">
@@ -108,6 +120,42 @@
     </div>
     <!-- Navbar Ends [Desktop]-->
 
+    <!-- Navbar Starts [Mobile]-->
+    <div class="nav-bar content-mobile">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#aboutUs" class="nav-link">About us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#residential" class="nav-link">Residential</a></li>
+                <li><a href="#decor" class="nav-link">Decor</a></li>
+                <li><a href="#construction" class="nav-link">Construction</a></li>
+                <li><a href="#contactUs" class="nav-link">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar Ends [Mobile]-->
+
     <div class="menu-pages" id="navbar2">
         <div>
             <a class="active-menu" href="#explore-soultree" id="Exp-explore">Explore Soultree</a>
@@ -139,7 +187,7 @@
             <div class="getIn-touch" onclick="document.getElementById('getInTouchId').style.display='block'">
                 GET IN TOUCH
             </div>
-            <div class="project-form-popup" id="getInTouchId" style="display: none;">
+            <div class="project-form-popup animate__animated animate__fadeInRightBig" id="getInTouchId" style="display: none;">
                 <div class="common-toggler" onclick="document.getElementById('getInTouchId').style.display='none'">
                   <span>Get In Touch</span>
                   <svg viewBox="0 0 32 32">
@@ -152,8 +200,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-10">
-                                    <div class="contact-title" style="width: 100%;">
-                                        <h2 class="form_wrapper--title scroll-fade in-view"> Get in touch</h2>
+                                    <div class="contact-title">
+                                        <h2 class="form_wrapper--title scroll-fade in-view" style="width: 10vw; font-family: Titillium Web, sans-serif;"> Get in touch</h2>
                                     </div>
                                 </div>
                             </div>      
@@ -415,7 +463,7 @@
             </div>
         </div>
 
-        <div class="floor-plans">
+        <div class="floor-plans content-desktop">
             <div class="floor-plans-title">Floor Plans</div>
             <div class="plan-specs">
                 <div class="spec active-spec">Serenity</div>
@@ -531,6 +579,79 @@
                 </div>
             </div>
         </div>
+
+        <div class="floor-plans content-mobile">
+            <div class="floor-plans-title">Floor Plans</div>
+            <div class="plan-specs">
+                <div class="spec active-spec">Serenity</div>
+                <div class="spec">Bliss</div>
+                <div class="spec">Nirvana</div>
+            </div>
+            <div class="plan-view">
+                <div class="selection" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-selection">
+                        <p>Type</p>
+                        <div class="click-btn" id="click-btn">
+                            <button class="click-btn-1">1</button>
+                            <button class="click-btn-1">2</button>
+                            <button class="click-btn-1 active">3</button>
+                        </div>
+                    </div>
+    
+                    <div class="facing">
+                        <p>Facing</p>
+                        <div class="box11">
+                            <select>
+                                <option>East</option>
+                                <option>West</option>
+                                <option>North</option>
+                                <option>South</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="building-blocks">
+                        <p>Block</p>
+                        <div class="box11">
+                            <select>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                    </div>
+
+                    <div class="ellipse1" style="z-index: 100;">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="ellipse2" style="z-index: 100;">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- #################################################################################### -->
@@ -555,9 +676,47 @@
     </div>
 
     <!-- #################################################################################### -->
-    <div class="gallery" id="gallery">
+    <div class="gallery content-desktop" id="gallery">
         <div class="gallery-nav">
             <div class="gal">Gallery</div>
+            <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
+            <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
+        </div>
+        <div class="gallery-view">
+            <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/gallery/gallery.jpg"
+                        srcset="images/gallery/gallery@2x.jpg 2x,
+                        images/gallery/gallery@3x.jpg 3x">  
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/gallery.jpg"
+                        srcset="images/gallery/gallery@2x.jpg 2x,
+                        images/gallery/gallery@3x.jpg 3x">  
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/gallery.jpg"
+                        srcset="images/gallery/gallery@2x.jpg 2x,
+                        images/gallery/gallery@3x.jpg 3x">  
+                    </div>
+                </div>
+                <div class="fillet-box">
+                    <div class="left-box">
+                        <a><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="right-box">
+                        <a><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery content-mobile" id="gallery">
+        <div class="gal">Gallery</div>
+        <div class="gallery-nav">
             <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
             <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
         </div>
@@ -773,7 +932,16 @@
     </script> 
 
     <!-- #################################################################################### -->
-    <div class="specBrand">
+    <div class="specBrand content-desktop">
+        <p>SPECIFICATIONS & BRANDS</p>
+        <div class="btnFlex">
+            <div class="buttn">
+                <button class="black-button" type="submit">KNOW MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="specBrand content-mobile">
         <p>SPECIFICATIONS & BRANDS</p>
         <div class="btnFlex">
             <div class="buttn">
@@ -783,7 +951,8 @@
     </div>
 
     <!-- #################################################################################### -->
-    <div class="location-section">
+    <!-- Location Section Starts[Desktop] -->
+    <div class="location-section content-desktop">
         <p class="location-title">
             A perfect location for a perfect home
         </p>
@@ -840,14 +1009,81 @@
             </div>
         </div>
     </div>
+    <!-- Location Section Ends[Desktop] -->
+
+    <!-- Location Section Starts[Mobile] -->
+    <div class="location-section content-mobile">
+        <p class="location-title">
+            A perfect location for a perfect home
+        </p>
+        <p class="location-subtitle">
+            Somepura Gate, Sarjapur Road, located in south-east Bangalore, is one of the fastest-growing parts of the city which makes it perfect & favoured property investment destinations. Despite it's close proximity to the IT hubs of the city it still retains the peaceful & serene aspect missing from almost every other part of the city which certainly are heading towards saturation.
+        <!-- </p> -->
+        <br><br>
+        <!-- <p class="location-subtitle"> -->
+            The real estate demand in this location has seen a ten folds increase. Sarjapur Road enjoys robust residential demand and excellent connectivity to the IT hubs & hotspots like Koramangala, Whitefield, HSR, Electronic City, Marathahalli, Silk Board etc. The planned Metro rail extension, Outer Ring Road and the proposed eight-lane Peripheral Ring Road [PRR] which will reduce the travel time to airport considerably are expected to boost the realty sector here.
+        </p>
+        <div class="location-descrip">
+            <div class="location-img" id="mapImg">
+                <img src="images/Map.png">   
+                <p onclick="mapMFunc()">View Map</p>      
+            </div>
+            <iframe class="location-img" id="mapM" style="display: none; border: 1px solid black; border-radius: 1vw;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9256920171847!2d77.6770247146445!3d12.912497390894686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae135d95d42c11%3A0xc20268292891ba2c!2sSoulTree%20by%20ModernSpaaces!5e0!3m2!1sen!2sin!4v1603023796674!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
+            <div class="location-distance">
+                <ul>
+                    <li>
+                        <p class="place">Dommasandra circle</p>
+                        <p class="kms">4 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Decatalon/ RGA Tech Park</p>
+                        <p class="kms">9 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Electronic City</p>
+                        <p class="kms">14 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Eco Space</p>
+                        <p class="kms">15 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Wipro Corporate Office</p>
+                        <p class="kms">13 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Total Mall</p>
+                        <p class="kms">14 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">HSR Layout</p>
+                        <p class="kms">17 KMS</p>
+                    </li>
+                    <li>
+                        <p class="place">Marathahalli</p>
+                        <p class="kms">19 KMS</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Location Section Ends[Mobile] -->
 
     <script>
         var m = document.getElementById('map');
+        var p = document.getElementById('mapM');
         var n = document.getElementById('mapImg')
         function mapFunc() {
             if (m.style.display === 'none') {
                 m.style.display = 'block';
                 n.style.display = 'none';
+            }
+        }
+
+        function mapMFunc() {
+            if (p.style.display === 'none') {
+                p.style.display = 'block';
+                p.style.display = 'none';
             }
         }
     </script>
