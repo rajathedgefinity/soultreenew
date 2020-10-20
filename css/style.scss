@@ -727,9 +727,10 @@ body {
   height: auto;
   // padding-top: 8.39vw;
   padding-top: 9vw;
-  font-family: Titillium Web, sans-serif;
+}
 
   .main-title {
+    font-family: Titillium Web, sans-serif;
     font-size: 3.125vw;
     font-weight: $fontBold;
     margin-bottom: 2.76vw;
@@ -739,6 +740,7 @@ body {
   }
 
   .main-subtitle {
+    font-family: Titillium Web, sans-serif;
     width: 75vw;
     font-size: 1.2vw;
     line-height: 1.43;
@@ -1177,6 +1179,63 @@ body {
     }
   }
 
+                                                    @media only screen and (max-width:768px) {
+                                                      .master-plan {
+                                                        display: block;
+                                                        // padding-left: 14.9vw;
+                                                        padding-left: 0vw;
+                                                        margin-top: -5vw;
+
+                                                        .master-plan-title {
+                                                          width: 86vw;
+                                                          margin: auto;
+                                                          font-size: 6.76vw;
+                                                          font-weight: $fontBold;
+                                                          margin-top: 6vw;
+                                                          margin-bottom: 6.5vw;
+                                                          color: $black;
+                                                        }
+                                                    
+                                                        .master-plan-img {
+                                                          width: 72vw;
+                                                          height: 97vw;
+                                                          margin-top: 3vw;
+                                                          margin-left: 10vw;
+                                                    
+                                                          img {
+                                                            width: 100%;
+                                                            height: auto;
+                                                          }
+                                                        }
+                                                    
+                                                        .master-plan-descrip {
+                                                          display: flex;
+                                                          justify-content: space-around;
+                                                          flex-wrap: wrap;
+                                                          width: 80vw;
+                                                          margin: auto;
+                                                          margin-left: 12.4vw;
+                                                          margin-top: 10vw;
+                                                          padding-bottom: 5vw;
+                                                          
+                                                          li {
+                                                            margin-bottom: 4.5vw;
+                                                            color: $black;
+                                                            width: 30vw;
+                                                    
+                                                            .specs {
+                                                              font-size: 3.38vw;
+                                                            }
+                                                    
+                                                            .spec-details {
+                                                              font-size: 4.83vw;
+                                                              font-weight: $fontBold;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+
 
   // FLoor Plan Starts
   .floor-plans {
@@ -1485,213 +1544,216 @@ body {
       }
     }
   }
-  // FLoor Plan Starts
-}
 
-                                                      @media only screen and (max-width:768px) {
-                                                        .floor-plans {
-                                                          // height: 55vw;
-                                                          width: 100vw;
-                                                          padding-left: 0vw;
-                                                          margin-top: 8vw;
-                                                          padding-bottom: 5vw;
-                                                      
-                                                          .floor-plans-title {
-                                                            width: 86vw;
-                                                            margin: auto;
-                                                            font-size: 6.76vw;
+                                                    @media only screen and (max-width:768px) {
+                                                      .floor-plans {
+                                                        // height: 55vw;
+                                                        width: 100vw;
+                                                        padding-left: 0vw;
+                                                        margin-top: 8vw;
+                                                        padding-bottom: 15vw;
+                                                    
+                                                        .floor-plans-title {
+                                                          width: 86vw;
+                                                          margin: auto;
+                                                          font-size: 6.76vw;
+                                                          font-weight: $fontBold;
+                                                          margin-bottom: 8vw;
+                                                          color: $black;
+                                                        }
+                                                    
+                                                        .plan-specs {
+                                                          margin-left: 0vw;
+                                                          width: 86vw;
+                                                          margin: auto;
+                                                          display: flex;
+                                                          justify-content: space-between;
+                                                          border-bottom: 1px solid #707070;
+                                                    
+                                                          .spec {
+                                                            font-size: 5.31vw;
                                                             font-weight: $fontBold;
-                                                            margin-bottom: 15.5vw;
+                                                            padding-bottom: .4vw;
+                                                            color: #b2b2b2;
+                                                          }
+                                                    
+                                                          .active-spec {
+                                                            border-bottom: 2px solid $black;
                                                             color: $black;
                                                           }
-                                                      
-                                                          .plan-specs {
-                                                            margin-left: 5.31vw;
-                                                            width: 86vw;
-                                                            margin: auto;
-                                                            display: flex;
-                                                            justify-content: space-between;
-                                                            border-bottom: 1px solid #707070;
-                                                      
-                                                            .spec {
-                                                              font-size: 1.56vw;
-                                                              font-weight: $fontBold;
-                                                              padding-bottom: .4vw;
-                                                              color: #b2b2b2;
-                                                            }
-                                                      
-                                                            .active-spec {
-                                                              border-bottom: 5px solid $black;
-                                                              color: $black;
-                                                            }
+                                                        }
+                                                    
+                                                        .plan-view {
+                                                          margin-left: 3.03vw;
+                                                          display: flex;
+                                                          margin-top: 6vw;
+                                                    
+                                                          .selection {
+                                                            display: block;
+                                                            margin-right: 4.22vw;
+                                                            margin-top: 6vw;
                                                           }
-                                                      
-                                                          .plan-view {
-                                                            margin-left: 2.03vw;
-                                                            display: flex;
-                                                            margin-top: 4.3vw;
-                                                      
-                                                            .selection {
-                                                              display: block;
-                                                              margin-right: 4.22vw;
-                                                              margin-top: 6vw;
-                                                            }
+                                                        
+                                                          .type-selection, .facing, .building-blocks {
+                                                              margin-bottom: 6.03vw;
+                                                          }
                                                           
-                                                            .type-selection, .facing, .building-blocks {
-                                                                margin-bottom: 2.03vw;
+                                                          .type-selection, .facing, .building-blocks p {
+                                                              font-size: 3.38vw;
+                                                              font-weight: $fontBold;
+                                                          }
+                                                          
+                                                          .click-btn {
+                                                              display: flex;
+                                                              margin-top: .5vw;
+                                                          }
+                                                          
+                                                          .click-btn-1 {
+                                                              font-size: 3.38vw;
+                                                              font-weight: 300;
+                                                              padding: 2.4vw 3vw;
+                                                              border: 1px solid $white-six;
+                                                              background-color: $white-five;
+                                                          }
+                                                          
+                                                          .active, .click-btn-1:hover {
+                                                              background-color: $black;
+                                                              color: $white-two;
+                                                              // border: none;
+                                                          }
+                                                          
+                                                          select {
+                                                            /* for Firefox */
+                                                            -moz-appearance: none;
+                                                            /* for Chrome */
+                                                            -webkit-appearance: none;
+                                                          }
+                                                          
+                                                          /* For IE10 */
+                                                          select::-ms-expand {
+                                                            display: none;
+                                                          }
+                                                          
+                                                          .box11 {
+                                                              margin-top: .5vw;
+                                                              position: absolute;
                                                             }
                                                             
-                                                            .type-selection, .facing, .building-blocks p {
-                                                                font-size: $p;
-                                                                font-weight: $fontBold;
-                                                            }
-                                                            
-                                                            .click-btn {
-                                                                display: flex;
-                                                                margin-top: .5vw;
-                                                            }
-                                                            
-                                                            .click-btn-1 {
-                                                                font-size: 1vw;
-                                                                font-weight: 300;
-                                                                padding: 1vw 1.4vw;
-                                                                border: 1px solid $white-six;
-                                                                background-color: $white-five;
-                                                            }
-                                                            
-                                                            .active, .click-btn-1:hover {
-                                                                background-color: $black;
-                                                                color: $white-two;
-                                                                // border: none;
-                                                            }
-                                                            
-                                                            select {
-                                                              /* for Firefox */
-                                                              -moz-appearance: none;
-                                                              /* for Chrome */
-                                                              -webkit-appearance: none;
-                                                            }
-                                                            
-                                                            /* For IE10 */
-                                                            select::-ms-expand {
-                                                              display: none;
-                                                            }
-                                                            
-                                                            .box11 {
-                                                                margin-top: .5vw;
-                                                                position: absolute;
-                                                              }
-                                                              
-                                                              .box11 select {
-                                                                  text-align: center;
-                                                                background-color: $white-two;
-                                                                color: $black;
-                                                                width: 10.5vw;
-                                                                height: 3vw;
-                                                                border-radius: 3px;
-                                                                border: 1px solid;
-                                                                font-size: $p;
-                                                                font-weight: $fontThin;
-                                                                -webkit-appearance: button;
-                                                                -moz-appearance: button;
-                                                                appearance: button;
-                                                                outline: none;
-                                                              }
-                                                              
-                                                              .box11::before {
-                                                                content: "\f107";
-                                                                background: $white-two;
-                                                                font-family: FontAwesome;
-                                                                position: absolute;
-                                                                top: 1px;
-                                                                right: 3px;
-                                                                width: 18%;
-                                                                height: 80%;
+                                                            .box11 select {
                                                                 text-align: center;
-                                                                font-weight: $fontThin;
-                                                                font-size: 1.5vw;
-                                                                line-height: 45px;
-                                                                pointer-events: none;
-                                                                color: black;
-                                                              }
-                                                              
-                                                              select option {
-                                                                width: 70%;
-                                                                margin: auto;
+                                                              background-color: $white-two;
+                                                              color: $black;
+                                                              width: 25vw;
+                                                              height: 8vw;
+                                                              border-radius: 3px;
+                                                              border: 1px solid;
+                                                              font-size: 3.38vw;
+                                                              font-weight: $fontThin;
+                                                              -webkit-appearance: button;
+                                                              -moz-appearance: button;
+                                                              appearance: button;
+                                                              outline: none;
                                                             }
                                                             
-                                                            .building-blocks p {
-                                                                margin-top: 5.5vw;
+                                                            .box11::before {
+                                                              content: "\f107";
+                                                              background: $white-two;
+                                                              font-family: FontAwesome;
+                                                              position: absolute;
+                                                              top: 1px;
+                                                              right: 3px;
+                                                              width: 18%;
+                                                              height: 80%;
+                                                              text-align: center;
+                                                              font-weight: $fontThin;
+                                                              font-size: 4.5vw;
+                                                              line-height: 30px;
+                                                              pointer-events: none;
+                                                              color: black;
                                                             }
-                                                      
-                                                            .swiper-container {
-                                                              margin-left: 8vw;
-                                                              width: 48vw;
-                                                              height: 38vw;
-                                                              padding-left: 1.5vw;
-                                                              // background: red;
-                                                      
-                                                              .swiper-slide {
-                                                                width: 42.14vw;
-                                                                height: 33.75vw;
-                                                      
-                                                                img {
-                                                                  width: auto;
-                                                                  height: 100%;
-                                                                }
-                                                      
-                                                                p {
-                                                                  margin-top: 1vw;
-                                                                  text-align: center;
-                                                                  font-size: 1.2vw;
-                                                                  line-height: 1.43;
-                                                                  font-weight: $fontThin;
-                                                                }
-                                                              }
-                                                      
-                                                              .ellipse1 {
-                                                                position: absolute;
-                                                                width: 5vw;
-                                                                height: 5vw;
-                                                                border-radius: 50%;
-                                                                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-                                                                background-color: $white-two;
-                                                                z-index: 10;
-                                                                margin-top: -21vw;
-                                                                margin-left: -1.5vw;
-                                                                color: $black;
+                                                            
+                                                            select option {
+                                                              width: 70%;
+                                                              margin: auto;
+                                                          }
                                                           
-                                                                i {
-                                                                  margin-left: 1.8vw;
-                                                                  margin-top: 1vw;
-                                                                  font-size: 3vw;
-                                                                  z-index: 50;
-                                                                }
+                                                          .building-blocks p {
+                                                              margin-top: 17.5vw;
+                                                          }
+                                                    
+                                                          .swiper-container {
+                                                            margin-left: 8vw;
+                                                            width: 58vw;
+                                                            height: 74vw;
+                                                            padding-left: 0vw;
+                                                    
+                                                            .swiper-slide {
+                                                              width: 58vw;
+                                                              height: 42vw;
+                                                    
+                                                              img {
+                                                                width: auto;
+                                                                height: 100%;
                                                               }
-                                                      
-                                                              .ellipse2 {
-                                                                position: absolute;
-                                                                width: 5vw;
-                                                                height: 5vw;
-                                                                border-radius: 50%;
-                                                                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-                                                                background-color: $white-two;
-                                                                z-index: 10;
-                                                                margin-top: -21vw;
-                                                                margin-left: 40vw;
-                                                                color: $black;
-                                                          
-                                                                i {
-                                                                  margin-left: 2.2vw;
-                                                                  margin-top: 1vw;
-                                                                  font-size: 3vw;
-                                                                  z-index: 50;
-                                                                }
+                                                    
+                                                              p {
+                                                                margin-top: 5.5vw;
+                                                                text-align: center;
+                                                                font-size: 3.38vw;
+                                                                line-height: 1.5;
+                                                                font-weight: $fontThin;
+                                                              }
+                                                            }
+                                                    
+                                                            .ellipse1 {
+                                                              position: absolute;
+                                                              width: 5vw;
+                                                              height: 5vw;
+                                                              border-radius: 50%;
+                                                              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                              background-color: $white-two;
+                                                              z-index: 10;
+                                                              margin-top: -10vw;
+                                                              margin-left: 21vw;
+                                                              color: $black;
+                                                              transform: scale(2);
+                                                        
+                                                              i {
+                                                                margin-left: 1.8vw;
+                                                                margin-top: 1vw;
+                                                                font-size: 3vw;
+                                                                z-index: 50;
+                                                              }
+                                                            }
+                                                    
+                                                            .ellipse2 {
+                                                              position: absolute;
+                                                              width: 5vw;
+                                                              height: 5vw;
+                                                              border-radius: 50%;
+                                                              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                              background-color: $white-two;
+                                                              z-index: 10;
+                                                              margin-top: -10vw;
+                                                              margin-left: 32vw;
+                                                              color: $black;
+                                                              transform: scale(2);
+                                                        
+                                                              i {
+                                                                margin-left: 2.2vw;
+                                                                margin-top: 1vw;
+                                                                font-size: 3vw;
+                                                                z-index: 50;
                                                               }
                                                             }
                                                           }
                                                         }
                                                       }
+                                                    }
+  // FLoor Plan Starts
+
+
+                                                      
 
 // ####################################################################################
 //Timeline Section Starts
@@ -1995,7 +2057,7 @@ body {
                                                     @media only screen and (max-width:768px) {
                                                       .gallery {
                                                         padding-top: 12vw;
-                                                        padding-bottom: 8vw;
+                                                        padding-bottom: 14vw;
                                                         background-color: #f8f8f8;
                                                         color: $black;
                                                         font-family: Titillium Web, sans-serif;
@@ -2037,6 +2099,7 @@ body {
                                                           height: 48.8vw;
                                                           margin: auto;
                                                           border-radius: 1.56vw;
+                                                          padding-top: 4vw;
                                                       
                                                           .gal-img {
                                                             width: 85.2vw;
@@ -2694,28 +2757,26 @@ body {
                                                     @media only screen and(max-width:768px) {
                                                       .specBrand {
                                                         font-family: Titillium Web, sans-serif;
-                                                        width: 100vw;
+                                                        // width: 100vw;
                                                         height: 102vw;
-                                                        margin: auto;
+                                                        // margin: auto;
                                                         background-color: $cream;
                                                         display: flex;
-                                                        flex-direction: column;
                                                         justify-content: center;
                                                         align-items: center;
                                                       
                                                         p {
-                                                          width: 53.14vw;
-                                                          margin: auto;
                                                           margin-left: 0;
+                                                          text-align: center;
+                                                          width: 86vw;
+                                                          margin: auto;
                                                           font-size: 3.38vw;
                                                           font-weight: $fontBold;
                                                           letter-spacing: 2.41px;
                                                           color: $black;
+                                                          padding-top: 37.9vw;
+                                                          padding-bottom: 13.04vw;
                                                         }
-                                                      
-                                                        .btnFlex {
-                                                          width: 100%;
-                                                          margin: auto;
                                                       
                                                           .buttn {
                                                             height: 13.77vw;
@@ -2723,6 +2784,7 @@ body {
                                                             background-color: $black;
                                                             border-radius: 1vw;
                                                             transition: none;
+                                                            margin: auto;
                                                             
                                                             .black-button {
                                                                 border: none;
@@ -2739,24 +2801,24 @@ body {
                                                             }
                                                           }
                                                         
-                                                          .buttn:hover {
-                                                            height: 13.77vw;
-                                                            width: 0;
+                                                          // .buttn:hover {
+                                                          //   height: 13.77vw;
+                                                          //   width: 0;
                                                         
-                                                            .black-button {
-                                                                color: $black;
-                                                            }
+                                                          //   .black-button {
+                                                          //       color: $black;
+                                                          //   }
                                                         
-                                                            .black-button::after {
-                                                                content: '\f105';
-                                                                font-family: fontAwesome;
-                                                                font-size: 4vw;
-                                                                font-weight: $fontThin;
-                                                                padding-left: 2vw;
-                                                                color: $black;
-                                                            }
-                                                          }
-                                                        }
+                                                          //   .black-button::after {
+                                                          //       content: '\f105';
+                                                          //       font-family: fontAwesome;
+                                                          //       font-size: 4vw;
+                                                          //       font-weight: $fontThin;
+                                                          //       padding-left: 2vw;
+                                                          //       color: $black;
+                                                          //   }
+                                                          // }
+                                                        
                                                       }
                                                     }
 
