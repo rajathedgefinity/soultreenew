@@ -17,12 +17,7 @@
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/getInTouch.css">
-
-    <link rel="stylesheet" href="https://www.fontmirror.com/amalfi-coast">
-
-    <link rel="stylesheet" href="https://creativemarket.com/typeline/4248727-Amalfi-Coast-Chic-Calligraphy..">
 
     <!-- Google Fonts: Font Family -->
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
@@ -69,15 +64,15 @@
 
 <body>
 
-    <div class="lines animate__animated animate__slideOutUp animate__delay-4s">
+    <!-- <div class="lines animate__animated animate__slideOutUp animate__delay-4s"> -->
         <!-- <p class="animate__animated animate__flipInX animate__delay-1s">SOULTREE</p> -->
-        <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
+        <!-- <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
             <img src="images/Soul-tree_G.png" alt="">
         </div>
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-    </div>
+    </div> -->
       
 
     <!-- Navbar Starts [Desktop]-->
@@ -222,15 +217,6 @@
                                                 <fieldset class="js-form-item js-form-type-email form-type-email js-form-item-email form-item-email form-no-label form-group col-auto">
                                                     <input data-drupal-selector="edit-email" type="email" id="edit-email--4" name="email" value="" size="60" maxlength="254" placeholder="Email ID *" class="form-email required form-control" required="required" aria-required="true">
                                                 </fieldset>
-                                                <!-- <fieldset class="js-form-item js-form-type-select form-type-select js-form-item-project-name form-item-project-name form-no-label form-group col-auto">
-                                                    <select data-drupal-selector="edit-project-name" class="webform-entity-select form-select required form-control" id="edit-project-name--4" name="project_name" required="required" aria-required="true" disabled="">
-                                                        <option value="">- Select Property -</option>
-                                                        <option value="9" selected="selected">New Dawn Sunlit Row Villas</option>
-                                                        <option value="19">WonderWall</option>
-                                                        <option value="20">VGR Essor</option>
-                                                        <option value="21">The Fore</option>
-                                                    </select>
-                                                </fieldset> -->
                                                 <fieldset class="js-form-item js-form-type-textarea form-type-textarea js-form-item-message form-item-message form-no-label form-group col-auto">
                                                     <div class="form-textarea-wrapper">
                                                         <textarea data-drupal-selector="edit-message" id="edit-message--4" name="message" rows="1" cols="60" placeholder="What would you like to discuss?" class="form-textarea form-control resize-vertical"></textarea>
@@ -251,11 +237,6 @@
                 </section>
             </div>
         </div>
-
-        <script>
-            var x = document.getElementById('');
-            var y = document.getElementById('');
-        </script>
 
         <div class="landing-img">
             <img src="images/Banner1.jpg">
@@ -287,7 +268,7 @@
                     </ul>
                 </div>
 
-                <div class="ellipse"  onclick="fn_1()">
+                <div class="ellipse"  onclick="fn(0)">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
@@ -337,105 +318,74 @@
                 </div>
             </div>
         </div>
-
-       <script>
-            function fn(id) 
-            {
-                var id_1 = "car"+id;
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("carousel-descrip_t");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-               
-                document.getElementById(id_1).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script> 
-
 
         <p class="carousel-2-title" id="explore-soultree">Explore Soultree</p>
         <div class="carousel-2">
-            <div class="color-splash-1">
-                <img src="images/Color-Splash-1.png" alt="">
-            </div>
 
-            <div class="carousel-flex">
-                <div class="carousel">
-                    <ul class="carousel__list">
-                        <img src="images/section2/Relax & Rejuvenate.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn22(id)">
-                        <img src="images/section2/Unite & Celebrate.jpg" alt="" class="carousel__item" data-pos="-1" id="-1" onclick="fn22(id)">
-                        <img src="images/section2/Meet, Greet & Talk.jpg" alt="" class="carousel__item" data-pos="0" id="0" onclick="fn22(id)">
-                        <img src="images/section2/Mingle, Mix & Laugh.jpg" alt="" class="carousel__item" data-pos="1" id="1" onclick="fn22(id)">
-                        <img src="images/section2/Play & Enjoy.jpg" alt="" class="carousel__item" data-pos="2" id="2" onclick="fn22(id)">
-                    </ul>
-                </div>
-
-                <div class="ellipse"  onclick="fn_1()">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </div>
-
+            <div class="carousel-flex2">
                 <div class="carousel-descrip_t " id="car-2" style='display:block' >
                     <p class="carousel-title">
-                        Meet, Greet & Talk1
+                        Feel the light
                     </p>
                     <p class="carousel-details">
-                        From lobbies of the living areas, various seating clusters in & around the project to the corridor spaces, there are various thoughtfully designed ‘pause points’ to incorporate enthusiastic welcomes and lingering goodbyes. Wholesome architectural enhancements for you to meet, greet & talk.
+                        Our rooms, terraces & balconies are designed to take advantage of the Bangalore sun and bathe in natural light. The homes are compact and smart with good views, light and fresh air. All you need for a productive day and a good night’s sleep.  
                     </p>
                 </div>
 
                 <div class="carousel-descrip_t" style="display: none;" id="car-1">
                     <p class="carousel-title">
-                        Mingle, Mix & Laugh 
+                        Feel the design 
                     </p>
                     <p class="carousel-details">
-                        Soul Tree is sprinkled with an array of open spaces including dedicated senior citizen seating areas meant to merge the social and the personal with group-friendly and quiet spaces. The green patch between the living areas is created with landscapes – lush greenery interspersed with seating facilities and calming water bodies where you can mingle, mix & laugh. 
+                        A work of art inside and out. At Modern Spaaces, the passion for design transcends architecture and is reflected in the utmost care in the selection of equipment and materials. Form, function and robustness, in perfect harmony. 
                     </p>
                 </div>
 
                 <div class="carousel-descrip_t" style="display: none;" id="car0">
                     <p class="carousel-title">
-                        Play & Enjoy 
+                        Feel good 
                     </p>
                     <p class="carousel-details">
-                        With multiple kids-play areas scattered around the project & specifically designed toddlers play areas accompanied by parents seating benches, we aim to cater to the demands of each & every age group. There is a Basket Ball Court, motorised Cricket Nets, Skating & Biking Ring and so much more for you to play & enjoy to the fullest.  
+                        At Soul Tree, quality of life is the absolute priority. Our clubhouse attests to that. The 4000 sq ft clubhouse has a half indoor, partially covered swimming pool for adults and toddlers. It is designed to keep all your needs in mind from a host of indoor games, Badminton & Squash Court to a fully-equipped gym, a Library, Lego Room, Market Retail, ATM, Pharmacy & Laundry. 
                     </p>
                 </div>
 
                 <div class="carousel-descrip_t" style="display: none;" id="car1">
                     <p class="carousel-title">
-                        Relax & Rejuvenate 
+                        Feel Smart 
                     </p>
                     <p class="carousel-details">
-                        It’s a space that is designed to serve today’s global lifestyles and new-age living. Reflexology Barefoot Paths with Pebbles are meant to give you a relaxing break from your hectic lifestyle while the elevated east-facing sunrise court, Yoga zone, various green parks including a butterfly garden, walking path, multiple outdoor gyms & around the project jogging path will help you to relax & rejuvenate. 
+                        Our homes come with fully automated home automation facility. Now control your entire home with just a mobile app. Unlock the future in our smart homes and experience customized, luxury living. 
                     </p>
                 </div>
 
                 <div class="carousel-descrip_t" style="display: none;" id="car2">
                     <p class="carousel-title">
-                        Unite & Celebrate 
+                        Feel green 
                     </p>
                     <p class="carousel-details">
-                        Soul Tree lends its name from a rare auspicious banyan tree centring the Amphi Theatre, a uniquely designed space to encourage the celebrations of every nature. Adding to an already impressive Clubhouse packed with world-class facilities & the project dedicated to giving you a cause to unite & celebrate the life every day.  
+                        We believe in fair & efficient sustainable practices. Being aware of the environment we live in is a decision we’ve made in the design and functionality of the space. We have taken measures to save water, energy, and hopefully the planet, in the long run. 
                     </p>
                 </div>
+
+                <div class="ellipse"  onclick="fn(0)">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+
+                <div class="carousel">
+                    <ul class="carousel__list">
+                        <img src="images/section3/Feel the light.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn(id)">
+                        <img src="images/section3/Feel the design.png" alt="" class="carousel__item" data-pos="-1" id="-1" onclick="fn(id)">
+                        <img src="images/section3/Feel good.png" alt="" class="carousel__item" data-pos="0" id="0" onclick="fn(id)">
+                        <img src="images/section3/Feel Smart.jpg" alt="" class="carousel__item" data-pos="1" id="1" onclick="fn(id)">
+                        <img src="images/section3/Feel green.png" alt="" class="carousel__item" data-pos="2" id="2" onclick="fn(id)">
+                    </ul>
+                </div>
+            </div>
+            <div class="color-splash-2">
+                <img src="images/Color-Splash-2.png" alt="">
             </div>
         </div>
-
-       <script>
-            function fn22(id) 
-            {
-                var id_1 = "car"+id;
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("carousel-descrip_t");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-               
-                document.getElementById(id_1).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script> 
 
         <div class="master-plan content-desktop" id="master-plan">
             <div class="master-plan-img">
@@ -495,11 +445,11 @@
         <div class="floor-plans">
             <div class="floor-plans-title">Floor Plans</div>
             <div class="plan-specs">
-                <div class="spec active-spec">Serenity</div>
-                <div class="spec">Bliss</div>
-                <div class="spec">Nirvana</div>
+                <div class="spec active-spec" id="snty" onclick="serenityFunc()">Serenity</div>
+                <div class="spec" id="bls" onclick="blissFunc()">Bliss</div>
+                <div class="spec" id="nrv" onclick="nirvanaFunc()">Nirvana</div>
             </div>
-            <div class="plan-view">
+            <div class="plan-view" id="serenity" style="display: flex;">
                 <div class="selection" data-aos="fade-up" data-aos-delay="200">
                     <div class="type-selection">
                         <p>Type</p>
@@ -610,8 +560,181 @@
                     </div>
                 </div>
             </div>
+            <div class="plan-view" id="bliss" style="display: none;">
+                <div class="selection" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-selection">
+                        <p>Type</p>
+                        <div class="click-btn" id="click-btn">
+                            <button class="click-btn-1">1</button>
+                            <button class="click-btn-1">2</button>
+                            <button class="click-btn-1 active">3</button>
+                        </div>
+                    </div>
+    
+                    <div class="facing">
+                        <p>Facing</p>
+                        <div class="box11">
+                            <select>
+                                <option>East</option>
+                                <option>West</option>
+                                <option>North</option>
+                                <option>South</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="building-blocks">
+                        <p>Block</p>
+                        <div class="box11">
+                            <select>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                    </div>
+
+                    <div class="ellipse1" style="z-index: 100;">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="ellipse2" style="z-index: 100;">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-view" id="nirvana" style="display: none;">
+                <div class="selection" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-selection">
+                        <p>Type</p>
+                        <div class="click-btn" id="click-btn">
+                            <button class="click-btn-1">1</button>
+                            <button class="click-btn-1">2</button>
+                            <button class="click-btn-1 active">3</button>
+                        </div>
+                    </div>
+    
+                    <div class="facing">
+                        <p>Facing</p>
+                        <div class="box11">
+                            <select>
+                                <option>East</option>
+                                <option>West</option>
+                                <option>North</option>
+                                <option>South</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="building-blocks">
+                        <p>Block</p>
+                        <div class="box11">
+                            <select>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/floor-plan/floor-plan.jpg"
+                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <p>SBA 1345 Sft CA <br>
+                                945 Sft Flat no’s  A11, A12, A13</p>
+                        </div>
+                    </div>
+
+                    <div class="ellipse1" style="z-index: 100;">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="ellipse2" style="z-index: 100;">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     <!-- </div> -->
+
+    <script>
+        function serenityFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana');   
+            if (a.style.display === 'none') {
+                a.style.display = 'flex';
+                b.style.display = 'flex';
+                c.style.display = 'flex';
+                a.classList.add('active-spec')
+                b.classList.remove('active-spec');
+                c.classList.remove('active-spec');
+            }
+        }
+
+        function blissFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana');   
+            if (b.style.display === 'none') {
+                b.style.display = 'flex';
+                a.classList.remove('active-spec')
+                b.classList.add('active-spec');
+                c.classList.remove('active-spec');
+            }
+        }
+
+        function nirvanaFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana');   
+            if (c.style.display === 'none') {
+                c.style.display = 'flex';
+                a.classList.remove('active-spec')
+                b.classList.remove('active-spec');
+                c.classList.add('active-spec');
+            }
+        }
+    </script>
 
     <!-- #################################################################################### -->
     <div class="timeline" style="display: none;">
@@ -743,24 +866,23 @@
     <div class="amenities" id="amenities">
         <div class="amenities-title">Amenities</div>
 
-
-        <!-- <div class="carousel-3">
-            <div class="carousel-flex3">
-                <div class="carousel3">
-                    <ul class="carousel__list3">
-                        <img src="images/section2/Relax & Rejuvenate.jpg" alt="" class="carousel__item3" data-pos="-2"  id="-2a" onclick="fn11(id)">
-                        <img src="images/section2/Unite & Celebrate.jpg" alt="" class="carousel__item3" data-pos="-1" id="-1a" onclick="fn11(id)">
-                        <img src="images/section2/Meet, Greet & Talk.jpg" alt="" class="carousel__item3" data-pos="0" id="0a" onclick="fn11(id)">
-                        <img src="images/section2/Mingle, Mix & Laugh.jpg" alt="" class="carousel__item3" data-pos="1" id="1a" onclick="fn11(id)">
-                        <img src="images/section2/Play & Enjoy.jpg" alt="" class="carousel__item3" data-pos="2" id="2a" onclick="fn11(id)">
+        <div class="carousel-1">
+            <div class="carousel-flex">
+                <div class="carousel">
+                    <ul class="carousel__list">
+                        <img src="images/section2/Relax & Rejuvenate.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn(id)">
+                        <img src="images/section2/Unite & Celebrate.jpg" alt="" class="carousel__item" data-pos="-1" id="-1" onclick="fn(id)">
+                        <img src="images/section2/Meet, Greet & Talk.jpg" alt="" class="carousel__item" data-pos="0" id="0" onclick="fn(id)">
+                        <img src="images/section2/Mingle, Mix & Laugh.jpg" alt="" class="carousel__item" data-pos="1" id="1" onclick="fn(id)">
+                        <img src="images/section2/Play & Enjoy.jpg" alt="" class="carousel__item" data-pos="2" id="2" onclick="fn(id)">
                     </ul>
                 </div>
 
-                <div class="ellipse" >
+                <div class="ellipse"  onclick="fn(0)">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
-                <div class="carousel-descrip_ta " id="car-2a" style='display:block' >
+                <div class="carousel-descrip_t " id="car-2" style='display:block' >
                     <p class="carousel-title">
                         Meet, Greet & Talk1
                     </p>
@@ -769,7 +891,7 @@
                     </p>
                 </div>
 
-                <div class="carousel-descrip_ta" style="display: none;" id="car-1a">
+                <div class="carousel-descrip_t" style="display: none;" id="car-1">
                     <p class="carousel-title">
                         Mingle, Mix & Laugh 
                     </p>
@@ -778,7 +900,7 @@
                     </p>
                 </div>
 
-                <div class="carousel-descrip_ta" style="display: none;" id="car0a">
+                <div class="carousel-descrip_t" style="display: none;" id="car0">
                     <p class="carousel-title">
                         Play & Enjoy 
                     </p>
@@ -787,7 +909,7 @@
                     </p>
                 </div>
 
-                <div class="carousel-descrip_ta" style="display: none;" id="car1a">
+                <div class="carousel-descrip_t" style="display: none;" id="car1">
                     <p class="carousel-title">
                         Relax & Rejuvenate 
                     </p>
@@ -796,7 +918,7 @@
                     </p>
                 </div>
 
-                <div class="carousel-descrip_ta" style="display: none;" id="car2a">
+                <div class="carousel-descrip_t" style="display: none;" id="car2">
                     <p class="carousel-title">
                         Unite & Celebrate 
                     </p>
@@ -805,90 +927,8 @@
                     </p>
                 </div>
             </div>
-        </div> -->
-
-       
-
-
-        <!-- <div class="carousel-A">
-            <div class="carousel">
-                <ul class="carousel__list">
-                    <img src="images/section2/Relax & Rejuvenate.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn3(id)">
-                    <img src="images/section2/Unite & Celebrate.jpg" alt="" class="carousel__item" data-pos="-1" id="-1" onclick="fn3(id)">
-                    <img src="images/section2/Meet, Greet & Talk.jpg" alt="" class="carousel__item" data-pos="0" id="0" onclick="fn3(id)">
-                    <img src="images/section2/Mingle, Mix & Laugh.jpg" alt="" class="carousel__item" data-pos="1" id="1" onclick="fn3(id)">
-                    <img src="images/section2/Play & Enjoy.jpg" alt="" class="carousel__item" data-pos="2" id="2" onclick="fn3(id)">
-                </ul>
-            </div>
-
-            <div class="ellipse"  onclick="fn_1()">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-
-            <div class="carousel-descrip" id="car-2" style='display:block' >
-                <p class="carousel-title">
-                    Meet, Greet & Talk1
-                </p>
-                <p class="carousel-details">
-                    From lobbies of the living areas, various seating clusters in & around the project to the corridor spaces, there are various thoughtfully designed ‘pause points’ to incorporate enthusiastic welcomes and lingering goodbyes. Wholesome architectural enhancements for you to meet, greet & talk.
-                </p>
-            </div>
-
-            <div class="carousel-descrip" style="display: none;" id="car-1">
-                <p class="carousel-title">
-                    Mingle, Mix & Laugh 
-                </p>
-                <p class="carousel-details">
-                    Soul Tree is sprinkled with an array of open spaces including dedicated senior citizen seating areas meant to merge the social and the personal with group-friendly and quiet spaces. The green patch between the living areas is created with landscapes – lush greenery interspersed with seating facilities and calming water bodies where you can mingle, mix & laugh. 
-                </p>
-            </div>
-
-            <div class="carousel-descrip" style="display: none;" id="car0">
-                <p class="carousel-title">
-                    Play & Enjoy 
-                </p>
-                <p class="carousel-details">
-                    With multiple kids-play areas scattered around the project & specifically designed toddlers play areas accompanied by parents seating benches, we aim to cater to the demands of each & every age group. There is a Basket Ball Court, motorised Cricket Nets, Skating & Biking Ring and so much more for you to play & enjoy to the fullest.  
-                </p>
-            </div>
-
-            <div class="carousel-descrip" style="display: none;" id="car1">
-                <p class="carousel-title">
-                    Relax & Rejuvenate 
-                </p>
-                <p class="carousel-details">
-                    It’s a space that is designed to serve today’s global lifestyles and new-age living. Reflexology Barefoot Paths with Pebbles are meant to give you a relaxing break from your hectic lifestyle while the elevated east-facing sunrise court, Yoga zone, various green parks including a butterfly garden, walking path, multiple outdoor gyms & around the project jogging path will help you to relax & rejuvenate. 
-                </p>
-            </div>
-
-            <div class="carousel-descrip" style="display: none;" id="car2">
-                <p class="carousel-title">
-                    Unite & Celebrate 
-                </p>
-                <p class="carousel-details">
-                    Soul Tree lends its name from a rare auspicious banyan tree centring the Amphi Theatre, a uniquely designed space to encourage the celebrations of every nature. Adding to an already impressive Clubhouse packed with world-class facilities & the project dedicated to giving you a cause to unite & celebrate the life every day.  
-                </p>
-            </div>
-        </div> -->
+        </div>
     </div>
-
-    <script>
-        function fn11(id) 
-        {
-            alert(id);
-            var id_split = id.split("a");
-            
-            var id_1 = "car"+id_split[0];
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("carousel-descrip_ta");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-           
-            document.getElementById(id_1).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script> 
 
     <!-- #################################################################################### -->
     <div class="specBrand content-desktop">
@@ -1243,50 +1283,198 @@
 
 
     <script>
-        const state = {};
-    const carouselList = document.querySelector('.carousel__list');
-    const carouselItems = document.querySelectorAll('.carousel__item');
-    const elems = Array.from(carouselItems);
+        var idtemp = -2;
+        function fn(id) 
+            {
+                image_fn(idtemp)
+                if (idtemp == 2) {
+                    idtemp = -2;
+                } else {
+                    idtemp = idtemp + 1;
+                }
+                var id_1 = idtemp;
+                var id_1 = "car"+idtemp;
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("carousel-descrip_t");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+               
+                document.getElementById(id_1).style.display = "block";
+                // evt.currentTarget.className += " active";
+            }
 
-    carouselList.addEventListener('click', function (event) {
-    var newActive = event.target;
-    var isItem = newActive.closest('.carousel__item');
 
-    if (!isItem || newActive.classList.contains('carousel__item_active')) {
-        return;
-    };
-    
-    update(newActive);
-    });
+            const state = {};
+        const carouselList = document.querySelector('.carousel__list');
+        const carouselItems = document.querySelectorAll('.carousel__item');
+        const elems = Array.from(carouselItems);
 
-    const update = function(newActive) {
-    const newActivePos = newActive.dataset.pos;
+        var temp_var = 0
 
-    const current = elems.find((elem) => elem.dataset.pos == 0);
-    const prev = elems.find((elem) => elem.dataset.pos == -1);
-    const next = elems.find((elem) => elem.dataset.pos == 1);
-    const first = elems.find((elem) => elem.dataset.pos == -2);
-    const last = elems.find((elem) => elem.dataset.pos == 2);
-    
-    current.classList.remove('carousel__item_active');
-    
-    [current, prev, next, first, last].forEach(item => {
-        var itemPos = item.dataset.pos;
+        function image_fn(idtemp){
+            // var newActive = event.target;
+            // var isItem = newActive.closest('.carousel__item');
+            if (temp_var == 5) {
+                temp_var = 0 
+            } else {
+                temp_var = temp_var + 1
+            }
+            var newActive = temp_var
 
-        item.dataset.pos = getPos(itemPos, newActivePos)
-    });
-    };
+            // if (!isItem || newActive.classList.contains('carousel__item_active')) {
+            //     return;
+            // };
+        
+            update(newActive);
+        };
 
-    const getPos = function (current, active) {
-    const diff = current - active;
+        var ite_tear = NaN;
 
-    if (Math.abs(current - active) > 2) {
-        return -current
-    }
+        carouselList.addEventListener('click', function (event) {
+            var newActive = event.target;
+            var isItem = newActive.closest('.carousel__item');
 
-    return diff;
-    }
-    </script>
+            if (!isItem || newActive.classList.contains('carousel__item_active')) {
+                return;
+            };
+            ite_tear = newActive
+        
+            update(newActive);
+            // console.log(newActive)
+        });
+
+        const update = function(newActive) {
+        // const newActivePos = newActive.dataset.pos;
+        const newActivePos = 1;
+        // console.log(newActivePos)
+
+        const current = elems.find((elem) => elem.dataset.pos == -2);
+        const prev = elems.find((elem) => elem.dataset.pos == -1);
+        const next = elems.find((elem) => elem.dataset.pos == 0);
+        const first = elems.find((elem) => elem.dataset.pos == 1);
+        const last = elems.find((elem) => elem.dataset.pos == 2);
+
+        console.log(current,prev)
+        
+        current.classList.remove('carousel__item_active');
+        
+        [current, prev, next, first, last].forEach(item => {
+            var itemPos = item.dataset.pos;
+
+            item.dataset.pos = getPos(itemPos, newActivePos)
+        });
+        };
+
+        const getPos = function (current, active) {
+        const diff = current - active;
+
+        if (Math.abs(current - active) > 2) {
+            return -current
+        }
+
+        return diff;
+        }
+
+
+
+// ######################################################################
+
+var idtemp = -2;
+        function fn3(id) 
+            {
+                image_fn3(idtemp)
+                if (idtemp == 2) {
+                    idtemp = -2;
+                } else {
+                    idtemp = idtemp + 1;
+                }
+                var id_1 = idtemp;
+                var id_1 = "car"+idtemp;
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("carousel-descrip_t");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+               
+                document.getElementById(id_1).style.display = "block";
+                // evt.currentTarget.className += " active";
+            }
+
+
+            const state3 = {};
+        const carouselList3 = document.querySelector('.carousel__list');
+        const carouselItems3 = document.querySelectorAll('.carousel__item');
+        const elems3 = Array.from(carouselItems);
+
+        var temp_var3 = 0
+
+        function image_fn3(idtemp){
+            // var newActive = event.target;
+            // var isItem = newActive.closest('.carousel__item');
+            if (temp_var == 5) {
+                temp_var = 0 
+            } else {
+                temp_var = temp_var + 1
+            }
+            var newActive = temp_var
+
+            // if (!isItem || newActive.classList.contains('carousel__item_active')) {
+            //     return;
+            // };
+        
+            update(newActive);
+        };
+
+        var ite_tear3 = NaN;
+
+        carouselList.addEventListener('click', function (event) {
+            var newActive = event.target;
+            var isItem = newActive.closest('.carousel__item3');
+
+            if (!isItem || newActive.classList.contains('carousel__item_active')) {
+                return;
+            };
+            ite_tear = newActive
+        
+            update(newActive);
+            // console.log(newActive)
+        });
+
+        const update3 = function(newActive) {
+        // const newActivePos = newActive.dataset.pos;
+        const newActivePos3 = 1;
+        // console.log(newActivePos)
+
+        const current3 = elems.find((elem) => elem.dataset.pos == -2);
+        const prev3 = elems.find((elem) => elem.dataset.pos == -1);
+        const next3 = elems.find((elem) => elem.dataset.pos == 0);
+        const first3 = elems.find((elem) => elem.dataset.pos == 1);
+        const last3 = elems.find((elem) => elem.dataset.pos == 2);
+
+        console.log(current,prev)
+        
+        current.classList.remove('carousel__item_active');
+        
+        [current, prev, next, first, last].forEach(item => {
+            var itemPos = item.dataset.pos;
+
+            item.dataset.pos = getPos(itemPos, newActivePos3)
+        });
+        };
+
+        const getPos3 = function (current, active) {
+        const diff3 = current - active;
+
+        if (Math.abs(current - active) > 2) {
+            return -current
+        }
+
+        return diff;
+        }
+
+
+</script>
 
 
 <!-- Smooth Scroll -->

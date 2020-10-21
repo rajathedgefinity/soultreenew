@@ -750,6 +750,7 @@ body {
 
   .carousel-1 {
     display: flex;
+    font-family: Titillium Web, sans-serif;
 
     .color-splash-1 {
       width: 45.26vw;
@@ -905,7 +906,7 @@ body {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 17vw;
+        margin-top: 18vw;
         margin-left: 26vw;
         color: $black;
   
@@ -939,6 +940,7 @@ body {
   }
 
   .carousel-2-title {
+    font-family: Titillium Web, sans-serif;
     font-size: 3.125vw;
     font-weight: $fontBold;
     margin-left: 14.9vw;
@@ -947,30 +949,18 @@ body {
 
   .carousel-2 {
     display: flex;
+    font-family: Titillium Web, sans-serif;
 
-    .color-splash-1 {
-      width: 45.26vw;
-      height: 67.2vw;
-      margin-top: -6.5vw;
-      // margin-left: -22vw;
-
-      img {
-        width: auto;
-        height: 100%;
-      }
-    }
-
-    .carousel-flex{
+    .carousel-flex2{
       position: absolute;
       display: flex;
       // justify-content: space-between;
       align-items: center;
-      margin-top: 6vw;
-      margin-left: 26vw;
 
       .carousel {
         display: flex;
         align-items: center;
+        margin-left: 76vw;
       
         &__list {
           display: flex;
@@ -1053,12 +1043,12 @@ body {
           }
           
           &[data-pos="-1"] {
-            opacity: 0;
+            opacity: 0.5;
             filter: blur(1px) grayscale(100%);
           }
       
           &[data-pos="1"] {
-            opacity: 0.5;
+            opacity: 0;
             filter: blur(1px) grayscale(10%);
           }
           
@@ -1073,12 +1063,12 @@ body {
           }
           
           &[data-pos="-2"] {
-            opacity: 0;
+            opacity: 0.2;
             filter: blur(3px) grayscale(100%);
           }
           
           &[data-pos="2"] {
-            opacity: 0.2;
+            opacity: 0;
             filter: blur(3px) grayscale(20%);
           }
       
@@ -1095,15 +1085,15 @@ body {
       }
 
       .ellipse {
-        position: relative;
+        position: absolute;
         width: 5vw;
         height: 5vw;
         border-radius: 50%;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 17vw;
-        margin-left: 26vw;
+        margin-top: 18vw;
+        margin-left: 45.3vw;
         color: $black;
   
         i {
@@ -1117,8 +1107,7 @@ body {
       .carousel-descrip_t {
         position: absolute;
         width: 27.24vw;
-        // margin-right: 34vw;
-        margin-left: 34vw;
+        margin-left: 14.9vw;
         margin-top: 18vw;
   
         .carousel-title {
@@ -1133,13 +1122,26 @@ body {
         }
       }
     }
+
+    .color-splash-2 {
+      width: 45.26vw;
+      height: 47.19vw;
+      margin-top: -7vw;
+      margin-left: 52vw;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
   }
 
   .master-plan {
+    font-family: Titillium Web, sans-serif;
     display: flex;
     // padding-left: 14.9vw;
     padding-left: 13.91vw;
-    margin-top: -5vw;
+    margin-top: -2vw;
 
     .master-plan-img {
       width: 32.66vw;
@@ -1181,6 +1183,7 @@ body {
 
                                                     @media only screen and (max-width:768px) {
                                                       .master-plan {
+                                                        font-family: Titillium Web, sans-serif;
                                                         display: block;
                                                         // padding-left: 14.9vw;
                                                         padding-left: 0vw;
@@ -1239,6 +1242,7 @@ body {
 
   // FLoor Plan Starts
   .floor-plans {
+    font-family: Titillium Web, sans-serif;
     // height: 55vw;
     width: 100vw;
     padding-left: 14.9vw;
@@ -1547,6 +1551,7 @@ body {
 
                                                     @media only screen and (max-width:768px) {
                                                       .floor-plans {
+                                                        font-family: Titillium Web, sans-serif;
                                                         // height: 55vw;
                                                         width: 100vw;
                                                         padding-left: 0vw;
@@ -2222,18 +2227,6 @@ body {
   .carousel-3 {
     display: flex;
 
-    .color-splash-1 {
-      width: 45.26vw;
-      height: 67.2vw;
-      margin-top: -6.5vw;
-      // margin-left: -22vw;
-
-      img {
-        width: auto;
-        height: 100%;
-      }
-    }
-
     .carousel-flex3{
       position: absolute;
       display: flex;
@@ -2368,7 +2361,7 @@ body {
         }
       }
 
-      .ellipse {
+      .ellipse3 {
         position: relative;
         width: 5vw;
         height: 5vw;
@@ -2388,7 +2381,7 @@ body {
         }
       }
 
-      .carousel-descrip_ta {
+      .carousel-descrip_t3 {
         position: absolute;
         width: 27.24vw;
         // margin-right: 34vw;
@@ -2408,286 +2401,6 @@ body {
       }
     }
   }
-
-  // .carousel-A {
-  //   margin-top: -4vw;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   .carousel {
-  //     display: flex;
-  //     width: 100%;
-  //     height: 100%;
-  //     align-items: center;
-  //     font-family: Arial;
-    
-  //     &__list {
-  //       display: flex;
-  //       list-style: none;
-  //       position: relative;
-  //       width: 100%;
-  //       height: 300px;
-  //       justify-content: center;
-  //       perspective: 300px;
-  //     }
-      
-  //     &__item {
-  //       display: flex;
-  //       align-items: center;
-  //       justify-content: center;
-  //       color: #fff;
-  //       font-size: 0px;
-  //       width: 25.8vw;
-  //       height: 33.8vw;
-  //       border-radius: 1vw;
-  //       box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-  //       position: absolute;
-  //       transition: all .3s ease-in;
-        
-  //       &:nth-child(1) {
-  //           width: 25.8vw;
-  //           height: 33.8vw;
-  //           border-radius: 1vw;
-  //       img {
-  //           width: 100%;
-  //           height: auto;
-  //           border-radius: 1vw;
-  //         }
-  //       }
-  //       &:nth-child(2) {
-  //           width: 25.8vw;
-  //               height: 33.8vw;
-  //               border-radius: 1vw;
-  //           img {
-  //           width: 100%;
-  //           height: auto;
-  //           border-radius: 1vw;
-  //         }
-  //       }
-  //       &:nth-child(3) {
-  //           width: 25.8vw;
-  //               height: 33.8vw;
-  //               border-radius: 1vw;
-    
-  //           img {
-  //           width: 100%;
-  //           height: auto;
-  //           border-radius: 1vw;
-  //         }
-  //       }
-  //       &:nth-child(4) {
-  //           width: 25.8vw;
-  //               height: 33.8vw;
-  //               border-radius: 1vw;
-  //           img {
-  //           width: 100%;
-  //           height: auto;
-  //           border-radius: 1vw;
-  //         }
-  //       }
-  //       &:nth-child(5) {
-  //           width: 25.8vw;
-  //               height: 33.8vw;
-  //               border-radius: 1vw;
-  //           img {
-  //           width: 100%;
-  //           height: auto;
-  //           border-radius: 1vw;
-  //         }
-  //       }
-        
-  //       &[data-pos="0"] {
-  //         z-index: 5;
-  //       }
-        
-  //       &[data-pos="-1"] {
-  //         opacity: 0;
-  //         filter: blur(1px) grayscale(100%);
-  //       }
-    
-  //       &[data-pos="1"] {
-  //         opacity: 0.9;
-  //         filter: blur(1px) grayscale(10%);
-  //       }
-        
-  //       &[data-pos="-1"] {
-  //         transform: translateX(-40%) scale(.9);
-  //         z-index: 4;
-  //       }
-        
-  //       &[data-pos="1"] {
-  //         transform: translateX(40%) scale(.9);
-  //         z-index: 4;
-  //       }
-        
-  //       &[data-pos="-2"] {
-  //         opacity: 0;
-  //         filter: blur(3px) grayscale(100%);
-  //       }
-        
-  //       &[data-pos="2"] {
-  //         opacity: 0.4;
-  //         filter: blur(3px) grayscale(20%);
-  //       }
-    
-  //       &[data-pos="-2"] {
-  //         transform: translateX(-70%) scale(.8);
-  //         z-index: 3;
-  //       }
-        
-  //       &[data-pos="2"] {
-  //         transform: translateX(70%) scale(.8);
-  //         z-index: 3;
-  //       }
-  //     }
-  //   }
-  
-  //   // .carousel {
-  //   //   display: flex;
-  //   //   align-items: center;
-  //   //   margin-left: 15vw;
-      
-  //   //   &__list {
-  //   //     display: flex;
-  //   //     list-style: none;
-  //   //     position: relative;
-  //   //     width: 100%;
-  //   //     height: 15.625vw;
-  //   //     justify-content: center;
-  //   //     perspective: 15.625vw;
-  //   //   }
-      
-  //   //   &__item {
-  //   //     display: flex;
-  //   //     align-items: center;
-  //   //     justify-content: center;
-  //   //     color: #fff;
-  //   //     font-size: 0px;
-  //   //     width: 25.8vw;
-  //   //     height: 33.8vw;
-  //   //     border-radius: 1vw;
-  //   //     box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-  //   //     position: absolute;
-  //   //     transition: all .3s ease-in;
-        
-  //   //     &:nth-child(3) {
-  //   //       width: 25.8vw;
-  //   //       height: 33.8vw;
-  //   //       border-radius: 1vw;
-
-  //   //       img {
-  //   //         width: 100%;
-  //   //         height: auto;
-  //   //         border-radius: 1vw;
-  //   //       }
-  //   //     }
-        
-  //   //     &:nth-child(4) {
-  //   //       width: 25.8vw;
-  //   //       height: 33.8vw;
-  //   //       border-radius: 1vw;
-
-  //   //       img {
-  //   //         width: 100%;
-  //   //         height: auto;
-  //   //         border-radius: 1vw;
-  //   //       }
-  //   //     }
-
-  //   //     &:nth-child(5) {
-  //   //       width: 25.8vw;
-  //   //       height: 33.8vw;
-  //   //       border-radius: 1vw;
-
-  //   //       img {
-  //   //         width: 100%;
-  //   //         height: auto;
-  //   //         border-radius: 1vw;
-  //   //       }
-  //   //     }
-        
-  //   //     &[data-pos="0"] {
-  //   //       z-index: 5;
-  //   //     }
-        
-  //   //     &[data-pos="-1"],
-  //   //     &[data-pos="-2"] {
-  //   //     opacity: 0;
-  //   //     filter: blur(1px) grayscale(10%);
-  //   //   }
-
-  //   //     &[data-pos="1"] {
-  //   //       opacity: .8;
-  //   //       // filter: blur(1px) grayscale(10%);
-  //   //     }
-        
-  //   //     &[data-pos="-1"] {
-  //   //       transform: translateX(-40%) scale(.9);
-  //   //       z-index: 4;
-  //   //     }
-        
-  //   //     &[data-pos="1"] {
-  //   //       transform: translateX(40%) scale(.9);
-  //   //       z-index: 4;
-  //   //     }
-        
-  //   //     &[data-pos="2"] {
-  //   //       opacity: .5;
-  //   //       // filter: blur(3px) grayscale(10%);
-  //   //     }
-        
-  //   //     &[data-pos="-2"] {
-  //   //       transform: translateX(-70%) scale(.8);
-  //   //       z-index: 3;
-  //   //     }
-        
-  //   //     &[data-pos="2"] {
-  //   //       transform: translateX(70%) scale(.8);
-  //   //       z-index: 3;
-  //   //     }
-  //   //   }
-  //   // }
-  
-  
-  //   .ellipse {
-  //     position: absolute;
-  //     width: 5vw;
-  //     height: 5vw;
-  //     border-radius: 50%;
-  //     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  //     background-color: $white-two;
-  //     z-index: 10;
-  //     margin-top: 18vw;
-  //     margin-left: 10.3vw;
-  //     color: $black;
-  
-  //     i {
-  //       margin-left: 2vw;
-  //       margin-top: 1vw;
-  //       font-size: 3vw;
-  //       z-index: 50;
-  //     }
-  //   }
-  
-  //   .carousel-descrip {
-  //     width: 27.24vw;
-  //     margin-left: 34vw;
-  //     margin-top: 17vw;
-  
-  //     .carousel-title {
-  //       font-size: 2.34vw;
-  //       font-weight: $fontBold;
-  //       margin-bottom: 1.93vw;
-  //     }
-  
-  //     .carousel-details {
-  //       font-size: 1.2vw;
-  //       line-height: 1.43;
-  
-  //     }
-  //   }
-  // }
 }
 
 // ####################################################################################
