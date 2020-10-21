@@ -176,3 +176,59 @@ var header = document.getElementById("click-btn");
 //     navbar.classList.remove("sticky");
 //   }
 // }
+
+
+
+
+
+// floor plan tab functions
+        function serenityFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana');   
+            var d = document.getElementById('snty');   
+            var e = document.getElementById('bls');   
+            var f = document.getElementById('nrv');   
+            if (a.style.display === 'none') {
+                a.style.display = 'flex';
+                b.style.display = 'none';
+                c.style.display = 'none';
+                d.classList.add('active-spec')
+                e.classList.remove('active-spec');
+                f.classList.remove('active-spec');
+            }
+        }
+
+        function blissFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana'); 
+            var d = document.getElementById('snty');   
+            var e = document.getElementById('bls');   
+            var f = document.getElementById('nrv');     
+            if (b.style.display === 'none') {
+                a.style.display = 'none';
+                b.style.display = 'flex';
+                c.style.display = 'none';
+                d.classList.remove('active-spec')
+                e.classList.add('active-spec');
+                f.classList.remove('active-spec');
+            }
+        }
+
+        function nirvanaFunc() {
+            var a = document.getElementById('serenity');
+            var b = document.getElementById('bliss');
+            var c = document.getElementById('nirvana');  
+            var d = document.getElementById('snty');   
+            var e = document.getElementById('bls');   
+            var f = document.getElementById('nrv');    
+            if (c.style.display === 'none') {
+                a.style.display = 'none';
+                b.style.display = 'none';
+                c.style.display = 'flex';
+                d.classList.remove('active-spec')
+                e.classList.remove('active-spec');
+                f.classList.add('active-spec');
+            }
+        }

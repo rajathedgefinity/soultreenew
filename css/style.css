@@ -22,7 +22,7 @@ body {
   right: 0;
   height: 100vh;
   margin: auto;
-  width: 100vw;
+  width: 100%;
   background-color: #000000;
   z-index: 5000;
   display: -webkit-box;
@@ -107,6 +107,22 @@ body {
   }
   100% {
     top: 110%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lines {
+    width: 100%;
+  }
+  .lines .logoEntry {
+    height: 20vw;
+    width: 40vw;
+  }
+  .lines .line {
+    left: 23%;
+  }
+  .lines .line:nth-child(3) {
+    margin-left: 50%;
   }
 }
 
@@ -1497,6 +1513,7 @@ body {
   font-weight: 600;
   padding-bottom: .4vw;
   color: #b2b2b2;
+  cursor: pointer;
 }
 
 .floor-plans .plan-specs .active-spec {
@@ -1611,11 +1628,22 @@ body {
   width: 48vw;
   height: 38vw;
   padding-left: 1.5vw;
+  overflow: hidden;
 }
 
 .floor-plans .plan-view .swiper-container .swiper-slide {
   width: 42.14vw;
   height: 33.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .floor-plans .plan-view .swiper-container .swiper-slide img {
@@ -1667,6 +1695,142 @@ body {
 }
 
 .floor-plans .plan-view .swiper-container .ellipse2 i {
+  margin-left: 2.2vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .plan-view .swiper-container2 {
+  margin-left: 8vw;
+  width: 48vw;
+  height: 38vw;
+  padding-left: 1.5vw;
+  overflow: hidden;
+}
+
+.floor-plans .plan-view .swiper-container2 .swiper-slide {
+  width: 42.14vw;
+  height: 33.75vw;
+}
+
+.floor-plans .plan-view .swiper-container2 .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.floor-plans .plan-view .swiper-container2 .swiper-slide p {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 1.2vw;
+  line-height: 1.43;
+  font-weight: 300;
+}
+
+.floor-plans .plan-view .swiper-container2 .ellipse3 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: -1.5vw;
+  color: #000000;
+}
+
+.floor-plans .plan-view .swiper-container2 .ellipse3 i {
+  margin-left: 1.8vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .plan-view .swiper-container2 .ellipse4 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: 40vw;
+  color: #000000;
+}
+
+.floor-plans .plan-view .swiper-container2 .ellipse4 i {
+  margin-left: 2.2vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .plan-view .swiper-container3 {
+  margin-left: 8vw;
+  width: 48vw;
+  height: 38vw;
+  padding-left: 1.5vw;
+  overflow: hidden;
+}
+
+.floor-plans .plan-view .swiper-container3 .swiper-slide {
+  width: 42.14vw;
+  height: 33.75vw;
+}
+
+.floor-plans .plan-view .swiper-container3 .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.floor-plans .plan-view .swiper-container3 .swiper-slide p {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 1.2vw;
+  line-height: 1.43;
+  font-weight: 300;
+}
+
+.floor-plans .plan-view .swiper-container3 .ellipse5 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: -1.5vw;
+  color: #000000;
+}
+
+.floor-plans .plan-view .swiper-container3 .ellipse5 i {
+  margin-left: 1.8vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .plan-view .swiper-container3 .ellipse6 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: 40vw;
+  color: #000000;
+}
+
+.floor-plans .plan-view .swiper-container3 .ellipse6 i {
   margin-left: 2.2vw;
   margin-top: 1vw;
   font-size: 3vw;
@@ -2829,7 +2993,7 @@ body {
   }
   .location-section .location-descrip .location-img {
     width: 100%;
-    border-radius: 1vw;
+    border-radius: 2vw;
   }
   .location-section .location-descrip .location-img img {
     width: 100%;

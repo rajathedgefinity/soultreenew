@@ -54,7 +54,7 @@ body {
   right: 0;
   height: 100vh;
   margin: auto;
-  width: 100vw;
+  width: 100%;
   background-color: $black;
   z-index: 5000;
   display: flex;
@@ -142,9 +142,25 @@ body {
   }
 }
 
+                                                @media only screen and (max-width:768px) {
+                                                  
+                                                  .lines {
+                                                    width: 100%;
 
+                                                    .logoEntry {
+                                                      height: 20vw;
+                                                      width: 40vw;
+                                                    }
 
+                                                    .line {
+                                                      left: 23%;
+                                                    }
 
+                                                    .line:nth-child(3) {
+                                                      margin-left: 50%;
+                                                    }
+                                                  }
+                                                }
 
 
 // Navbar Starts
@@ -1268,6 +1284,7 @@ body {
         font-weight: $fontBold;
         padding-bottom: .4vw;
         color: #b2b2b2;
+        cursor: pointer;
       }
 
       .active-spec {
@@ -1374,123 +1391,19 @@ body {
           margin-top: 5.5vw;
       }
 
-      // .plan-selection {
-      //   width: 15.42vw;
-      //   height: 35.21vw;
-      //   background-color: $cream;
-      //   border-radius: .1vw;
-      //   padding-top: 3.8vw;
-      //   margin-top: 1.25vw;
-
-      //   .selections {
-      //     display: flex;
-      //     // flex-direction: column;
-      //     // align-items: center;
-      //     margin-bottom: 3.5vw;
-
-      //     p {
-      //       font-size: 1.2vw;
-      //       margin-left: 3.5vw;
-      //       color: $black;
-      //     }
-
-      //     .box11 {
-      //       margin-top: 1.6vw;
-      //       position: absolute;
-      //     }
-          
-      //     .box11 select {
-      //         // text-align: center;
-      //       background-color: $cream;
-      //       margin-left: 3vw;
-      //       color: $black;
-      //       width: 9vw;
-      //       height: 2.1vw;
-      //       // border-radius: 3px;
-      //       border: 1px solid $cream;
-      //       font-size: 1.2vw;
-      //       font-weight: $fontBold;
-      //       // -webkit-appearance: button;
-      //       // -moz-appearance: button;
-      //       // appearance: button;
-      //       // outline: none;
-      //     }
-          
-      //     .box11::before {
-      //       content: "\f107";
-      //       background: $cream;
-      //       font-family: FontAwesome;
-      //       position: absolute;
-      //       top: -4px;
-      //       right: 3px;
-      //       width: 18%;
-      //       height: 80%;
-      //       text-align: center;
-      //       font-weight: $fontThin;
-      //       font-size: 1.5vw;
-      //       line-height: 45px;
-      //       pointer-events: none;
-      //       color: black;
-      //     }
-          
-      //     select option {
-      //       width: 70%;
-      //       margin: auto;
-      //     }
-      //   }
-
-      //   .buttn {
-      //     height: 3.12vw;
-      //     width: 11.82vw;
-      //     background-color: $black;
-      //     border-radius: 0.26vw;
-      //     transition: width 500ms;
-      //     margin-left: 1.82vw;
-          
-      //     .black-button {
-      //         border: none;
-      //         height: 3.12vw;
-      //         width: 11.82vw;
-      //         display: flex;
-      //         justify-content: center;
-      //         align-items: center;
-      //         font-size: 0.9vw;
-      //         letter-spacing: 3.44px;
-      //         border-radius: 0.26vw;
-      //         font-weight: $fontBold;
-      //         color: $cream;
-      //     }
-      //   }
-      
-      //   // .buttn:hover {
-      //   //   height: 3.12vw;
-      //   //   width: 0;
-      
-      //   //   .black-button {
-      //   //       color: $black;
-      //   //   }
-      
-      //   //   .black-button::after {
-      //   //       content: '\f105';
-      //   //       font-family: fontAwesome;
-      //   //       font-size: .9vw;
-      //   //       font-weight: $fontThin;
-      //   //       padding-left: .6vw;
-      //   //       color: $black;
-      //   //   }
-      //   // }
-      // }
-
       .swiper-container {
         margin-left: 8vw;
         width: 48vw;
         height: 38vw;
         padding-left: 1.5vw;
-        // background: red;
+        overflow: hidden;
 
         .swiper-slide {
           width: 42.14vw;
           height: 33.75vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
           img {
             width: auto;
@@ -1527,6 +1440,138 @@ body {
         }
 
         .ellipse2 {
+          position: absolute;
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: $white-two;
+          z-index: 10;
+          margin-top: -21vw;
+          margin-left: 40vw;
+          color: $black;
+    
+          i {
+            margin-left: 2.2vw;
+            margin-top: 1vw;
+            font-size: 3vw;
+            z-index: 50;
+          }
+        }
+      }
+
+      .swiper-container2 {
+        margin-left: 8vw;
+        width: 48vw;
+        height: 38vw;
+        padding-left: 1.5vw;
+        overflow: hidden;
+
+        .swiper-slide {
+          width: 42.14vw;
+          height: 33.75vw;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+
+          p {
+            margin-top: 1vw;
+            text-align: center;
+            font-size: 1.2vw;
+            line-height: 1.43;
+            font-weight: $fontThin;
+          }
+        }
+
+        .ellipse3 {
+          position: absolute;
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: $white-two;
+          z-index: 10;
+          margin-top: -21vw;
+          margin-left: -1.5vw;
+          color: $black;
+    
+          i {
+            margin-left: 1.8vw;
+            margin-top: 1vw;
+            font-size: 3vw;
+            z-index: 50;
+          }
+        }
+
+        .ellipse4 {
+          position: absolute;
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: $white-two;
+          z-index: 10;
+          margin-top: -21vw;
+          margin-left: 40vw;
+          color: $black;
+    
+          i {
+            margin-left: 2.2vw;
+            margin-top: 1vw;
+            font-size: 3vw;
+            z-index: 50;
+          }
+        }
+      }
+
+      .swiper-container3 {
+        margin-left: 8vw;
+        width: 48vw;
+        height: 38vw;
+        padding-left: 1.5vw;
+        overflow: hidden;
+
+        .swiper-slide {
+          width: 42.14vw;
+          height: 33.75vw;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+
+          p {
+            margin-top: 1vw;
+            text-align: center;
+            font-size: 1.2vw;
+            line-height: 1.43;
+            font-weight: $fontThin;
+          }
+        }
+
+        .ellipse5 {
+          position: absolute;
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: $white-two;
+          z-index: 10;
+          margin-top: -21vw;
+          margin-left: -1.5vw;
+          color: $black;
+    
+          i {
+            margin-left: 1.8vw;
+            margin-top: 1vw;
+            font-size: 3vw;
+            z-index: 50;
+          }
+        }
+
+        .ellipse6 {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -2647,7 +2692,7 @@ body {
                                               
                                                   .location-img {
                                                     width: 100%;
-                                                    border-radius: 1vw;
+                                                    border-radius: 2vw;
                                                     // background-attachment: fixed;
                                               
                                                     img {
