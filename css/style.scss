@@ -688,12 +688,6 @@ body {
       }
     }
 
-    // .main-title {
-    //   font-family: 'AmalfiCoast';
-    //   font-size: 2.71vw;
-    //   font-weight: $fontThin;
-    // }
-
     .sub-title {
       text-align: center;
       width: 58vw;
@@ -706,14 +700,14 @@ body {
     }
 
     .getIn-touch {
-      position: absolute;
+      position: fixed;
       z-index: 90;
       color: $black;
       font-size: .94vw;
       font-weight: $fontBold;
       transform: rotate(-90deg);
-      margin-left: 96.5vw;
-      margin-top: 20vw;
+      margin-left: 96.25vw;
+      margin-top: 15vw;
       background-color: $cream;
       width: 8.85vw;
       height: 2.6vw;
@@ -738,11 +732,67 @@ body {
   }
 }
 
+                                                        @media only screen and (max-width:768px) {
+                                                          .landing-container {
+                                                            .overlay-content {
+                                                              .soultree-logo {
+                                                                margin-top: 25vw;
+                                                                width: 20vw;
+                                                                transform: scale(3.2);
+                                                                z-index: 10;
+                                                                
+                                                                img {
+                                                                  width: 100%;
+                                                                  height: auto;
+                                                                }
+                                                              }
+                                                          
+                                                              .sub-title {
+                                                                width: 78vw;
+                                                                z-index: 10;
+                                                                margin-top: 48vw;
+                                                                line-height: 1.5;
+                                                                font-size: 3.38vw;
+                                                              }
+                                                          
+                                                              .getIn-touch {
+                                                                position: fixed;
+                                                                z-index: 1000;
+                                                                color: $black;
+                                                                font-size: 2.5vw;
+                                                                font-weight: $fontBold;
+                                                                transform: rotate(-90deg);
+                                                                margin-left: 95vw;
+                                                                margin-top: 15vw;
+                                                                background-color: $cream;
+                                                                width: 23vw;
+                                                                height: 6vw;
+                                                                border-radius: 1vw;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                              }
+                                                            }
+                                                          
+                                                            .landing-img {
+                                                              position: absolute;
+                                                              width: 100vw;
+                                                              margin-top: -138vw;
+                                                              overflow: hidden;
+                                                          
+                                                              img {
+                                                                height: auto;
+                                                                width: 100%;
+                                                                object-fit: cover;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+
 // ####################################################################################
 .main-section {
   height: auto;
-  // padding-top: 8.39vw;
-  padding-top: 9vw;
+  padding-top: 8.39vw;
 }
 
   .main-title {
@@ -1151,6 +1201,222 @@ body {
       }
     }
   }
+
+                                                              @media only screen and (max-width:768px) {
+                                                                .main-section {
+                                                                  height: auto;
+                                                                  padding-top: 15vw;
+                                                                }
+                                                                
+                                                                  .main-title {
+                                                                    font-size: 6.76vw;
+                                                                    margin-left: 0vw;
+                                                                    width: 86vw;
+                                                                    margin: auto;
+                                                                    line-height: 1.4;
+                                                                    margin-bottom: 6vw;
+                                                                  }
+                                                                
+                                                                  .main-subtitle {
+                                                                    font-size: 3.38vw;
+                                                                    line-height: 1.5;
+                                                                    margin-left: 0vw;
+                                                                    color: $black;
+                                                                    width: 86vw;
+                                                                    margin: auto;
+                                                                  }
+                                                                
+                                                                  .carousel-1 {
+                                                                    display: flex;
+                                                                
+                                                                    .color-splash-1 {
+                                                                      width: 45.26vw;
+                                                                      height: 67.2vw;
+                                                                      margin-top: -6.5vw;
+                                                                      // margin-left: -22vw;
+                                                                
+                                                                      img {
+                                                                        width: auto;
+                                                                        height: 100%;
+                                                                      }
+                                                                    }
+                                                                
+                                                                    .carousel-flex{
+                                                                      position: absolute;
+                                                                      display: block;
+                                                                      // justify-content: space-between;
+                                                                      align-items: center;
+                                                                      margin-top: 16vw;
+                                                                      margin-left: 5vw;
+                                                                
+                                                                      .carousel {
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                      
+                                                                        &__list {
+                                                                          display: flex;
+                                                                          list-style: none;
+                                                                          position: relative;
+                                                                          width: 100%;
+                                                                          height: 15.625vw;
+                                                                          justify-content: center;
+                                                                          perspective: 15.625vw;
+                                                                        }
+                                                                        
+                                                                        &__item {
+                                                                          display: flex;
+                                                                          align-items: center;
+                                                                          justify-content: center;
+                                                                          color: #fff;
+                                                                          font-size: 0px;
+                                                                          width: 25.8vw;
+                                                                          height: 33.8vw;
+                                                                          border-radius: 1vw;
+                                                                          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                                          position: absolute;
+                                                                          transition: all .3s ease-in;
+                                                                
+                                                                          
+                                                                          &:nth-child(1) {
+                                                                              width: 25.8vw;
+                                                                              height: 33.8vw;
+                                                                              border-radius: 1vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(2) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(3) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                      
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(4) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(5) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
+                                                                            }
+                                                                          }
+                                                                          
+                                                                          &[data-pos="0"] {
+                                                                            z-index: 5;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(1px) grayscale(100%);
+                                                                          }
+                                                                      
+                                                                          &[data-pos="1"] {
+                                                                            opacity: 0.5;
+                                                                            filter: blur(1px) grayscale(10%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            transform: translateX(-40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="1"] {
+                                                                            transform: translateX(40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-2"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(3px) grayscale(100%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            opacity: 0.2;
+                                                                            filter: blur(3px) grayscale(20%);
+                                                                          }
+                                                                      
+                                                                          &[data-pos="-2"] {
+                                                                            transform: translateX(-70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            transform: translateX(70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                
+                                                                      .ellipse {
+                                                                        position: relative;
+                                                                        width: 5vw;
+                                                                        height: 5vw;
+                                                                        border-radius: 50%;
+                                                                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                                        background-color: $white-two;
+                                                                        z-index: 10;
+                                                                        margin-top: 18vw;
+                                                                        margin-left: 26vw;
+                                                                        color: $black;
+                                                                  
+                                                                        i {
+                                                                          margin-left: 2vw;
+                                                                          margin-top: 1vw;
+                                                                          font-size: 3vw;
+                                                                          z-index: 50;
+                                                                        }
+                                                                      }
+                                                                
+                                                                      .carousel-descrip_t {
+                                                                        position: absolute;
+                                                                        width: 27.24vw;
+                                                                        // margin-right: 34vw;
+                                                                        margin-left: 34vw;
+                                                                        margin-top: 18vw;
+                                                                  
+                                                                        .carousel-title {
+                                                                          font-size: 2.34vw;
+                                                                          font-weight: $fontBold;
+                                                                          margin-bottom: 1.93vw;
+                                                                        }
+                                                                  
+                                                                        .carousel-details {
+                                                                          font-size: 1.2vw;
+                                                                          line-height: 1.43;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                              }
+
 
   .master-plan {
     font-family: Titillium Web, sans-serif;
@@ -2693,6 +2959,7 @@ body {
                                                   .location-img {
                                                     width: 100%;
                                                     border-radius: 2vw;
+                                                    margin-top: 5vw;
                                                     // background-attachment: fixed;
                                               
                                                     img {

@@ -64,15 +64,15 @@
 
 <body>
 
-    <div class="lines animate__animated animate__slideOutUp animate__delay-4s">
+    <!-- <div class="lines animate__animated animate__slideOutUp animate__delay-4s"> -->
         <!-- <p class="animate__animated animate__flipInX animate__delay-1s">SOULTREE</p> -->
-        <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
+        <!-- <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
             <img src="images/Soul-tree_G.png" alt="">
         </div>
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-    </div>
+    </div> -->
       
 
     <!-- Navbar Starts [Desktop]-->
@@ -324,6 +324,7 @@
         </div>
 
         <p class="carousel-2-title" id="explore-soultree">Explore Soultree</p>
+        
         <div class="carousel-2">
 
             <div class="carousel-flex2">
@@ -372,19 +373,21 @@
                     </p>
                 </div>
 
-                <div class="ellipse"  onclick="fn2(0)">
+               
+                <div class="carousel">
+                    <ul class="carousel__list">
+                        <img src="images/section3/Feel the light.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn2(id)">
+                        <img src="images/section3/Feel the design.png" alt="" class="carousel__item" data-pos="-1" id="-1" onclick="fn2(id)">
+                        <img src="images/section3/Feel good.png" alt="" class="carousel__item" data-pos="0" id="0" onclick="fn2(id)">
+                        <img src="images/section3/Feel Smart.jpg" alt="" class="carousel__item" data-pos="1" id="1" onclick="fn2(id)">
+                        <img src="images/section3/Feel green.png" alt="" class="carousel__item" data-pos="2" id="2" onclick="fn2(id)">
+                    </ul>
+                </div>
+
+                <div class="ellipse"  onclick="fn(id)">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </div>
 
-                <div class="carousel">
-                    <ul class="carousel__list">
-                        <img src="images/section3/Feel the light.jpg" alt="" class="carousel__item" data-pos="-2"  id="3" onclick="fn2(id)">
-                        <img src="images/section3/Feel the design.png" alt="" class="carousel__item" data-pos="-1" id="4" onclick="fn2(id)">
-                        <img src="images/section3/Feel good.png" alt="" class="carousel__item" data-pos="0" id="5" onclick="fn2(id)">
-                        <img src="images/section3/Feel Smart.jpg" alt="" class="carousel__item" data-pos="1" id="6" onclick="fn2(id)">
-                        <img src="images/section3/Feel green.png" alt="" class="carousel__item" data-pos="2" id="7" onclick="fn2(id)">
-                    </ul>
-                </div>
             </div>
             <div class="color-splash-2">
                 <img src="images/Color-Splash-2.png" alt="">
@@ -678,12 +681,19 @@
     </div>
 
     <!-- #################################################################################### -->
-    <div class="gallery content-desktop" id="gallery">
-        <div class="gallery-nav" data-aos="fade-up" data-aos-delay="200">
-            <div class="gal">Gallery</div>
-            <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
-            <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
+    <div class="gallery" id="gallery">
+        <div class="gallery-nav content-desktop" data-aos="fade-up" data-aos-delay="200">
+            <div class="gal content-desktop">Gallery</div>
+            <div class="gal-nav active-gal content-desktop" onclick="iFunc()" id="photos">Photos</div>
+            <div class="gal-nav content-desktop" onclick="vFunc()" id="walkthrough">Walkthrough</div>
         </div>
+        
+        <div class="gal content-mobile" data-aos="fade-up" data-aos-delay="200">Gallery</div>
+        <div class="gallery-nav content-mobile" data-aos="fade-up" data-aos-delay="250">
+            <div class="gal-nav active-gal content-mobile" onclick="iMFunc()" id="photosM">Photos</div>
+            <div class="gal-nav content-mobile" onclick="vMFunc()" id="walkthroughM">Walkthrough</div>
+        </div>
+
         <div class="gallery-view" data-aos="fade-up" data-aos-delay="300">
             <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
@@ -716,7 +726,7 @@
         </div>
     </div>
 
-    <div class="gallery content-mobile" id="gallery">
+    <!-- <div class="gallery content-mobile" id="gallery">
         <div class="gal" data-aos="fade-up" data-aos-delay="200">Gallery</div>
         <div class="gallery-nav" data-aos="fade-up" data-aos-delay="250">
             <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
@@ -752,7 +762,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
         function vFunc() {
@@ -768,11 +778,37 @@
             }
         }
 
+        function vMFunc() {
+            var a = document.getElementById('gal-V');
+            var b = document.getElementById('gal-I');
+            var c = document.getElementById('walkthroughM');
+            var d = document.getElementById('photosM');
+            if (a.style.display === 'none') {
+                a.style.display = 'block';
+                b.style.display = 'none';
+                c.classList.add('active-gal');
+                d.classList.remove('active-gal');
+            }
+        }
+
         function iFunc() {
             var a = document.getElementById('gal-V');
             var b = document.getElementById('gal-I');
             var c = document.getElementById('walkthrough');
             var d = document.getElementById('photos');
+            if (b.style.display === 'none') {
+                a.style.display = 'none';
+                b.style.display = 'block';
+                c.classList.remove('active-gal');
+                d.classList.add('active-gal');
+            }
+        }
+
+        function iMFunc() {
+            var a = document.getElementById('gal-V');
+            var b = document.getElementById('gal-I');
+            var c = document.getElementById('walkthroughM');
+            var d = document.getElementById('photosM');
             if (b.style.display === 'none') {
                 a.style.display = 'none';
                 b.style.display = 'block';
