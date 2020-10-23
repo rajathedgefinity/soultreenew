@@ -345,7 +345,7 @@
                     </ul>
                 </div>
 
-                <div class="ellipse"  onclick="fn_1()">
+                <div class="ellipse"  onclick="fn_arrow(0)">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
@@ -452,16 +452,14 @@
             </div>
         </div>
 
-
-
         <div class="floor-plans">
             <div class="floor-plans-title">Floor Plans</div>
-            <div class="plan-specs">
-                <div class="spec active-spec" id="snty" onclick="serenityFunc()">Serenity</div>
-                <div class="spec" id="bls" onclick="blissFunc()">Bliss</div>
-                <div class="spec" id="nrv" onclick="nirvanaFunc()">Nirvana</div>
+            <div class="plan-specs tab">
+                <div class="spec tablinks" id="snty" onclick="openFunc(evt, serenity)">Serenity</div>
+                <div class="spec tablinks" id="bls" onclick="openFunc(evt, bliss)">Bliss</div>
+                <div class="spec tablinks" id="nrv" onclick="openFunc(evt, nirvana)">Nirvana</div>
             </div>
-            <div class="plan-view" id="serenity" style="display: flex;">
+            <div class="planView" id="serenity" style="display: flex;">
                 <div class="selection" data-aos="fade-up" data-aos-delay="200">
                     <div class="type-selection">
                         <p>Type</p>
@@ -528,7 +526,7 @@
                 </div>
             </div>
 
-            <div class="plan-view" id="bliss" style="display: none;">
+            <div class="planView" id="bliss" style="display: none;">
                 <div class="selection" data-aos="fade-up" data-aos-delay="200">
                     <div class="type-selection">
                         <p>Type</p>
@@ -595,7 +593,7 @@
                 </div>
             </div>
 
-            <div class="plan-view" id="nirvana" style="display: none;">
+            <div class="planView" id="nirvana" style="display: none;">
                 <div class="selection" data-aos="fade-up" data-aos-delay="200">
                     <div class="type-selection">
                         <p>Type</p>
@@ -662,10 +660,24 @@
                 </div>
             </div>
 
-
-
         </div>
     <!-- </div> -->
+
+    <!-- <script>
+        function openFunc(evt, blocks) {
+          var i, planView, tablinks;
+          planView = document.getElementsByClassName("planView");
+          for (i = 0; i < planView.length; i++) {
+            planView[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-spec", "");
+          }
+          document.getElementById(blocks).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script> -->
 
     <!-- #################################################################################### -->
     <div class="timeline" style="display: none;">
@@ -733,44 +745,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="gallery content-mobile" id="gallery">
-        <div class="gal" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-        <div class="gallery-nav" data-aos="fade-up" data-aos-delay="250">
-            <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
-            <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
-        </div>
-        <div class="gallery-view" data-aos="fade-up" data-aos-delay="300">
-            <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                </div>
-                <div class="fillet-box">
-                    <div class="left-box">
-                        <a><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="right-box">
-                        <a><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <script>
         function vFunc() {
@@ -842,7 +816,7 @@
                     </ul>
                 </div>
 
-                <div class="ellipse3" >
+                <div class="ellipse3" onclick="fn_arrow1(0)" >
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
@@ -1278,6 +1252,209 @@
 
         return diff;
         }
+</script>
+<script>
+
+        var idtemp1 = -2;
+function fn_arrow(id) 
+    {
+        image_fn_arrow(idtemp1)
+        if (idtemp1 == 2) {
+            idtemp1 = -2;
+        } else {
+            idtemp1 = idtemp1 + 1;
+        }
+        var id_1 = idtemp1+"_a";
+      
+        var id_1 = "car"+id_1;
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("carousel-descrip_t1");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+       
+        document.getElementById(id_1).style.display = "block";
+        // evt.currentTarget.className += " active";
+    }
+
+
+    const state_arrow = {};
+const carouselList_arrow = document.querySelector('.carousel_list');
+const carouselItems_arrow = document.querySelectorAll('.carousel_item1');
+const elems_arrow = Array.from(carouselItems_arrow);
+
+var temp_var_arrow = 0
+
+function image_fn_arrow(idtemp1){
+    // var newActive_arrow = event.target;
+    // var isItem_arrow = newActive_arrow.closest('.carousel__item');
+    if (temp_var_arrow == 5) {
+        temp_var_arrow = 0 
+    } else {
+        temp_var_arrow = temp_var_arrow + 1
+    }
+    var newActive_arrow = temp_var_arrow
+
+    // if (!isItem || newActive_arrow.classList.contains('carousel__item_active')) {
+    //     return;
+    // };
+
+    update_arrow(newActive_arrow);
+};
+
+var ite_tear_arrow = NaN;
+
+carouselList_arrow.addEventListener('click', function (event) {
+    var newActive_arrow = event.target;
+    var isItem_arrow = newActive_arrow.closest('.carousel_item1');
+
+    if (!isItem_arrow || newActive_arrow.classList.contains('carousel_item1_active')) {
+        return;
+    };
+    ite_tear_arrow = newActive_arrow
+
+    update(newActive_arrow);
+    // console.log(newActive_arrow)
+});
+
+const update_arrow = function(newActive_arrow) {
+// const newActivePos_arrow = newActive_arrow.dataset.pos;
+const newActivePos_arrow = 1;
+// console.log(newActivePos_arrow)
+
+const current_arrow = elems_arrow.find((elem) => elem.dataset.pos == -2);
+const prev_arrow = elems_arrow.find((elem) => elem.dataset.pos == -1);
+const next_arrow = elems_arrow.find((elem) => elem.dataset.pos == 0);
+const first_arrow = elems_arrow.find((elem) => elem.dataset.pos == 1);
+const last_arrow = elems_arrow.find((elem) => elem.dataset.pos == 2);
+
+console.log(current_arrow,prev_arrow)
+
+current_arrow.classList.remove('carousel_item1_active');
+
+[current_arrow, prev_arrow, next_arrow, first_arrow, last_arrow].forEach(item => {
+    var itemPos_arrow = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos_arrow, newActivePos_arrow)
+});
+};
+
+const getPos_arrow = function (current_arrow, active_arrow) {
+const diff_arrow = current_arrow - active_arrow;
+
+if (Math.abs(current_arrow - active_arrow) > 2) {
+    return -current_arrow
+}
+
+return diff_arrow;
+}
+
+
+
+</script>
+
+<script>
+    var idtemp1_arrow11 = -2;
+function fn_arrow1(id) 
+    {
+        image_fn_arrow1(idtemp1_arrow11)
+        if (idtemp1_arrow11 == 2) {
+            idtemp1_arrow11 = -2;
+        } else {
+            idtemp1_arrow11 = idtemp1_arrow11 + 1;
+        }
+        var id_1 = idtemp1_arrow11+"_b";
+      
+        var id_1 = "car"+id_1;
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("carousel-descrip_tb");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+       
+        document.getElementById(id_1).style.display = "block";
+        // evt.currentTarget.className += " active";
+    }
+
+
+    const state_arrow1 = {};
+const carouselList_arrow1 = document.querySelector('.carousel_list2');
+const carouselItems_arrow1 = document.querySelectorAll('.carousel_item2');
+const elems_arrow1 = Array.from(carouselItems_arrow1);
+
+var temp_var_arrow1 = 0
+
+function image_fn_arrow1(idtemp1_arrow11){
+    // var newActive_arrow1 = event.target;
+    // var isItem_arrow1 = newActive_arrow1.closest('.carousel__item');
+    if (temp_var_arrow1 == 5) {
+        temp_var_arrow1 = 0 
+    } else {
+        temp_var_arrow1 = temp_var_arrow1 + 1
+    }
+    var newActive_arrow1 = temp_var_arrow1
+
+    // if (!isItem || newActive_arrow1.classList.contains('carousel__item_active')) {
+    //     return;
+    // };
+
+    update_arrow1(newActive_arrow1);
+};
+
+var ite_tear_arrow1 = NaN;
+
+carouselList_arrow1.addEventListener('click', function (event) {
+    var newActive_arrow1 = event.target;
+    var isItem_arrow1 = newActive_arrow1.closest('.carousel_item2');
+
+    if (!isItem_arrow1 || newActive_arrow1.classList.contains('carousel_item2_active')) {
+        return;
+    };
+    ite_tear_arrow1 = newActive_arrow1
+
+    update(newActive_arrow1);
+    // console.log(newActive_arrow1)
+});
+
+const update_arrow1 = function(newActive_arrow1) {
+// const newActivePos_arrow1 = newActive_arrow1.dataset.pos;
+const newActivePos_arrow1 = 1;
+// console.log(newActivePos_arrow1)
+
+const current_arrow1 = elems_arrow1.find((elem) => elem.dataset.pos == -2);
+const prev_arrow1 = elems_arrow1.find((elem) => elem.dataset.pos == -1);
+const next_arrow1 = elems_arrow1.find((elem) => elem.dataset.pos == 0);
+const first_arrow1 = elems_arrow1.find((elem) => elem.dataset.pos == 1);
+const last_arrow1 = elems_arrow1.find((elem) => elem.dataset.pos == 2);
+
+console.log(current_arrow1,prev_arrow1)
+
+current_arrow1.classList.remove('carousel_item2_active');
+
+[current_arrow1, prev_arrow1, next_arrow1, first_arrow1, last_arrow1].forEach(item => {
+    var itemPos_arrow1 = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos_arrow1, newActivePos_arrow1)
+});
+};
+
+const getPos_arrow1 = function (current_arrow1, active_arrow1) {
+const diff_arrow1 = current_arrow1 - active_arrow1;
+
+if (Math.abs(current_arrow1 - active_arrow1) > 2) {
+    return -current_arrow1
+}
+
+return diff_arrow1;
+}
+
+
+
+
+
+
+
+
 
 </script>
 

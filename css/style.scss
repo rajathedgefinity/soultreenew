@@ -1219,7 +1219,7 @@ body {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 18vw;
+        margin-top: 17vw;
         margin-left: 45.3vw;
         color: $black;
   
@@ -1839,7 +1839,7 @@ body {
       }
     }
 
-    .plan-view {
+    .planView {
       margin-left: 2.03vw;
       display: flex;
       margin-top: 4.3vw;
@@ -2005,6 +2005,105 @@ body {
           }
         }
       }
+    }
+
+    .planView {
+      margin-left: 2.03vw;
+      display: flex;
+      margin-top: 4.3vw;
+
+      .selection {
+        display: block;
+        margin-right: 4.22vw;
+        margin-top: 6vw;
+      }
+    
+      .type-selection, .facing, .building-blocks {
+          margin-bottom: 2.03vw;
+      }
+      
+      .type-selection, .facing, .building-blocks p {
+          font-size: $p;
+          font-weight: $fontBold;
+      }
+      
+      .click-btn {
+          display: flex;
+          margin-top: .5vw;
+      }
+      
+      .click-btn-1 {
+          font-size: 1vw;
+          font-weight: 300;
+          padding: 1vw 1.4vw;
+          border: 1px solid $white-six;
+          background-color: $white-five;
+      }
+      
+      .active, .click-btn-1:hover {
+          background-color: $black;
+          color: $white-two;
+          // border: none;
+      }
+      
+      select {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Chrome */
+        -webkit-appearance: none;
+      }
+      
+      /* For IE10 */
+      select::-ms-expand {
+        display: none;
+      }
+      
+      .box11 {
+          margin-top: .5vw;
+          position: absolute;
+        }
+        
+        .box11 select {
+            text-align: center;
+          background-color: $white-two;
+          color: $black;
+          width: 10.5vw;
+          height: 3vw;
+          border-radius: 3px;
+          border: 1px solid;
+          font-size: $p;
+          font-weight: $fontThin;
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button;
+          outline: none;
+        }
+        
+        .box11::before {
+          content: "\f107";
+          background: $white-two;
+          font-family: FontAwesome;
+          position: absolute;
+          top: 1px;
+          right: 3px;
+          width: 18%;
+          height: 80%;
+          text-align: center;
+          font-weight: $fontThin;
+          font-size: 1.5vw;
+          line-height: 45px;
+          pointer-events: none;
+          color: black;
+        }
+        
+        select option {
+          width: 70%;
+          margin: auto;
+      }
+      
+      .building-blocks p {
+          margin-top: 5.5vw;
+      }
 
       #blissCarousel {
         margin-left: 8vw;
@@ -2012,16 +2111,16 @@ body {
         height: 38vw;
         padding-left: 1.5vw;
         overflow: hidden;
-
+    
         .swiper-slide {
           width: 42.14vw;
           height: 33.75vw;
-
+    
           img {
             width: auto;
             height: 100%;
           }
-
+    
           p {
             margin-top: 1vw;
             text-align: center;
@@ -2030,7 +2129,7 @@ body {
             font-weight: $fontThin;
           }
         }
-
+    
         #elBliss {
           position: absolute;
           width: 5vw;
@@ -2050,7 +2149,7 @@ body {
             z-index: 50;
           }
         }
-
+    
         #erBliss {
           position: absolute;
           width: 5vw;
@@ -2071,6 +2170,105 @@ body {
           }
         }
       }
+    }
+
+    .planView {
+      margin-left: 2.03vw;
+      display: flex;
+      margin-top: 4.3vw;
+
+      .selection {
+        display: block;
+        margin-right: 4.22vw;
+        margin-top: 6vw;
+      }
+    
+      .type-selection, .facing, .building-blocks {
+          margin-bottom: 2.03vw;
+      }
+      
+      .type-selection, .facing, .building-blocks p {
+          font-size: $p;
+          font-weight: $fontBold;
+      }
+      
+      .click-btn {
+          display: flex;
+          margin-top: .5vw;
+      }
+      
+      .click-btn-1 {
+          font-size: 1vw;
+          font-weight: 300;
+          padding: 1vw 1.4vw;
+          border: 1px solid $white-six;
+          background-color: $white-five;
+      }
+      
+      .active, .click-btn-1:hover {
+          background-color: $black;
+          color: $white-two;
+          // border: none;
+      }
+      
+      select {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Chrome */
+        -webkit-appearance: none;
+      }
+      
+      /* For IE10 */
+      select::-ms-expand {
+        display: none;
+      }
+      
+      .box11 {
+          margin-top: .5vw;
+          position: absolute;
+        }
+        
+        .box11 select {
+            text-align: center;
+          background-color: $white-two;
+          color: $black;
+          width: 10.5vw;
+          height: 3vw;
+          border-radius: 3px;
+          border: 1px solid;
+          font-size: $p;
+          font-weight: $fontThin;
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button;
+          outline: none;
+        }
+        
+        .box11::before {
+          content: "\f107";
+          background: $white-two;
+          font-family: FontAwesome;
+          position: absolute;
+          top: 1px;
+          right: 3px;
+          width: 18%;
+          height: 80%;
+          text-align: center;
+          font-weight: $fontThin;
+          font-size: 1.5vw;
+          line-height: 45px;
+          pointer-events: none;
+          color: black;
+        }
+        
+        select option {
+          width: 70%;
+          margin: auto;
+      }
+      
+      .building-blocks p {
+          margin-top: 5.5vw;
+      }
 
       #nirvanaCarousel {
         margin-left: 8vw;
@@ -2078,16 +2276,16 @@ body {
         height: 38vw;
         padding-left: 1.5vw;
         overflow: hidden;
-
+    
         .swiper-slide {
           width: 42.14vw;
           height: 33.75vw;
-
+    
           img {
             width: auto;
             height: 100%;
           }
-
+    
           p {
             margin-top: 1vw;
             text-align: center;
@@ -2096,7 +2294,7 @@ body {
             font-weight: $fontThin;
           }
         }
-
+    
         #elNirvana {
           position: absolute;
           width: 5vw;
@@ -2116,7 +2314,7 @@ body {
             z-index: 50;
           }
         }
-
+    
         #erNirvana {
           position: absolute;
           width: 5vw;
@@ -2139,6 +2337,7 @@ body {
       }
     }
   }
+
 
                                                     @media only screen and (max-width:768px) {
                                                       .floor-plans {
@@ -2179,7 +2378,7 @@ body {
                                                           }
                                                         }
                                                     
-                                                        .plan-view {
+                                                        .planView {
                                                           margin-left: 3.03vw;
                                                           display: flex;
                                                           margin-top: 6vw;
