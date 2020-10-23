@@ -16,12 +16,15 @@
     <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/puttamma.css">
     <link rel="stylesheet" href="css/getInTouch.css">
-    <!-- <link rel="stylesheet" href="css/puttamma.css"> -->
+
+    <link rel="stylesheet" href="https://www.fontmirror.com/amalfi-coast">
+
+    <link rel="stylesheet" href="https://creativemarket.com/typeline/4248727-Amalfi-Coast-Chic-Calligraphy..">
 
     <!-- Google Fonts: Font Family -->
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <!-- AOS(Animation On Scroll) -->
@@ -65,11 +68,7 @@
 
 <body>
 
-    <!-- <div class="lines animate__animated animate__slideOutUp animate__delay-4s"> -->
-        <!-- <p class="animate__animated animate__flipInX animate__delay-1s">SOULTREE</p> -->
-        <!-- <div class="logoEntry animate__animated animate__flipInX animate__delay-2s">
-            <img src="images/Soul-tree_G.png" alt="">
-        </div>
+    <!-- <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -105,58 +104,16 @@
         <nav class="top-nav">
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#explore-soultree" class="nav-link">Explore Soultree</a></li>
-                <li><a href="#master-plan" class="nav-link">Master Plan</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#amenities" class="nav-link">Amenities</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#aboutUs" class="nav-link">About us</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#residential" class="nav-link">Residential</a></li>
+                <li><a href="#decor" class="nav-link">Decor</a></li>
+                <li><a href="#construction" class="nav-link">Construction</a></li>
+                <li><a href="#contactUs" class="nav-link">Contact us</a></li>
             </ul>
         </nav>
     </div>
     <!-- Navbar Ends [Desktop]-->
-
-    <!-- Navbar Starts [Mobile]-->
-    <div class="nav-bar content-mobile">
-        <div class="logo-container">
-            <div class="logo">
-                <div class="fillet-div">
-                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-            <path
-                  class="line top"
-                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-            <path
-                  class="line middle"
-                  d="m 30,50 h 40" />
-            <path
-                  class="line bottom"
-                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg> -->
-
-        <div class="box" id="myHam">
-            <div class="btn11 not-active">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#explore-soultree" class="nav-link">Explore Soultree</a></li>
-                <li><a href="#master-plan" class="nav-link">Master Plan</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#amenities" class="nav-link">Amenities</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Navbar Ends [Mobile]-->
 
     <div class="menu-pages" id="navbar2">
         <div>
@@ -189,7 +146,7 @@
             <div class="getIn-touch" onclick="document.getElementById('getInTouchId').style.display='block'">
                 GET IN TOUCH
             </div>
-            <div class="project-form-popup animate__animated animate__fadeInRightBig" id="getInTouchId" style="display: none;">
+            <div class="project-form-popup" id="getInTouchId" style="display: none;">
                 <div class="common-toggler" onclick="document.getElementById('getInTouchId').style.display='none'">
                   <span>Get In Touch</span>
                   <svg viewBox="0 0 32 32">
@@ -202,8 +159,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-10">
-                                    <div class="contact-title">
-                                        <h2 class="form_wrapper--title scroll-fade in-view" style="width: 10vw; font-family: Titillium Web, sans-serif;"> Get in touch</h2>
+                                    <div class="contact-title" style="width: 100%;">
+                                        <h2 class="form_wrapper--title scroll-fade in-view"> Get in touch</h2>
                                     </div>
                                 </div>
                             </div>      
@@ -224,6 +181,15 @@
                                                 <fieldset class="js-form-item js-form-type-email form-type-email js-form-item-email form-item-email form-no-label form-group col-auto">
                                                     <input data-drupal-selector="edit-email" type="email" id="edit-email--4" name="email" value="" size="60" maxlength="254" placeholder="Email ID *" class="form-email required form-control" required="required" aria-required="true">
                                                 </fieldset>
+                                                <!-- <fieldset class="js-form-item js-form-type-select form-type-select js-form-item-project-name form-item-project-name form-no-label form-group col-auto">
+                                                    <select data-drupal-selector="edit-project-name" class="webform-entity-select form-select required form-control" id="edit-project-name--4" name="project_name" required="required" aria-required="true" disabled="">
+                                                        <option value="">- Select Property -</option>
+                                                        <option value="9" selected="selected">New Dawn Sunlit Row Villas</option>
+                                                        <option value="19">WonderWall</option>
+                                                        <option value="20">VGR Essor</option>
+                                                        <option value="21">The Fore</option>
+                                                    </select>
+                                                </fieldset> -->
                                                 <fieldset class="js-form-item js-form-type-textarea form-type-textarea js-form-item-message form-item-message form-no-label form-group col-auto">
                                                     <div class="form-textarea-wrapper">
                                                         <textarea data-drupal-selector="edit-message" id="edit-message--4" name="message" rows="1" cols="60" placeholder="What would you like to discuss?" class="form-textarea form-control resize-vertical"></textarea>
@@ -245,16 +211,17 @@
             </div>
         </div>
 
-        <div class="landing-img content-desktop">
-            <img src="images/Banner1.jpg">
-        </div>
+        <script>
+            var x = document.getElementById('');
+            var y = document.getElementById('');
+        </script>
 
-        <div class="landing-img content-mobile">
-            <img src="images/bannerMobile.png">
+        <div class="landing-img">
+            <img src="images/Banner1.jpg">
         </div>
     </div>
     <!-- #################################################################################### -->
-        <div class="main-section"></div>
+    <div class="main-section">
         <p class="main-title">
             For the generation of today, <br>
             tomorrow & future.
@@ -279,7 +246,7 @@
                     </ul>
                 </div>
 
-                <div class="ellipse"  onclick="fn(0)">
+                <div class="ellipse"  onclick="fn_1()">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
@@ -330,9 +297,28 @@
             </div>
         </div>
 
+       <script>
+           
+            function fn(id) 
+            {
+                var id_1 = "car"+id;
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("carousel-descrip_t");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+               
+                document.getElementById(id_1).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script> 
+
+
         <p class="carousel-2-title" id="explore-soultree">Explore Soultree</p>
-        
         <div class="carousel-2">
+            <div class="color-splash-1">
+                <img src="images/Color-Splash-1.png" alt="">
+            </div>
 
             <div class="carousel-flex">
                 <div class="carousel" id="g1">
@@ -394,14 +380,30 @@
                     </p>
                 </div>
             </div>
-            <div class="color-splash-2">
-                <img src="images/Color-Splash-2.png" alt="">
-            </div>
         </div>
 
-        <div class="master-plan content-desktop" id="master-plan">
+       <script>
+            function fn22(id) 
+            {
+               
+                var id_1 = "car"+id;
+              
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("carousel-descrip_t1");
+               
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+               
+                document.getElementById(id_1).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script> 
+
+        <div class="master-plan" id="master-plan">
             <div class="master-plan-img">
-                <img src="images/MASTER-PLAN.png">
+                <img src="images/MASTER-PLAN.png" 
+                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
             </div>
             <div class="master-plan-descrip">
                 <div class="master-plan-title">Master plan</div>
@@ -424,49 +426,19 @@
             </div>
         </div>
 
-
-
-
-        <div class="master-plan content-mobile" id="master-plan">
-            <div class="master-plan-title">Master plan</div>
-            <div class="master-plan-img">
-                <img src="images/MASTER-PLAN.png">
-            </div>
-            <div class="master-plan-descrip">
-                <li>
-                    <p class="specs">Land Area</p>
-                    <p class="spec-details">3 Acres</p>
-                </li>
-                <li>
-                    <p class="specs">BHK Type</p>
-                    <p class="spec-details">1, 2 & 3</p>
-                </li>
-                <li>
-                    <p class="specs">Units</p>
-                    <p class="spec-details">538</p>
-                </li>
-                <li>
-                    <p class="specs">Club House</p>
-                    <p class="spec-details">20,000 sqft</p>
-                </li>
-            </div>
-        </div>
-
-
-
         <div class="floor-plans">
             <div class="floor-plans-title">Floor Plans</div>
             <div class="plan-specs">
-                <div class="spec active-spec" id="snty" onclick="serenityFunc()">Serenity</div>
-                <div class="spec" id="bls" onclick="blissFunc()">Bliss</div>
-                <div class="spec" id="nrv" onclick="nirvanaFunc()">Nirvana</div>
+                <div class="spec active-spec">Serenity</div>
+                <div class="spec">Bliss</div>
+                <div class="spec">Nirvana</div>
             </div>
-            <div class="plan-view" id="serenity" style="display: flex;">
+            <div class="plan-view">
                 <div class="selection" data-aos="fade-up" data-aos-delay="200">
                     <div class="type-selection">
                         <p>Type</p>
                         <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
+                            <button class="click-btn-1" >1</button>
                             <button class="click-btn-1">2</button>
                             <button class="click-btn-1 active">3</button>
                         </div>
@@ -494,52 +466,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container" id="serenityCarousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
+                <!-- <div class="plan-selection">
+                    <div class="selections">
+                        <p>Wing</p>
+                        <div class="box11">
+                            <select>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
                         </div>
                     </div>
-
-                    <div class="ellipse1" style="z-index: 100;" id="elSerenity">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erSerenity">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="plan-view" id="bliss" style="display: none;">
-                <div class="selection" data-aos="fade-up" data-aos-delay="200">
-                    <div class="type-selection">
-                        <p>Type</p>
-                        <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
-                            <button class="click-btn-1">2</button>
-                            <button class="click-btn-1 active">3</button>
-                        </div>
-                    </div>
-    
-                    <div class="facing">
+                    <div class="selections">
                         <p>Facing</p>
                         <div class="box11">
                             <select>
@@ -550,122 +489,60 @@
                             </select>
                         </div>
                     </div>
-                    <div class="building-blocks">
-                        <p>Block</p>
+                    <div class="selections">
+                        <p>BHK</p>
                         <div class="box11">
                             <select>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-container" id="blissCarousel">
+                    <div class="selections" style="margin-bottom: 7vw">
+                        <p>SBA</p>
+                        <div class="box11">
+                            <select>
+                                <option>1214</option>
+                                <option>1215</option>
+                                <option>1216</option>
+                                <option>1217</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
                             <p>SBA 1345 Sft CA <br>
                                 945 Sft Flat no’s  A11, A12, A13</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
                             <p>SBA 1345 Sft CA <br>
                                 945 Sft Flat no’s  A11, A12, A13</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
+                            <img src="images/floor-plan/floor-plan.jpg" 
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x, static/images/floor-plan/floor-plan@3x.jpg 3x">
                             <p>SBA 1345 Sft CA <br>
                                 945 Sft Flat no’s  A11, A12, A13</p>
                         </div>
                     </div>
 
-                    <div class="ellipse1" style="z-index: 100;" id="elBliss">
+                    <div class="ellipse1" style="z-index: 100;">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erBliss">
+                    <div class="ellipse2" style="z-index: 100;">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
-
-            <div class="plan-view" id="nirvana" style="display: none;">
-                <div class="selection" data-aos="fade-up" data-aos-delay="200">
-                    <div class="type-selection">
-                        <p>Type</p>
-                        <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
-                            <button class="click-btn-1">2</button>
-                            <button class="click-btn-1 active">3</button>
-                        </div>
-                    </div>
-    
-                    <div class="facing">
-                        <p>Facing</p>
-                        <div class="box11">
-                            <select>
-                                <option>East</option>
-                                <option>West</option>
-                                <option>North</option>
-                                <option>South</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="building-blocks">
-                        <p>Block</p>
-                        <div class="box11">
-                            <select>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-container" id="nirvanaCarousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                    </div>
-
-                    <div class="ellipse1" style="z-index: 100;" id="elNirvana">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erNirvana">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
-    <!-- </div> -->
+    </div>
 
     <!-- #################################################################################### -->
     <div class="timeline" style="display: none;">
@@ -690,19 +567,12 @@
 
     <!-- #################################################################################### -->
     <div class="gallery" id="gallery">
-        <div class="gallery-nav content-desktop" data-aos="fade-up" data-aos-delay="200">
-            <div class="gal content-desktop">Gallery</div>
-            <div class="gal-nav active-gal content-desktop" onclick="iFunc()" id="photos">Photos</div>
-            <div class="gal-nav content-desktop" onclick="vFunc()" id="walkthrough">Walkthrough</div>
+        <div class="gallery-nav">
+            <div class="gal">Gallery</div>
+            <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
+            <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
         </div>
-        
-        <div class="gal content-mobile" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-        <div class="gallery-nav content-mobile" data-aos="fade-up" data-aos-delay="250">
-            <div class="gal-nav active-gal content-mobile" onclick="iMFunc()" id="photosM">Photos</div>
-            <div class="gal-nav content-mobile" onclick="vMFunc()" id="walkthroughM">Walkthrough</div>
-        </div>
-
-        <div class="gallery-view" data-aos="fade-up" data-aos-delay="300">
+        <div class="gallery-view">
             <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
                 <div class="swiper-wrapper">
@@ -734,63 +604,12 @@
         </div>
     </div>
 
-    <!-- <div class="gallery content-mobile" id="gallery">
-        <div class="gal" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-        <div class="gallery-nav" data-aos="fade-up" data-aos-delay="250">
-            <div class="gal-nav active-gal" onclick="iFunc()" id="photos">Photos</div>
-            <div class="gal-nav" onclick="vFunc()" id="walkthrough">Walkthrough</div>
-        </div>
-        <div class="gallery-view" data-aos="fade-up" data-aos-delay="300">
-            <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/gallery/gallery.jpg"
-                        srcset="images/gallery/gallery@2x.jpg 2x,
-                        images/gallery/gallery@3x.jpg 3x">  
-                    </div>
-                </div>
-                <div class="fillet-box">
-                    <div class="left-box">
-                        <a><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="right-box">
-                        <a><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <script>
         function vFunc() {
             var a = document.getElementById('gal-V');
             var b = document.getElementById('gal-I');
             var c = document.getElementById('walkthrough');
             var d = document.getElementById('photos');
-            if (a.style.display === 'none') {
-                a.style.display = 'block';
-                b.style.display = 'none';
-                c.classList.add('active-gal');
-                d.classList.remove('active-gal');
-            }
-        }
-
-        function vMFunc() {
-            var a = document.getElementById('gal-V');
-            var b = document.getElementById('gal-I');
-            var c = document.getElementById('walkthroughM');
-            var d = document.getElementById('photosM');
             if (a.style.display === 'none') {
                 a.style.display = 'block';
                 b.style.display = 'none';
@@ -811,26 +630,14 @@
                 d.classList.add('active-gal');
             }
         }
-
-        function iMFunc() {
-            var a = document.getElementById('gal-V');
-            var b = document.getElementById('gal-I');
-            var c = document.getElementById('walkthroughM');
-            var d = document.getElementById('photosM');
-            if (b.style.display === 'none') {
-                a.style.display = 'none';
-                b.style.display = 'block';
-                c.classList.remove('active-gal');
-                d.classList.add('active-gal');
-            }
-        }
     </script>
 
     <!-- #################################################################################### -->
     <div class="amenities" id="amenities">
-        <div class="amenities-title">Amenities</div> 
+        <div class="amenities-title">Amenities</div>
 
-        <div class="carousel-3">
+
+         <div class="carousel-3">
             <div class="carousel-flex3">
                 <div class="carousel" id="g2_c">
                     <ul class="carousel_list2" id="g2__list11">
@@ -842,7 +649,7 @@
                     </ul>
                 </div>
 
-                <div class="ellipse3" >
+                <div class="ellipse" >
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
 
@@ -892,10 +699,29 @@
                 </div>
             </div>
         </div> 
+        <script>
+            function fn_33(id) 
+            {
+               
+                var id_1 = "car"+id;
+              
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("carousel-descrip_tb");
+              
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+               
+                document.getElementById(id_1).style.display = "block";
+                
+            }
+        </script> 
+    
     </div>
 
+
     <!-- #################################################################################### -->
-    <div class="specBrand content-desktop" data-aos="fade-up" data-aos-delay="200">
+    <div class="specBrand">
         <p>SPECIFICATIONS & BRANDS</p>
         <div class="btnFlex">
             <div class="buttn">
@@ -904,61 +730,57 @@
         </div>
     </div>
 
-    <div class="specBrand content-mobile" data-aos="fade-up" data-aos-delay="200">
-        <p>SPECIFICATIONS & BRANDS</p>
-        <div class="buttn">
-            <button class="black-button" type="submit">KNOW MORE</button>
-        </div>
-    </div>
-
     <!-- #################################################################################### -->
-    <!-- Location Section Starts-->
     <div class="location-section">
-        <p class="location-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="location-title">
             A perfect location for a perfect home
         </p>
-        <p class="location-subtitle" data-aos="fade-up" data-aos-delay="250">
+        <p class="location-subtitle">
             Somepura Gate, Sarjapur Road, located in south-east Bangalore, is one of the fastest-growing parts of the city which makes it perfect & favoured property investment destinations. Despite it's close proximity to the IT hubs of the city it still retains the peaceful & serene aspect missing from almost every other part of the city which certainly are heading towards saturation.
-        <br><br data-aos="fade-up" data-aos-delay="300">
+        <!-- </p> -->
+        <br><br>
+        <!-- <p class="location-subtitle"> -->
             The real estate demand in this location has seen a ten folds increase. Sarjapur Road enjoys robust residential demand and excellent connectivity to the IT hubs & hotspots like Koramangala, Whitefield, HSR, Electronic City, Marathahalli, Silk Board etc. The planned Metro rail extension, Outer Ring Road and the proposed eight-lane Peripheral Ring Road [PRR] which will reduce the travel time to airport considerably are expected to boost the realty sector here.
         </p>
         <div class="location-descrip">
-            <div class="location-img" id="mapImg" data-aos="fade-up" data-aos-delay="350">
-                <img src="images/Map.png">   
+            <div class="location-img" id="mapImg">
+                <img src="images/Map.png"
+                srcset="images/soultree/soultree@2x.jpg 2x,
+                images/soultree/soultree@3x.jpg 3x">   
                 <p onclick="mapFunc()">View Map</p>      
             </div>
             <iframe class="location-img" id="map" style="display: none; border: 1px solid black;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9256920171847!2d77.6770247146445!3d12.912497390894686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae135d95d42c11%3A0xc20268292891ba2c!2sSoulTree%20by%20ModernSpaaces!5e0!3m2!1sen!2sin!4v1603023796674!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
             <div class="location-distance">
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="350">
+                    <li>
                         <p class="place">Dommasandra circle</p>
                         <p class="kms">4 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="350">
+                    <li>
                         <p class="place">Decatalon/ RGA Tech Park</p>
                         <p class="kms">9 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
+                    <li>
                         <p class="place">Electronic City</p>
                         <p class="kms">14 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
+                    <li>
                         <p class="place">Eco Space</p>
                         <p class="kms">15 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="450">
+                    <li>
                         <p class="place">Wipro Corporate Office</p>
                         <p class="kms">13 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="450">
+                    <li>
                         <p class="place">Total Mall</p>
                         <p class="kms">14 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="500">
+                    <li>
                         <p class="place">HSR Layout</p>
                         <p class="kms">17 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="500">
+                    <li>
                         <p class="place">Marathahalli</p>
                         <p class="kms">19 KMS</p>
                     </li>
@@ -966,25 +788,14 @@
             </div>
         </div>
     </div>
-    <!-- Location Section Ends-->
-
-    
 
     <script>
         var m = document.getElementById('map');
-        var p = document.getElementById('mapM');
         var n = document.getElementById('mapImg')
         function mapFunc() {
             if (m.style.display === 'none') {
                 m.style.display = 'block';
                 n.style.display = 'none';
-            }
-        }
-
-        function mapMFunc() {
-            if (p.style.display === 'none') {
-                p.style.display = 'block';
-                p.style.display = 'none';
             }
         }
     </script>
@@ -1010,43 +821,41 @@
 
     <!-- #################################################################################### -->
     <div class="contact content-desktop" id="contact">
-        <p class="contact-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="contact-title">
             We’d love to hear from you!
         </p>
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="200">
-            We’re here answer queries and to guide and provide you with information you need in choosing the perfect
-        </p>
-        <form action="">
-            <div class="inputA">
-                <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="200">
-                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="200">
-            </div>
-            <div class="inputB">
-                <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="250">
-                <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="300">
-            </div>
-            <div class="buttn" data-aos="fade-up" data-aos-delay="200">
-                <button class="black-button" type="submit">SUBMIT</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="contact content-mobile">
-        <p class="contact-title" data-aos="fade-up" data-aos-delay="200">
-            We’d love to hear from you!
-        </p>
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="240">
+        <p class="contact-subtitle">
             We’re here answer queries and to guide and provide you with information you need in choosing the perfect
         </p>
         <div class="inputA">
-            <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="280">
-            <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="320">
+            <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="200">
+            <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="200">
         </div>
         <div class="inputB">
-            <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="360">
-            <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="400">
+            <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="250">
+            <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="300">
         </div>
-        <div class="buttn" data-aos="fade-up" data-aos-delay="440">
+        <div class="buttn">
+            <button class="black-button" type="submit">SUBMIT</button>
+        </div>
+    </div>
+
+    <div class="contact content-mobile">
+        <p class="contact-title">
+            We’d love to hear from you!
+        </p>
+        <p class="contact-subtitle">
+            We’re here answer queries and to guide and provide you with information you need in choosing the perfect
+        </p>
+        <div class="inputA">
+            <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="200">
+            <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="200">
+        </div>
+        <div class="inputB">
+            <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="250">
+            <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="300">
+        </div>
+        <div class="buttn">
             <button class="black-button" type="submit">SUBMIT</button>
         </div>
     </div>
@@ -1148,27 +957,30 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-            var mySwiper = new Swiper('#serenityCarousel', {
-            navigation: {
-                nextEl: '#erSerenity',
-                prevEl: '#elSerenity',
-            },
-            })
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            // loop: true,
 
-            var mySwiper = new Swiper('#blissCarousel', {
-            navigation: {
-                nextEl: '#erBliss',
-                prevEl: '#elBliss',
-            },
-            })
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
 
-            var mySwiper = new Swiper('#nirvanaCarousel', {
+            // Navigation arrows
             navigation: {
-                nextEl: '#erNirvana',
-                prevEl: '#elNirvana',
+                nextEl: '.ellipse2',
+                prevEl: '.ellipse1',
             },
-            })
 
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            })
+    </script>
+
+    <script>
             //#################################################
             var mySwiper = new Swiper('.gal-img', {
             // direction: 'vertical',
@@ -1186,100 +998,50 @@
 
 
     <script>
-        var idtemp = -2;
-        function fn(id) 
-            {
-                image_fn(idtemp)
-                if (idtemp == 2) {
-                    idtemp = -2;
-                } else {
-                    idtemp = idtemp + 1;
-                }
-                var id_1 = idtemp;
-                var id_1 = "car"+idtemp;
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("carousel-descrip_t");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-               
-                document.getElementById(id_1).style.display = "block";
-                // evt.currentTarget.className += " active";
-            }
+        const state = {};
+    const carouselList = document.querySelector('.carousel__list');
+    const carouselItems = document.querySelectorAll('.carousel__item');
+    const elems = Array.from(carouselItems);
 
+    carouselList.addEventListener('click', function (event) {
+    var newActive = event.target;
+    var isItem = newActive.closest('.carousel__item');
 
-            const state = {};
-        const carouselList = document.querySelector('.carousel__list');
-        const carouselItems = document.querySelectorAll('.carousel__item');
-        const elems = Array.from(carouselItems);
+    if (!isItem || newActive.classList.contains('carousel__item_active')) {
+        return;
+    };
+    
+    update(newActive);
+    });
 
-        var temp_var = 0
+    const update = function(newActive) {
+    const newActivePos = newActive.dataset.pos;
 
-        function image_fn(idtemp){
-            // var newActive = event.target;
-            // var isItem = newActive.closest('.carousel__item');
-            if (temp_var == 5) {
-                temp_var = 0 
-            } else {
-                temp_var = temp_var + 1
-            }
-            var newActive = temp_var
+    const current = elems.find((elem) => elem.dataset.pos == 0);
+    const prev = elems.find((elem) => elem.dataset.pos == -1);
+    const next = elems.find((elem) => elem.dataset.pos == 1);
+    const first = elems.find((elem) => elem.dataset.pos == -2);
+    const last = elems.find((elem) => elem.dataset.pos == 2);
+    
+    current.classList.remove('carousel__item_active');
+    
+    [current, prev, next, first, last].forEach(item => {
+        var itemPos = item.dataset.pos;
 
-            // if (!isItem || newActive.classList.contains('carousel__item_active')) {
-            //     return;
-            // };
-        
-            update(newActive);
-        };
+        item.dataset.pos = getPos(itemPos, newActivePos)
+    });
+    };
 
-        var ite_tear = NaN;
+    const getPos = function (current, active) {
+    const diff = current - active;
 
-        carouselList.addEventListener('click', function (event) {
-            var newActive = event.target;
-            var isItem = newActive.closest('.carousel__item');
+    if (Math.abs(current - active) > 2) {
+        return -current
+    }
 
-            if (!isItem || newActive.classList.contains('carousel__item_active')) {
-                return;
-            };
-            ite_tear = newActive
-        
-            update(newActive);
-            // console.log(newActive)
-        });
-
-        const update = function(newActive) {
-        // const newActivePos = newActive.dataset.pos;
-        const newActivePos = 1;
-        // console.log(newActivePos)
-
-        const current = elems.find((elem) => elem.dataset.pos == -2);
-        const prev = elems.find((elem) => elem.dataset.pos == -1);
-        const next = elems.find((elem) => elem.dataset.pos == 0);
-        const first = elems.find((elem) => elem.dataset.pos == 1);
-        const last = elems.find((elem) => elem.dataset.pos == 2);
-
-        console.log(current,prev)
-        
-        current.classList.remove('carousel__item_active');
-        
-        [current, prev, next, first, last].forEach(item => {
-            var itemPos = item.dataset.pos;
-
-            item.dataset.pos = getPos(itemPos, newActivePos)
-        });
-        };
-
-        const getPos = function (current, active) {
-        const diff = current - active;
-
-        if (Math.abs(current - active) > 2) {
-            return -current
-        }
-
-        return diff;
-        }
-
-</script>
+    return diff;
+    }
+    </script>
 
 
 <!-- Smooth Scroll -->
@@ -1296,43 +1058,43 @@ $("a[href^='#']").click(function(e) {
 });
 
 
-// var a1 = document.getElementById('Exp-explore');
-// var a2 = document.getElementById('Mplan');
-// var a3 = document.getElementById('Gall-gallery');
-// var a4 = document.getElementById('Amne');
-// var a5 = document.getElementById('Cont');
-// function tabFunc1() {
-//     if (al.style.display === 'none') {
-//         al.style.display = 'block';
-//         a2.style.display = 'none';
-//         a3.style.display = 'none';
-//         a4.style.display = 'none';
-//         a5.style.display = 'none';
-//         a1.classList.add('active-menu')
-//     }
-// }
+var a1 = document.getElementById('Exp-explore');
+var a2 = document.getElementById('Mplan');
+var a3 = document.getElementById('Gall-gallery');
+var a4 = document.getElementById('Amne');
+var a5 = document.getElementById('Cont');
+function tabFunc1() {
+    if (al.style.display === 'none') {
+        al.style.display = 'block';
+        a2.style.display = 'none';
+        a3.style.display = 'none';
+        a4.style.display = 'none';
+        a5.style.display = 'none';
+        a1.classList.add('active-menu')
+    }
+}
 
-// function tabFunc2() {
-//     if (a2.style.display === 'none') {
-//         al.style.display = 'none';
-//         a2.style.display = 'block';
-//         a3.style.display = 'none';
-//         a4.style.display = 'none';
-//         a5.style.display = 'none';
-//         a2.classList.add('active-menu')
-//     }
-// }
+function tabFunc2() {
+    if (a2.style.display === 'none') {
+        al.style.display = 'none';
+        a2.style.display = 'block';
+        a3.style.display = 'none';
+        a4.style.display = 'none';
+        a5.style.display = 'none';
+        a2.classList.add('active-menu')
+    }
+}
 
-// function tabFunc2() {
-//     if (a2.style.display === 'none') {
-//         al.style.display = 'none';
-//         a2.style.display = 'none';
-//         a3.style.display = 'block';
-//         a4.style.display = 'none';
-//         a5.style.display = 'none';
-//         a3.classList.add('active-menu')
-//     }
-// }
+function tabFunc2() {
+    if (a2.style.display === 'none') {
+        al.style.display = 'none';
+        a2.style.display = 'none';
+        a3.style.display = 'block';
+        a4.style.display = 'none';
+        a5.style.display = 'none';
+        a3.classList.add('active-menu')
+    }
+}
 </script>
 
 
@@ -1394,15 +1156,121 @@ $("a[href^='#']").click(function(e) {
         })
          }
     </script>
-    
     <script>
-        AOS.init({
-        easing: 'ease',
-        duration: 800,
-        once: false
-    })
-    </script>
+
+        
+        const state1 = {};
+        const carouselList1 = document.querySelector('.carousel_list');
+        const carouselItems1 = document.querySelectorAll('.carousel_item1');
+        const elems1 = Array.from(carouselItems1);
+
+        carouselList1.addEventListener('click', function (event) {
+        var newActive1 = event.target;
+        var isItem1 = newActive1.closest('.carousel_item1');
+
+        if (!isItem1 || newActive1.classList.contains('carousel_item1_active1')) {
+            return;
+        };
+        
+        update1(newActive1);
+        });
+
+        const update1 = function(newActive1) {
+        const newActivePos1 = newActive1.dataset.pos;
+
+        const current1 = elems1.find((elem) => elem.dataset.pos == -2);
+        const prev1 = elems1.find((elem) => elem.dataset.pos == -1);
+        const next1 = elems1.find((elem) => elem.dataset.pos == 0);
+        const first1 = elems1.find((elem) => elem.dataset.pos == 1);
+        const last1 = elems1.find((elem) => elem.dataset.pos == 2);
+        
+        current1.classList.remove('carousel_item1_active1');
+        
+        [current1, prev1, next1, first1, last1].forEach(item => {
+            var itemPos1 = item.dataset.pos;
+
+            item.dataset.pos = getPos1(itemPos1, newActivePos1)
+        });
+        };
+
+        const getPos1 = function (current1, active1) {
+        const diff1 = current1 - active1;
+
+        if (Math.abs(current1 - active1) > 2) {
+            return -current1
+        }
+
+        return diff1;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+
+
+
+        const state2 = {};
+const carouselList2 = document.querySelector('.carousel_list2');
+const carouselItems2 = document.querySelectorAll('.carousel_item2');
+const elems2 = Array.from(carouselItems2);
+
+carouselList2.addEventListener('click', function (event) {
+  var newActive2 = event.target;
+  var isItem2 = newActive2.closest('.carousel_item2');
+
+  if (!isItem2 || newActive2.classList.contains('.carousel_item2_active2')) {
+    return;
+  };
+  
+  update2(newActive2);
+});
+
+const update2 = function(newActive2) {
+  const newActivePos2 = newActive2.dataset.pos;
+
+  const current2 = elems2.find((elem) => elem.dataset.pos == -2);
+  const prev2 = elems2.find((elem) => elem.dataset.pos == -1);
+  const next2 = elems2.find((elem) => elem.dataset.pos == 0);
+  const first2 = elems2.find((elem) => elem.dataset.pos == 1);
+  const last2 = elems2.find((elem) => elem.dataset.pos == 2);
+  
+  current2.classList.remove('.carousel_item2_active2');
+  
+  [current2, prev2, next2, first2, last2].forEach(item => {
+    var itemPos2 = item.dataset.pos;
+
+    item.dataset.pos = getPos2(itemPos2, newActivePos2)
+  });
+};
+
+const getPos2 = function (current2, active2) {
+  const diff2 = current2 - active2;
+
+  if (Math.abs(current2 - active2) > 2) {
+    return -current2
+  }
+
+  return diff2;
+}
+
+            </script>
+            <script>
+                        AOS.init({
+                        easing: 'ease',
+                        duration: 800,
+                        once: false
+                    })
+            </script>
 
 </body>
 </html>
-

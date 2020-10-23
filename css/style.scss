@@ -397,7 +397,6 @@ body {
 
 .nav-link {
   font-family: Titillium Web, sans-serif;
-  font-size: $h1;
   font-size: 1.5vw;
   font-weight: 600;
   color: $white-two;
@@ -427,6 +426,7 @@ body {
                                 width: 100%;
                                 height: 18vw;
                                 z-index: 1000;
+                                // background: red;
                             }
 
                             .logo-container {
@@ -445,143 +445,204 @@ body {
                                 }
                             }
 
-                            .ham {
+                            .box {
+                              z-index: 3000;
+                              margin-left: 86vw;
+                              border-radius: 3px;
+                              margin-top: -8.5vw;
+                              position: absolute;
+                              width: 10vw;
+                              height: 10vw;
+                              background: $black;
+                              transition: none;
+                            
+                              .btn11 {
+                                position: absolute;
+                                width: 8vw;
+                                height: 8vw;
+                                margin-left: 1vw;
+                                margin-top: 1.5vw;
                                 cursor: pointer;
-                                z-index: 2000;
-
-                              
-                                -webkit-tap-highlight-color: transparent;
-                                transition: transform 400ms;
-                                -moz-user-select: none;
-                                -webkit-user-select: none;
-                                -ms-user-select: none;
-                                user-select: none;
-                                margin-top: -9.2vw;
-                                margin-right: 9vw;
-                                background-color: $black;
-                                float: right;
-                                width: 11vw;
-                                border-radius: 1.3vw;
+                            
+                                span {
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  margin: auto;
+                                  width: 50%;
+                                  // box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+                                  border-radius: 5px;
+                                  height: 1.8px;
+                                  background: $cream;
+                                  transition: none;
+                                  position: relative;
+                                  margin-top: .68vw;
+                                }
+                                
+                                span + span {
+                                  margin-top: 8px;
+                                }
                               }
-                              .hamRotate.active {
+                            }
+                            
+                            .box:hover {
+                              width: 10vw;
+                            
+                              .btn11 {
+                                  span {
+                                  background: $cream;
+                                } 
+                              }
+                            }
+                            
+                            .active span:nth-child(1) {
+                              animation: ease .7s top forwards;
+                            }
+                            
+                            .not-active span:nth-child(1) {
+                              animation: ease .7s top-2 forwards;
+                            }
+                            
+                            .active span:nth-child(2) {
+                              animation: ease .7s scaled forwards;
+                            }
+                            
+                            .not-active span:nth-child(2) {
+                              animation: ease .7s scaled-2 forwards;
+                            }
+                            
+                            .active span:nth-child(3) {
+                              animation: ease .7s bottom forwards;
+                            }
+                            
+                            .not-active span:nth-child(3) {
+                              animation: ease .7s bottom-2 forwards;
+                            }
+                            
+                            @keyframes top {
+                              0% {
+                                top: 0;
+                                transform: rotate(0);
+                              }
+                              50% {
+                                top: 11px;
+                                transform: rotate(0);
+                              }
+                              100% {
+                                top: 11px;
                                 transform: rotate(45deg);
                               }
-                              .hamRotate180.active {
-                                transform: rotate(180deg);
+                            }
+                            
+                            @keyframes top-2 {
+                              0% {
+                                top: 11px;
+                                transform: rotate(45deg);
                               }
-                              .line {
-                                fill:none;
-                                transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-                                stroke: $white-two;
-                                stroke-width: 3;
-                                stroke-linecap:round;
-                                z-index: 2500;
+                              50% {
+                                top: 11px;
+                                transform: rotate(0deg);
                               }
-                              .ham1 .top {
-                                stroke-dasharray: 40 139;
+                              100% {
+                                top: 0;
+                                transform: rotate(0deg);
                               }
-                              .ham1 .bottom {
-                                stroke-dasharray: 40 180;
+                            }
+                            
+                            @keyframes bottom {
+                              0% {
+                                bottom: 0;
+                                transform: rotate(0);
                               }
-                              .ham1.active .top {
-                                stroke-dashoffset: -98px;
+                              50% {
+                                bottom: 9px;
+                                transform: rotate(0);
                               }
-                              .ham1.active .bottom {
-                                stroke-dashoffset: -138px;
+                              100% {
+                                bottom: 9px;
+                                transform: rotate(135deg);
                               }
-                              
+                            }
+                            
+                            @keyframes bottom-2 {
+                              0% {
+                                bottom: 9px;
+                                transform: rotate(135deg);
+                              }
+                              50% {
+                                bottom: 9px;
+                                transform: rotate(0);
+                              }
+                              100% {
+                                bottom: 0;
+                                transform: rotate(0);
+                              }
+                            }
+                            
+                            @keyframes scaled {
+                              50% {
+                                transform: scale(0);
+                              }
+                              100% {
+                                transform: scale(0);
+                              }
+                            }
+                            
+                            @keyframes scaled-2 {
+                              0% {
+                                transform: scale(0);
+                              }
+                              50% {
+                                transform: scale(0);
+                              }
+                              100% {
+                                transform: scale(1);
+                              }
+                            }            
+                            
                             .top-nav {
-                                width: 100%;
-                                height: 100vh;
-                                position: fixed;
-                                top: -105vh;
-                                z-index: 50;
-                                background: $black;
-                                border-bottom-right-radius: 50%;
-                                border-bottom-left-radius: 50%;
-                                transition: all 650ms cubic-bezier(1,0,0,1);
+                              width: 100%;
+                              height: 100vh;
+                              position: fixed;
+                              top: -100vh;
+                              z-index: 50;
+                              background: $black;
+                              border-bottom-right-radius: 100%;
+                              border-bottom-left-radius: 100%;
+                              transition: all 650ms cubic-bezier(1,0,0,1);
                             }
-
+                            
                             .nav-list {
-                                width: 100%;
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
+                              width: 100%;
+                              height: 100%;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
                             }
-
+                            
                             .nav-list li {
-                                margin: 1vw;
-                                text-align: center;
+                              margin: 1vw;
+                              text-align: center;
                             }
-
+                            
                             .nav-link {
-                                font-family: Titillium Web, sans-serif;
-                                font-size: 4vw;
-                                font-weight: $fontBold;
-                                color: $white-two;
+                              font-family: Titillium Web, sans-serif;
+                              font-size: 5vw;
+                              font-weight: 600;
+                              color: $white-two;
                             }
-
+                            
                             .nav-link:hover,
                             .nav-link:focus {
-                                background: linear-gradient(to right, $brownish-orange-two, $army-green);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
+                              background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
                             }
-
+                            
                             .top-nav.open {
-                                top: 0;
-                                border-radius: initial;
-                            }
-
-                            .menu-toggler {
-                                position: absolute;
-                                top: 7vw;
-                                width: 4.5vw;
-                                right: 9.6vw;
-                                height: 3vw;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                cursor: pointer;
-                                z-index: 2000;
-                                transition: transform 500ms ease-out;
-                                overflow: visible;
-                            }
-
-                            .menu-toggler.open {
-                                transform: rotate(-45deg);
-                            }
-
-                            .bar {
-                                background-color: $brownish-orange-two;
-                                width: 100%;
-                                height: 1px;
-                                border-radius: 5px;
-                            }
-
-                            .bar.half {
-                                width: 100%;
-                            }
-
-                            .bar.start {
-                                transform-origin: center;
-                                transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-                            }
-
-                            .open .bar.start {
-                                transform: rotate(-90deg) translateX(-.4rem);
-                            }
-
-                            .bar.end {
-                                align-self: flex-end;
-                                transform-origin: center;
-                                transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-                            }
-
-                            .open .bar.end {
-                                transform: rotate(-90deg) translateX(.4rem);
+                              top: 0;
+                              border-radius: initial;
                             }
                         }
 // Navbar Ends
@@ -1017,7 +1078,7 @@ body {
     display: flex;
     font-family: Titillium Web, sans-serif;
 
-    .carousel-flex2{
+    .carousel-flex{
       position: absolute;
       display: flex;
       // justify-content: space-between;
@@ -1038,7 +1099,7 @@ body {
           perspective: 15.625vw;
         }
         
-        &__item {
+        &__item1 {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1170,7 +1231,7 @@ body {
         }
       }
 
-      .carousel-descrip_t {
+      .carousel-descrip_t1 {
         position: absolute;
         width: 27.24vw;
         margin-left: 14.9vw;
@@ -1428,6 +1489,212 @@ body {
                                                                     margin: auto;
                                                                     margin-top: 46vw;
                                                                   }
+
+                                                                  .carousel-2 {
+                                                                    display: flex;
+                                                                    font-family: Titillium Web, sans-serif;
+                                                                
+                                                                    .carousel-flex{
+                                                                      position: relative;
+                                                                      display: block;
+                                                                      // justify-content: space-between;
+                                                                      align-items: center;
+                                                                
+                                                                      .carousel {
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                        margin-left: 76vw;
+                                                                      
+                                                                        &__list {
+                                                                          display: flex;
+                                                                          list-style: none;
+                                                                          position: relative;
+                                                                          width: 100%;
+                                                                          height: 15.625vw;
+                                                                          justify-content: center;
+                                                                          perspective: 15.625vw;
+                                                                        }
+                                                                        
+                                                                        &__item1 {
+                                                                          display: flex;
+                                                                          align-items: center;
+                                                                          justify-content: center;
+                                                                          color: #fff;
+                                                                          font-size: 0px;
+                                                                          width: 86vw;
+                                                                          height: 68.12vw;
+                                                                          border-radius: 1vw;
+                                                                          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                                          position: absolute;
+                                                                          transition: all .3s ease-in;
+                                                                
+                                                                          &:nth-child(1) {
+                                                                            width: 51.93vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 3vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(2) {
+                                                                            width: 51.93vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 3vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(3) {
+                                                                            width: 51.93vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 3vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(4) {
+                                                                            width: 51.93vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 3vw;
+                                                                            }
+                                                                          }
+                                                                          &:nth-child(5) {
+                                                                            width: 51.93vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 3vw;
+                                                                            }
+                                                                          }
+                                                                          
+                                                                          &[data-pos="0"] {
+                                                                            z-index: 5;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            opacity: 0.5;
+                                                                            filter: blur(1px) grayscale(100%);
+                                                                          }
+                                                                      
+                                                                          &[data-pos="1"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(1px) grayscale(10%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            transform: translateX(-40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="1"] {
+                                                                            transform: translateX(40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-2"] {
+                                                                            opacity: 0.2;
+                                                                            filter: blur(3px) grayscale(100%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(3px) grayscale(20%);
+                                                                          }
+                                                                      
+                                                                          &[data-pos="-2"] {
+                                                                            transform: translateX(-70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            transform: translateX(70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                
+                                                                      .ellipse {
+                                                                        position: absolute;
+                                                                        width: 5vw;
+                                                                        height: 5vw;
+                                                                        border-radius: 50%;
+                                                                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                                        background-color: $white-two;
+                                                                        z-index: 10;
+                                                                        margin-top: 18vw;
+                                                                        margin-left: 45.3vw;
+                                                                        color: $black;
+                                                                        transform: scale(2);
+                                                                  
+                                                                        i {
+                                                                          margin-left: 2vw;
+                                                                          margin-top: 1vw;
+                                                                          font-size: 3vw;
+                                                                          z-index: 50;
+                                                                        }
+                                                                      }
+                                                                
+                                                                      .carousel-descrip_t1 {
+                                                                        position: relative;
+                                                                        width: 82vw;
+                                                                        margin-left: 14.9vw;
+                                                                        margin-top: 18vw;
+                                                                  
+                                                                        .carousel-title {
+                                                                          font-size: 5.31vw;
+                                                                          font-weight: $fontBold;
+                                                                          margin-bottom: 1.93vw;
+                                                                        }
+                                                                  
+                                                                        .carousel-details {
+                                                                          font-size: 3.38vw;
+                                                                          line-height: 1.5;
+                                                                        }
+                                                                      }
+                                                                    }
+
+                                                                    // position: absolute;
+                                                                    //     width: 82vw;
+                                                                    //     // margin-right: 34vw;
+                                                                    //     margin-left: -26vw;
+                                                                    //     margin-top: 58vw;
+                                                                    //     margin-bottom: 20vw;
+                                                                  
+                                                                    //     .carousel-title {
+                                                                    //       font-size: 5.31vw;
+                                                                    //       font-weight: $fontBold;
+                                                                    //       margin-bottom: 1.93vw;
+                                                                    //     }
+                                                                  
+                                                                    //     .carousel-details {
+                                                                    //       font-size: 3.38vw;
+                                                                    //       line-height: 1.5;
+                                                                    //     }
+                                                                
+                                                                    .color-splash-2 {
+                                                                      width: 45.26vw;
+                                                                      height: 47.19vw;
+                                                                      margin-top: -7vw;
+                                                                      margin-left: 52vw;
+                                                                
+                                                                      img {
+                                                                        width: auto;
+                                                                        height: 100%;
+                                                                      }
+                                                                    }
+                                                                  }
                                                               }
 
 
@@ -1670,7 +1937,7 @@ body {
           margin-top: 5.5vw;
       }
 
-      .swiper-container {
+      #serenityCarousel {
         margin-left: 8vw;
         width: 48vw;
         height: 38vw;
@@ -1698,7 +1965,7 @@ body {
           }
         }
 
-        .ellipse1 {
+        #elSerenity {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -1718,7 +1985,7 @@ body {
           }
         }
 
-        .ellipse2 {
+        #erSerenity {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -1739,7 +2006,7 @@ body {
         }
       }
 
-      .swiper-container2 {
+      #blissCarousel {
         margin-left: 8vw;
         width: 48vw;
         height: 38vw;
@@ -1764,7 +2031,7 @@ body {
           }
         }
 
-        .ellipse3 {
+        #elBliss {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -1784,7 +2051,7 @@ body {
           }
         }
 
-        .ellipse4 {
+        #erBliss {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -1805,7 +2072,7 @@ body {
         }
       }
 
-      .swiper-container3 {
+      #nirvanaCarousel {
         margin-left: 8vw;
         width: 48vw;
         height: 38vw;
@@ -1830,7 +2097,7 @@ body {
           }
         }
 
-        .ellipse5 {
+        #elNirvana {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -1850,7 +2117,7 @@ body {
           }
         }
 
-        .ellipse6 {
+        #erNirvana {
           position: absolute;
           width: 5vw;
           height: 5vw;
@@ -2281,6 +2548,7 @@ body {
     height: 44vw;
     margin: auto;
     border-radius: 1.56vw;
+    margin-top: -5vw;
 
     .gal-img {
       width: 77vw;
@@ -2424,19 +2692,21 @@ body {
                                                         }
                                                       
                                                         .gallery-view {
-                                                          width: 85.2vw;
+                                                          display: flex;
+                                                          justify-content: center;
+                                                          width: 86vw;
                                                           height: 48.8vw;
                                                           margin: auto;
                                                           border-radius: 1.56vw;
                                                           padding-top: 4vw;
                                                       
                                                           .gal-img {
-                                                            width: 85.2vw;
+                                                            width: 86vw;
                                                             height: 48.8vw;
                                                             border-radius: 1.56vw;
                                                       
                                                             .swiper-slide {
-                                                              width: 85.2vw;
+                                                              width: 86vw;
                                                               overflow-y: hidden;
                                                               
                                                               img {
@@ -2559,134 +2829,136 @@ body {
       margin-top: 6vw;
       margin-left: 26vw;
 
-      .carousel3 {
+      #g2_c {
         display: flex;
+        width: 100%;
+        height: 100%;
         align-items: center;
+        font-family: Arial;
       
-        &__list3 {
+        .carousel_list2 {
           display: flex;
           list-style: none;
           position: relative;
           width: 100%;
-          height: 15.625vw;
+          height: 300px;
           justify-content: center;
-          perspective: 15.625vw;
+          perspective: 300px;
         }
         
-        &__item3 {
+        .carousel_item2 {
           display: flex;
           align-items: center;
           justify-content: center;
           color: #fff;
           font-size: 0px;
-          width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
+          width: 150px;
+          height: 250px;
+          border-radius: 12px;
           box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
           position: absolute;
           transition: all .3s ease-in;
-
           
           &:nth-child(1) {
-              width: 25.8vw;
-              height: 33.8vw;
-              border-radius: 1vw;
-          img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
-            }
+            width: 25.8vw;
+            height: 33.8vw;
+            border-radius: 1vw;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
           }
-          &:nth-child(2) {
-              width: 25.8vw;
-                  height: 33.8vw;
-                  border-radius: 1vw;
-              img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
-            }
+        }
+        &:nth-child(2) {
+            width: 25.8vw;
+                height: 33.8vw;
+                border-radius: 1vw;
+            img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
           }
-          &:nth-child(3) {
-              width: 25.8vw;
-                  height: 33.8vw;
-                  border-radius: 1vw;
+        }
+        &:nth-child(3) {
+            width: 25.8vw;
+                height: 33.8vw;
+                border-radius: 1vw;
       
-              img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
-            }
+            img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
           }
-          &:nth-child(4) {
-              width: 25.8vw;
-                  height: 33.8vw;
-                  border-radius: 1vw;
-              img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
-            }
+        }
+        &:nth-child(4) {
+            width: 25.8vw;
+                height: 33.8vw;
+                border-radius: 1vw;
+            img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
           }
-          &:nth-child(5) {
-              width: 25.8vw;
-                  height: 33.8vw;
-                  border-radius: 1vw;
-              img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
-            }
+        }
+        &:nth-child(5) {
+            width: 25.8vw;
+                height: 33.8vw;
+                border-radius: 1vw;
+            img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
           }
-          
-          &[data-pos="0"] {
-            z-index: 5;
-          }
-          
-          &[data-pos="-1"] {
-            opacity: 0;
-            filter: blur(1px) grayscale(100%);
-          }
+        }
+        
+        &[data-pos="0"] {
+          z-index: 5;
+        }
+        
+        &[data-pos="-1"] {
+          opacity: 0;
+          filter: blur(1px) grayscale(100%);
+        }
       
-          &[data-pos="1"] {
-            opacity: 0.5;
-            filter: blur(1px) grayscale(10%);
-          }
-          
-          &[data-pos="-1"] {
-            transform: translateX(-40%) scale(.9);
-            z-index: 4;
-          }
-          
-          &[data-pos="1"] {
-            transform: translateX(40%) scale(.9);
-            z-index: 4;
-          }
-          
-          &[data-pos="-2"] {
-            opacity: 0;
-            filter: blur(3px) grayscale(100%);
-          }
-          
-          &[data-pos="2"] {
-            opacity: 0.2;
-            filter: blur(3px) grayscale(20%);
-          }
+        &[data-pos="1"] {
+          opacity: 0.5;
+          filter: blur(1px) grayscale(10%);
+        }
+        
+        &[data-pos="-1"] {
+          transform: translateX(-40%) scale(.9);
+          z-index: 4;
+        }
+        
+        &[data-pos="1"] {
+          transform: translateX(40%) scale(.9);
+          z-index: 4;
+        }
+        
+        &[data-pos="-2"] {
+          opacity: 0;
+          filter: blur(3px) grayscale(100%);
+        }
+        
+        &[data-pos="2"] {
+          opacity: 0.2;
+          filter: blur(3px) grayscale(20%);
+        }
       
-          &[data-pos="-2"] {
-            transform: translateX(-70%) scale(.8);
-            z-index: 3;
-          }
-          
-          &[data-pos="2"] {
-            transform: translateX(70%) scale(.8);
-            z-index: 3;
-          }
+        &[data-pos="-2"] {
+          transform: translateX(-70%) scale(.8);
+          z-index: 3;
+        }
+        
+        &[data-pos="2"] {
+          transform: translateX(70%) scale(.8);
+          z-index: 3;
+        }
         }
       }
 
       .ellipse3 {
-        position: relative;
+        position: absolute;
         width: 5vw;
         height: 5vw;
         border-radius: 50%;
@@ -2705,7 +2977,7 @@ body {
         }
       }
 
-      .carousel-descrip_t3 {
+      .carousel-descrip_tb {
         position: absolute;
         width: 27.24vw;
         // margin-right: 34vw;
@@ -2744,157 +3016,146 @@ body {
                                                                       margin: auto;
                                                                     }
                                                                   
-                                                                    .carousel-1 {
+                                                                    .carousel-3 {
                                                                       display: flex;
-                                                                      padding-bottom: 5vw;
                                                                   
-                                                                      .color-splash-1 {
-                                                                        width: 62.32vw;
-                                                                        height: 106.52vw;
-                                                                        margin-top: -10vw;
-                                                                        // margin-left: -22vw;
-                                                                  
-                                                                        img {
-                                                                          width: auto;
-                                                                          height: 100%;
-                                                                        }
-                                                                      }
-                                                                  
-                                                                      .carousel-flex{
+                                                                      .carousel-flex3{
                                                                         position: absolute;
-                                                                        display: block;
+                                                                        display: flex;
                                                                         // justify-content: space-between;
                                                                         align-items: center;
-                                                                        margin-top: 16vw;
-                                                                        margin-left: 33vw;
+                                                                        margin-top: 6vw;
+                                                                        margin-left: 26vw;
                                                                   
-                                                                        .carousel {
+                                                                        #g2_c {
                                                                           display: flex;
+                                                                          width: 100%;
+                                                                          height: 100%;
                                                                           align-items: center;
+                                                                          font-family: Arial;
                                                                         
-                                                                          &__list {
+                                                                          .carousel_list2 {
                                                                             display: flex;
                                                                             list-style: none;
                                                                             position: relative;
                                                                             width: 100%;
-                                                                            height: 15.625vw;
+                                                                            height: 300px;
                                                                             justify-content: center;
-                                                                            perspective: 15.625vw;
+                                                                            perspective: 300px;
                                                                           }
                                                                           
-                                                                          &__item {
+                                                                          .carousel_item2 {
                                                                             display: flex;
                                                                             align-items: center;
                                                                             justify-content: center;
                                                                             color: #fff;
                                                                             font-size: 0px;
-                                                                            width: 86vw;
-                                                                            height: 68.12vw;
-                                                                            border-radius: 3vw;
+                                                                            width: 150px;
+                                                                            height: 250px;
+                                                                            border-radius: 12px;
                                                                             box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
                                                                             position: absolute;
                                                                             transition: all .3s ease-in;
-                                                                  
                                                                             
                                                                             &:nth-child(1) {
-                                                                              width: 51.93vw;
-                                                                              height: 68.12vw;
-                                                                              border-radius: 3vw;
-                                                                            img {
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 3vw;
-                                                                              }
+                                                                              width: 25.8vw;
+                                                                              height: 33.8vw;
+                                                                              border-radius: 1vw;
+                                                                          img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
                                                                             }
-                                                                            &:nth-child(2) {
-                                                                              width: 51.93vw;
-                                                                              height: 68.12vw;
-                                                                              border-radius: 3vw;
-                                                                                img {
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 3vw;
-                                                                              }
+                                                                          }
+                                                                          &:nth-child(2) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
                                                                             }
-                                                                            &:nth-child(3) {
-                                                                              width: 51.93vw;
-                                                                              height: 68.12vw;
-                                                                              border-radius: 3vw;
+                                                                          }
+                                                                          &:nth-child(3) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
                                                                         
-                                                                                img {
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 3vw;
-                                                                              }
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
                                                                             }
-                                                                            &:nth-child(4) {
-                                                                              width: 51.93vw;
-                                                                              height: 68.12vw;
-                                                                              border-radius: 3vw;
-                                                                                img {
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 3vw;
-                                                                              }
+                                                                          }
+                                                                          &:nth-child(4) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
                                                                             }
-                                                                            &:nth-child(5) {
-                                                                              width: 51.93vw;
-                                                                              height: 68.12vw;
-                                                                              border-radius: 3vw;
-                                                                                img {
-                                                                                width: 100%;
-                                                                                height: auto;
-                                                                                border-radius: 3vw;
-                                                                              }
+                                                                          }
+                                                                          &:nth-child(5) {
+                                                                              width: 25.8vw;
+                                                                                  height: 33.8vw;
+                                                                                  border-radius: 1vw;
+                                                                              img {
+                                                                              width: 100%;
+                                                                              height: auto;
+                                                                              border-radius: 1vw;
                                                                             }
-                                                                            
-                                                                            &[data-pos="0"] {
-                                                                              z-index: 5;
-                                                                            }
-                                                                            
-                                                                            &[data-pos="-1"] {
-                                                                              opacity: 0;
-                                                                              filter: blur(1px) grayscale(100%);
-                                                                            }
+                                                                          }
+                                                                          
+                                                                          &[data-pos="0"] {
+                                                                            z-index: 5;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(1px) grayscale(100%);
+                                                                          }
                                                                         
-                                                                            &[data-pos="1"] {
-                                                                              opacity: 0.5;
-                                                                              filter: blur(1px) grayscale(10%);
-                                                                            }
-                                                                            
-                                                                            &[data-pos="-1"] {
-                                                                              transform: translateX(-40%) scale(.9);
-                                                                              z-index: 4;
-                                                                            }
-                                                                            
-                                                                            &[data-pos="1"] {
-                                                                              transform: translateX(40%) scale(.9);
-                                                                              z-index: 4;
-                                                                            }
-                                                                            
-                                                                            &[data-pos="-2"] {
-                                                                              opacity: 0;
-                                                                              filter: blur(3px) grayscale(100%);
-                                                                            }
-                                                                            
-                                                                            &[data-pos="2"] {
-                                                                              opacity: 0.2;
-                                                                              filter: blur(3px) grayscale(20%);
-                                                                            }
+                                                                          &[data-pos="1"] {
+                                                                            opacity: 0.5;
+                                                                            filter: blur(1px) grayscale(10%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-1"] {
+                                                                            transform: translateX(-40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="1"] {
+                                                                            transform: translateX(40%) scale(.9);
+                                                                            z-index: 4;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="-2"] {
+                                                                            opacity: 0;
+                                                                            filter: blur(3px) grayscale(100%);
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            opacity: 0.2;
+                                                                            filter: blur(3px) grayscale(20%);
+                                                                          }
                                                                         
-                                                                            &[data-pos="-2"] {
-                                                                              transform: translateX(-70%) scale(.8);
-                                                                              z-index: 3;
-                                                                            }
-                                                                            
-                                                                            &[data-pos="2"] {
-                                                                              transform: translateX(70%) scale(.8);
-                                                                              z-index: 3;
-                                                                            }
+                                                                          &[data-pos="-2"] {
+                                                                            transform: translateX(-70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
+                                                                          
+                                                                          &[data-pos="2"] {
+                                                                            transform: translateX(70%) scale(.8);
+                                                                            z-index: 3;
+                                                                          }
                                                                           }
                                                                         }
                                                                   
-                                                                        .ellipse {
+                                                                        .ellipse3 {
                                                                           position: absolute;
                                                                           width: 5vw;
                                                                           height: 5vw;
@@ -2902,10 +3163,9 @@ body {
                                                                           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                                                           background-color: $white-two;
                                                                           z-index: 10;
-                                                                          margin-top: 16vw;
-                                                                          margin-left: 55vw;
+                                                                          margin-top: 17vw;
+                                                                          margin-left: 26vw;
                                                                           color: $black;
-                                                                          transform: scale(2);
                                                                     
                                                                           i {
                                                                             margin-left: 2vw;
@@ -2915,23 +3175,22 @@ body {
                                                                           }
                                                                         }
                                                                   
-                                                                        .carousel-descrip_t {
+                                                                        .carousel-descrip_tb {
                                                                           position: absolute;
-                                                                          width: 82vw;
+                                                                          width: 27.24vw;
                                                                           // margin-right: 34vw;
-                                                                          margin-left: -26vw;
-                                                                          margin-top: 58vw;
-                                                                          margin-bottom: 20vw;
+                                                                          margin-left: 34vw;
+                                                                          margin-top: 18vw;
                                                                     
                                                                           .carousel-title {
-                                                                            font-size: 5.31vw;
+                                                                            font-size: 2.34vw;
                                                                             font-weight: $fontBold;
                                                                             margin-bottom: 1.93vw;
                                                                           }
-                                                                    
+                                                                      
                                                                           .carousel-details {
-                                                                            font-size: 3.38vw;
-                                                                            line-height: 1.5;
+                                                                            font-size: 1.2vw;
+                                                                            line-height: 1.43;
                                                                           }
                                                                         }
                                                                       }
@@ -3784,5 +4043,267 @@ box-shadow: 10px 14px 120px -2px rgba(0,0,0,0.75);
 
   .content-mobile {
       display: block;
+  }
+}
+
+
+
+
+
+
+#g1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+
+  .carousel_list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    perspective: 300px;
+  }
+  
+  .carousel_item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 150px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    transition: all .3s ease-in;
+    
+    &:nth-child(1) {
+      width: 25.8vw;
+      height: 33.8vw;
+      border-radius: 1vw;
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(2) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(3) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(4) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(5) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  
+  &[data-pos="0"] {
+    z-index: 5;
+  }
+  
+  &[data-pos="-1"] {
+    opacity: 0.5;
+    filter: blur(1px) grayscale(100%);
+  }
+
+  &[data-pos="1"] {
+    opacity: 0;
+    filter: blur(1px) grayscale(10%);
+  }
+  
+  &[data-pos="-1"] {
+    transform: translateX(-40%) scale(.9);
+    z-index: 4;
+  }
+  
+  &[data-pos="1"] {
+    transform: translateX(40%) scale(.9);
+    z-index: 4;
+  }
+  
+  &[data-pos="-2"] {
+    opacity: 0.2;
+    filter: blur(3px) grayscale(100%);
+  }
+  
+  &[data-pos="2"] {
+    opacity: 0;
+    filter: blur(3px) grayscale(20%);
+  }
+
+  &[data-pos="-2"] {
+    transform: translateX(-70%) scale(.8);
+    z-index: 3;
+  }
+  
+  &[data-pos="2"] {
+    transform: translateX(70%) scale(.8);
+    z-index: 3;
+  }
+  }
+}
+
+
+#g2_c {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+
+  .carousel_list2 {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    perspective: 300px;
+  }
+  
+  .carousel_item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 150px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    transition: all .3s ease-in;
+    
+    &:nth-child(1) {
+      width: 25.8vw;
+      height: 33.8vw;
+      border-radius: 1vw;
+  img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(2) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(3) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(4) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  &:nth-child(5) {
+      width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
+      img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vw;
+    }
+  }
+  
+  &[data-pos="0"] {
+    z-index: 5;
+  }
+  
+  &[data-pos="-1"] {
+    opacity: 0;
+    filter: blur(1px) grayscale(100%);
+  }
+
+  &[data-pos="1"] {
+    opacity: 0.5;
+    filter: blur(1px) grayscale(10%);
+  }
+  
+  &[data-pos="-1"] {
+    transform: translateX(-40%) scale(.9);
+    z-index: 4;
+  }
+  
+  &[data-pos="1"] {
+    transform: translateX(40%) scale(.9);
+    z-index: 4;
+  }
+  
+  &[data-pos="-2"] {
+    opacity: 0;
+    filter: blur(3px) grayscale(100%);
+  }
+  
+  &[data-pos="2"] {
+    opacity: 0.2;
+    filter: blur(3px) grayscale(20%);
+  }
+
+  &[data-pos="-2"] {
+    transform: translateX(-70%) scale(.8);
+    z-index: 3;
+  }
+  
+  &[data-pos="2"] {
+    transform: translateX(70%) scale(.8);
+    z-index: 3;
+  }
   }
 }
