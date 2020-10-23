@@ -1586,7 +1586,7 @@ body {
 @media only screen and (max-width: 768px) {
   .main-section {
     height: auto;
-    padding-top: 15vw;
+    padding-top: 20vw;
   }
   .main-title {
     font-size: 6.76vw;
@@ -1815,6 +1815,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-family: Titillium Web, sans-serif;
+    height: 150vw;
+    overflow: hidden;
   }
   .carousel-2 .carousel-flex {
     position: relative;
@@ -1830,7 +1832,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 76vw;
+    margin-left: 20vw;
+    margin-top: -26vw;
   }
   .carousel-2 .carousel-flex .carousel__list {
     display: -webkit-box;
@@ -1969,8 +1972,8 @@ body {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 10;
-    margin-top: 18vw;
-    margin-left: 45.3vw;
+    margin-top: -80vw;
+    margin-left: 5vw;
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
@@ -1984,8 +1987,8 @@ body {
   .carousel-2 .carousel-flex .carousel-descrip_t1 {
     position: relative;
     width: 82vw;
-    margin-left: 14.9vw;
-    margin-top: 18vw;
+    margin-left: 8.4vw;
+    margin-top: -35vw;
   }
   .carousel-2 .carousel-flex .carousel-descrip_t1 .carousel-title {
     font-size: 5.31vw;
@@ -1997,10 +2000,10 @@ body {
     line-height: 1.5;
   }
   .carousel-2 .color-splash-2 {
-    width: 45.26vw;
-    height: 47.19vw;
-    margin-top: -7vw;
-    margin-left: 52vw;
+    width: 56.28vw;
+    height: 91.30vw;
+    margin-top: 2vw;
+    margin-left: -60vw;
   }
   .carousel-2 .color-splash-2 img {
     width: auto;
@@ -2250,7 +2253,7 @@ body {
   margin-top: 5.5vw;
 }
 
-.floor-plans .planView #serenityCarousel {
+.floor-plans .planView .swiper-containerSerenity {
   margin-left: 8vw;
   width: 48vw;
   height: 38vw;
@@ -2258,7 +2261,7 @@ body {
   overflow: hidden;
 }
 
-.floor-plans .planView #serenityCarousel .swiper-slide {
+.floor-plans .planView .swiper-containerSerenity .swiper-slide {
   width: 42.14vw;
   height: 33.75vw;
   display: -webkit-box;
@@ -2273,12 +2276,12 @@ body {
           align-items: center;
 }
 
-.floor-plans .planView #serenityCarousel .swiper-slide img {
+.floor-plans .planView .swiper-containerSerenity .swiper-slide img {
   width: auto;
   height: 100%;
 }
 
-.floor-plans .planView #serenityCarousel .swiper-slide p {
+.floor-plans .planView .swiper-containerSerenity .swiper-slide p {
   margin-top: 1vw;
   text-align: center;
   font-size: 1.2vw;
@@ -2286,7 +2289,7 @@ body {
   font-weight: 300;
 }
 
-.floor-plans .planView #serenityCarousel #elSerenity {
+.floor-plans .planView .swiper-containerSerenity #elSerenity {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2300,14 +2303,14 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #serenityCarousel #elSerenity i {
+.floor-plans .planView .swiper-containerSerenity #elSerenity i {
   margin-left: 1.8vw;
   margin-top: 1vw;
   font-size: 3vw;
   z-index: 50;
 }
 
-.floor-plans .planView #serenityCarousel #erSerenity {
+.floor-plans .planView .swiper-containerSerenity #erSerenity {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2321,7 +2324,163 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #serenityCarousel #erSerenity i {
+.floor-plans .planView .swiper-containerSerenity #erSerenity i {
+  margin-left: 2.2vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .planView .swiper-containerBliss {
+  margin-left: 8vw;
+  width: 48vw;
+  height: 38vw;
+  padding-left: 1.5vw;
+  overflow: hidden;
+}
+
+.floor-plans .planView .swiper-containerBliss .swiper-slide {
+  width: 42.14vw;
+  height: 33.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.floor-plans .planView .swiper-containerBliss .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.floor-plans .planView .swiper-containerBliss .swiper-slide p {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 1.2vw;
+  line-height: 1.43;
+  font-weight: 300;
+}
+
+.floor-plans .planView .swiper-containerBliss #elBliss {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: -1.5vw;
+  color: #000000;
+}
+
+.floor-plans .planView .swiper-containerBliss #elBliss i {
+  margin-left: 1.8vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .planView .swiper-containerBliss #erBliss {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: 40vw;
+  color: #000000;
+}
+
+.floor-plans .planView .swiper-containerBliss #erBliss i {
+  margin-left: 2.2vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .planView .swiper-containerNirvana {
+  margin-left: 8vw;
+  width: 48vw;
+  height: 38vw;
+  padding-left: 1.5vw;
+  overflow: hidden;
+}
+
+.floor-plans .planView .swiper-containerNirvana .swiper-slide {
+  width: 42.14vw;
+  height: 33.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.floor-plans .planView .swiper-containerNirvana .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.floor-plans .planView .swiper-containerNirvana .swiper-slide p {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 1.2vw;
+  line-height: 1.43;
+  font-weight: 300;
+}
+
+.floor-plans .planView .swiper-containerNirvana #elNirvana {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: -1.5vw;
+  color: #000000;
+}
+
+.floor-plans .planView .swiper-containerNirvana #elNirvana i {
+  margin-left: 1.8vw;
+  margin-top: 1vw;
+  font-size: 3vw;
+  z-index: 50;
+}
+
+.floor-plans .planView .swiper-containerNirvana #erNirvana {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+  margin-top: -21vw;
+  margin-left: 40vw;
+  color: #000000;
+}
+
+.floor-plans .planView .swiper-containerNirvana #erNirvana i {
   margin-left: 2.2vw;
   margin-top: 1vw;
   font-size: 3vw;
@@ -2430,7 +2589,7 @@ body {
   margin-top: 5.5vw;
 }
 
-.floor-plans .planView #blissCarousel {
+.floor-plans .planView .swiper-containerBliss {
   margin-left: 8vw;
   width: 48vw;
   height: 38vw;
@@ -2438,17 +2597,17 @@ body {
   overflow: hidden;
 }
 
-.floor-plans .planView #blissCarousel .swiper-slide {
+.floor-plans .planView .swiper-containerBliss .swiper-slide {
   width: 42.14vw;
   height: 33.75vw;
 }
 
-.floor-plans .planView #blissCarousel .swiper-slide img {
+.floor-plans .planView .swiper-containerBliss .swiper-slide img {
   width: auto;
   height: 100%;
 }
 
-.floor-plans .planView #blissCarousel .swiper-slide p {
+.floor-plans .planView .swiper-containerBliss .swiper-slide p {
   margin-top: 1vw;
   text-align: center;
   font-size: 1.2vw;
@@ -2456,7 +2615,7 @@ body {
   font-weight: 300;
 }
 
-.floor-plans .planView #blissCarousel #elBliss {
+.floor-plans .planView .swiper-containerBliss #elBliss {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2470,14 +2629,14 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #blissCarousel #elBliss i {
+.floor-plans .planView .swiper-containerBliss #elBliss i {
   margin-left: 1.8vw;
   margin-top: 1vw;
   font-size: 3vw;
   z-index: 50;
 }
 
-.floor-plans .planView #blissCarousel #erBliss {
+.floor-plans .planView .swiper-containerBliss #erBliss {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2491,7 +2650,7 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #blissCarousel #erBliss i {
+.floor-plans .planView .swiper-containerBliss #erBliss i {
   margin-left: 2.2vw;
   margin-top: 1vw;
   font-size: 3vw;
@@ -2600,7 +2759,7 @@ body {
   margin-top: 5.5vw;
 }
 
-.floor-plans .planView #nirvanaCarousel {
+.floor-plans .planView .swiper-containerNirvana {
   margin-left: 8vw;
   width: 48vw;
   height: 38vw;
@@ -2608,17 +2767,17 @@ body {
   overflow: hidden;
 }
 
-.floor-plans .planView #nirvanaCarousel .swiper-slide {
+.floor-plans .planView .swiper-containerNirvana .swiper-slide {
   width: 42.14vw;
   height: 33.75vw;
 }
 
-.floor-plans .planView #nirvanaCarousel .swiper-slide img {
+.floor-plans .planView .swiper-containerNirvana .swiper-slide img {
   width: auto;
   height: 100%;
 }
 
-.floor-plans .planView #nirvanaCarousel .swiper-slide p {
+.floor-plans .planView .swiper-containerNirvana .swiper-slide p {
   margin-top: 1vw;
   text-align: center;
   font-size: 1.2vw;
@@ -2626,7 +2785,7 @@ body {
   font-weight: 300;
 }
 
-.floor-plans .planView #nirvanaCarousel #elNirvana {
+.floor-plans .planView .swiper-containerNirvana #elNirvana {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2640,14 +2799,14 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #nirvanaCarousel #elNirvana i {
+.floor-plans .planView .swiper-containerNirvana #elNirvana i {
   margin-left: 1.8vw;
   margin-top: 1vw;
   font-size: 3vw;
   z-index: 50;
 }
 
-.floor-plans .planView #nirvanaCarousel #erNirvana {
+.floor-plans .planView .swiper-containerNirvana #erNirvana {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -2661,7 +2820,7 @@ body {
   color: #000000;
 }
 
-.floor-plans .planView #nirvanaCarousel #erNirvana i {
+.floor-plans .planView .swiper-containerNirvana #erNirvana i {
   margin-left: 2.2vw;
   margin-top: 1vw;
   font-size: 3vw;
@@ -3611,14 +3770,12 @@ body {
   }
   .amenities .carousel-3 .carousel-flex3 {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 6vw;
-    margin-left: 26vw;
+    margin-top: 10vw;
+    margin-left: -27vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c {
     display: -webkit-box;
@@ -3667,54 +3824,54 @@ body {
     transition: all .3s ease-in;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(1) {
-    width: 25.8vw;
-    height: 33.8vw;
-    border-radius: 1vw;
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(1) img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(2) {
-    width: 25.8vw;
-    height: 33.8vw;
-    border-radius: 1vw;
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(2) img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(3) {
-    width: 25.8vw;
-    height: 33.8vw;
-    border-radius: 1vw;
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(3) img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(4) {
-    width: 25.8vw;
-    height: 33.8vw;
-    border-radius: 1vw;
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(4) img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(5) {
-    width: 25.8vw;
-    height: 33.8vw;
-    border-radius: 1vw;
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2:nth-child(5) img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
+    border-radius: 3vw;
   }
   .amenities .carousel-3 .carousel-flex3 #g2_c .carousel_item2[data-pos="0"] {
     z-index: 5;
@@ -3760,7 +3917,7 @@ body {
     z-index: 3;
   }
   .amenities .carousel-3 .carousel-flex3 .ellipse3 {
-    position: absolute;
+    position: relative;
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
@@ -3768,9 +3925,11 @@ body {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 10;
-    margin-top: 17vw;
-    margin-left: 26vw;
+    margin-top: -40vw;
+    margin-left: 115vw;
     color: #000000;
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   .amenities .carousel-3 .carousel-flex3 .ellipse3 i {
     margin-left: 2vw;
@@ -3780,18 +3939,18 @@ body {
   }
   .amenities .carousel-3 .carousel-flex3 .carousel-descrip_tb {
     position: absolute;
-    width: 27.24vw;
+    width: 82vw;
     margin-left: 34vw;
-    margin-top: 18vw;
+    margin-top: 40vw;
   }
   .amenities .carousel-3 .carousel-flex3 .carousel-descrip_tb .carousel-title {
-    font-size: 2.34vw;
+    font-size: 5.31vw;
     font-weight: 600;
     margin-bottom: 1.93vw;
   }
   .amenities .carousel-3 .carousel-flex3 .carousel-descrip_tb .carousel-details {
-    font-size: 1.2vw;
-    line-height: 1.43;
+    font-size: 3.38vw;
+    line-height: 1.5;
   }
 }
 
@@ -4811,164 +4970,144 @@ body {
   z-index: 3;
 }
 
-#g2_c {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Arial;
-}
-
-#g2_c .carousel_list2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  position: relative;
-  width: 100%;
-  height: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-perspective: 300px;
-          perspective: 300px;
-}
-
-#g2_c .carousel_item2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  font-size: 0px;
-  width: 150px;
-  height: 250px;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-  position: absolute;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-
-#g2_c .carousel_item2:nth-child(1) {
-  width: 25.8vw;
-  height: 33.8vw;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(1) img {
-  width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(2) {
-  width: 25.8vw;
-  height: 33.8vw;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(2) img {
-  width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(3) {
-  width: 25.8vw;
-  height: 33.8vw;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(3) img {
-  width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(4) {
-  width: 25.8vw;
-  height: 33.8vw;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(4) img {
-  width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(5) {
-  width: 25.8vw;
-  height: 33.8vw;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2:nth-child(5) img {
-  width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-#g2_c .carousel_item2[data-pos="0"] {
-  z-index: 5;
-}
-
-#g2_c .carousel_item2[data-pos="-1"] {
-  opacity: 0;
-  -webkit-filter: blur(1px) grayscale(100%);
-          filter: blur(1px) grayscale(100%);
-}
-
-#g2_c .carousel_item2[data-pos="1"] {
-  opacity: 0.5;
-  -webkit-filter: blur(1px) grayscale(10%);
-          filter: blur(1px) grayscale(10%);
-}
-
-#g2_c .carousel_item2[data-pos="-1"] {
-  -webkit-transform: translateX(-40%) scale(0.9);
-          transform: translateX(-40%) scale(0.9);
-  z-index: 4;
-}
-
-#g2_c .carousel_item2[data-pos="1"] {
-  -webkit-transform: translateX(40%) scale(0.9);
-          transform: translateX(40%) scale(0.9);
-  z-index: 4;
-}
-
-#g2_c .carousel_item2[data-pos="-2"] {
-  opacity: 0;
-  -webkit-filter: blur(3px) grayscale(100%);
-          filter: blur(3px) grayscale(100%);
-}
-
-#g2_c .carousel_item2[data-pos="2"] {
-  opacity: 0.2;
-  -webkit-filter: blur(3px) grayscale(20%);
-          filter: blur(3px) grayscale(20%);
-}
-
-#g2_c .carousel_item2[data-pos="-2"] {
-  -webkit-transform: translateX(-70%) scale(0.8);
-          transform: translateX(-70%) scale(0.8);
-  z-index: 3;
-}
-
-#g2_c .carousel_item2[data-pos="2"] {
-  -webkit-transform: translateX(70%) scale(0.8);
-          transform: translateX(70%) scale(0.8);
-  z-index: 3;
+@media only screen and (max-width: 768px) {
+  #g1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #g1 .carousel_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-perspective: 300px;
+            perspective: 300px;
+  }
+  #g1 .carousel_item1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 150px;
+    height: 250px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+  #g1 .carousel_item1:nth-child(1) {
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(1) img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(2) {
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(3) {
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(3) img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(4) {
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(4) img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(5) {
+    width: 51.93vw;
+    height: 68.12vw;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1:nth-child(5) img {
+    width: 100%;
+    height: auto;
+    border-radius: 3vw;
+  }
+  #g1 .carousel_item1[data-pos="0"] {
+    z-index: 5;
+  }
+  #g1 .carousel_item1[data-pos="-1"] {
+    opacity: 0.5;
+    -webkit-filter: blur(1px) grayscale(100%);
+            filter: blur(1px) grayscale(100%);
+  }
+  #g1 .carousel_item1[data-pos="1"] {
+    opacity: 0;
+    -webkit-filter: blur(1px) grayscale(10%);
+            filter: blur(1px) grayscale(10%);
+  }
+  #g1 .carousel_item1[data-pos="-1"] {
+    -webkit-transform: translateX(-40%) scale(0.9);
+            transform: translateX(-40%) scale(0.9);
+    z-index: 4;
+  }
+  #g1 .carousel_item1[data-pos="1"] {
+    -webkit-transform: translateX(40%) scale(0.9);
+            transform: translateX(40%) scale(0.9);
+    z-index: 4;
+  }
+  #g1 .carousel_item1[data-pos="-2"] {
+    opacity: 0.2;
+    -webkit-filter: blur(3px) grayscale(100%);
+            filter: blur(3px) grayscale(100%);
+  }
+  #g1 .carousel_item1[data-pos="2"] {
+    opacity: 0;
+    -webkit-filter: blur(3px) grayscale(20%);
+            filter: blur(3px) grayscale(20%);
+  }
+  #g1 .carousel_item1[data-pos="-2"] {
+    -webkit-transform: translateX(-70%) scale(0.8);
+            transform: translateX(-70%) scale(0.8);
+    z-index: 3;
+  }
+  #g1 .carousel_item1[data-pos="2"] {
+    -webkit-transform: translateX(70%) scale(0.8);
+            transform: translateX(70%) scale(0.8);
+    z-index: 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

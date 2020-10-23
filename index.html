@@ -179,9 +179,6 @@
             <div class="soultree-logo">
                 <img src="images/Soul-tree_G.png" alt="">
             </div>
-            <!-- <p class="main-title">
-                More than just a dream home!
-            </p> -->
             <p class="sub-title">
                 Fully automated futuristic & intelligent luxury 1, 2 and 3 BHK apartments with a multitude of amenities located
                 amidst green cover at Sompura Gate, Sarjapur Road
@@ -455,229 +452,240 @@
         <div class="floor-plans">
             <div class="floor-plans-title">Floor Plans</div>
             <div class="plan-specs tab">
-                <div class="spec tablinks" id="snty" onclick="openFunc(evt, serenity)">Serenity</div>
-                <div class="spec tablinks" id="bls" onclick="openFunc(evt, bliss)">Bliss</div>
-                <div class="spec tablinks" id="nrv" onclick="openFunc(evt, nirvana)">Nirvana</div>
+                <div class="spec  active-spec tablinks" id="snty" onclick="serenityFunc(event,'serenity')">Serenity</div>
+                <div class="spec tablinks" id="bls" onclick="serenityFunc(event,'bliss')">Bliss</div>
+                <div class="spec tablinks" id="nrv" onclick="serenityFunc(event,'nirvana')">Nirvana</div>
             </div>
-            <div class="planView" id="serenity" style="display: flex;">
-                <div class="selection" data-aos="fade-up" data-aos-delay="200">
-                    <div class="type-selection">
-                        <p>Type</p>
-                        <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
-                            <button class="click-btn-1">2</button>
-                            <button class="click-btn-1 active">3</button>
+            <div class="planView tabcontent" id="serenity">
+                <div style="display:flex">
+                    <div class="selection">
+                        <div class="type-selection">
+                            <p>Type</p>
+                            <div class="click-btn" id="click-btn">
+                                <button class="click-btn-1">1</button>
+                                <button class="click-btn-1">2</button>
+                                <button class="click-btn-1 active">3</button>
+                            </div>
+                        </div>
+                
+                        <div class="facing">
+                            <p>Facing</p>
+                            <div class="box11">
+                                <select>
+                                    <option>East</option>
+                                    <option>West</option>
+                                    <option>North</option>
+                                    <option>South</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building-blocks">
+                            <p>Block</p>
+                            <div class="box11">
+                                <select>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-    
-                    <div class="facing">
-                        <p>Facing</p>
-                        <div class="box11">
-                            <select>
-                                <option>East</option>
-                                <option>West</option>
-                                <option>North</option>
-                                <option>South</option>
-                            </select>
+                    <div class="swiper-containerSerenity" id="serenityCarousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/floor-plan/floor-plan.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Meet, Greet & Talk.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Mingle, Mix & Laugh.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="building-blocks">
-                        <p>Block</p>
-                        <div class="box11">
-                            <select>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
+                
+                        <div class="ellipse1" style="z-index: 100;" id="elSerenity">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-container" id="serenityCarousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
+                        <div class="ellipse2" style="z-index: 100;" id="erSerenity">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                    </div>
-
-                    <div class="ellipse1" style="z-index: 100;" id="elSerenity">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erSerenity">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="planView" id="bliss" style="display: none;">
-                <div class="selection" data-aos="fade-up" data-aos-delay="200">
-                    <div class="type-selection">
-                        <p>Type</p>
-                        <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
-                            <button class="click-btn-1">2</button>
-                            <button class="click-btn-1 active">3</button>
-                        </div>
-                    </div>
-    
-                    <div class="facing">
-                        <p>Facing</p>
-                        <div class="box11">
-                            <select>
-                                <option>East</option>
-                                <option>West</option>
-                                <option>North</option>
-                                <option>South</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="building-blocks">
-                        <p>Block</p>
-                        <div class="box11">
-                            <select>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-container" id="blissCarousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                    </div>
-
-                    <div class="ellipse1" style="z-index: 100;" id="elBliss">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erBliss">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="planView" id="nirvana" style="display: none;">
-                <div class="selection" data-aos="fade-up" data-aos-delay="200">
-                    <div class="type-selection">
-                        <p>Type</p>
-                        <div class="click-btn" id="click-btn">
-                            <button class="click-btn-1">1</button>
-                            <button class="click-btn-1">2</button>
-                            <button class="click-btn-1 active">3</button>
+            <div class="planView tabcontent" id="bliss">
+                <div style="display:flex">
+                    <div class="selection">
+                        <div class="type-selection">
+                            <p>Type</p>
+                            <div class="click-btn" id="click-btn">
+                                <button class="click-btn-1">1</button>
+                                <button class="click-btn-1">2</button>
+                                <button class="click-btn-1 active">3</button>
+                            </div>
+                        </div>
+                
+                        <div class="facing">
+                            <p>Facing</p>
+                            <div class="box11">
+                                <select>
+                                    <option>East</option>
+                                    <option>West</option>
+                                    <option>North</option>
+                                    <option>South</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building-blocks">
+                            <p>Block</p>
+                            <div class="box11">
+                                <select>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-    
-                    <div class="facing">
-                        <p>Facing</p>
-                        <div class="box11">
-                            <select>
-                                <option>East</option>
-                                <option>West</option>
-                                <option>North</option>
-                                <option>South</option>
-                            </select>
+                    <div class="swiper-containerBliss" id="blissCarousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/floor-plan/floor-plan.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Meet, Greet & Talk.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Mingle, Mix & Laugh.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="building-blocks">
-                        <p>Block</p>
-                        <div class="box11">
-                            <select>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
+                
+                        <div class="ellipse_1" style="z-index: 100;" id="elBliss">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-container" id="nirvanaCarousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/floor-plan/floor-plan.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
+                        <div class="ellipse_2" style="z-index: 100;" id="erBliss">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Meet, Greet & Talk.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/section2/Mingle, Mix & Laugh.jpg"
-                                srcset="images/floor-plan/floor-plan@2x.jpg 2x,
-                                        images/floor-plan/floor-plan@3x.jpg 3x">
-                            <p>SBA 1345 Sft CA <br>
-                                945 Sft Flat no’s  A11, A12, A13</p>
-                        </div>
-                    </div>
-
-                    <div class="ellipse1" style="z-index: 100;" id="elNirvana">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="ellipse2" style="z-index: 100;" id="erNirvana">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
+
+
+            <div class="planView tabcontent" id="nirvana">
+                <div style="display:flex">
+                    <div class="selection">
+                        <div class="type-selection">
+                            <p>Type</p>
+                            <div class="click-btn" id="click-btn">
+                                <button class="click-btn-1">1</button>
+                                <button class="click-btn-1">2</button>
+                                <button class="click-btn-1 active">3</button>
+                            </div>
+                        </div>
+                
+                        <div class="facing">
+                            <p>Facing</p>
+                            <div class="box11">
+                                <select>
+                                    <option>East</option>
+                                    <option>West</option>
+                                    <option>North</option>
+                                    <option>South</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building-blocks">
+                            <p>Block</p>
+                            <div class="box11">
+                                <select>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-containerNirvana" id="nirvanaCarousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/floor-plan/floor-plan.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Meet, Greet & Talk.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/section2/Mingle, Mix & Laugh.jpg"
+                                    srcset="images/floor-plan/floor-plan@2x.jpg 2x,
+                                            images/floor-plan/floor-plan@3x.jpg 3x">
+                                <p>SBA 1345 Sft CA <br>
+                                    945 Sft Flat no’s  A11, A12, A13</p>
+                            </div>
+                        </div>
+                
+                        <div class="ellipse_3" style="z-index: 100;" id="elNirvana">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="ellipse_4" style="z-index: 100;" id="erNirvana">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
 
         </div>
     <!-- </div> -->
 
-    <!-- <script>
-        function openFunc(evt, blocks) {
+     <script>
+
+        function serenityFunc(evt,blocks) {
           var i, planView, tablinks;
-          planView = document.getElementsByClassName("planView");
+          planView = document.getElementsByClassName("tabcontent");
           for (i = 0; i < planView.length; i++) {
             planView[i].style.display = "none";
           }
           tablinks = document.getElementsByClassName("tablinks");
           for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active-spec", "");
+            tablinks[i].className = tablinks[i].className.replace("active-spec", " ");
           }
           document.getElementById(blocks).style.display = "block";
-          evt.currentTarget.className += " active";
+          evt.currentTarget.className += " active-spec";
         }
-        </script> -->
+        
+       
+        </script> 
 
     <!-- #################################################################################### -->
     <div class="timeline" style="display: none;">
@@ -702,19 +710,19 @@
 
     <!-- #################################################################################### -->
     <div class="gallery" id="gallery">
-        <div class="gallery-nav content-desktop" data-aos="fade-up" data-aos-delay="200">
+        <div class="gallery-nav content-desktop">
             <div class="gal content-desktop">Gallery</div>
             <div class="gal-nav active-gal content-desktop" onclick="iFunc()" id="photos">Photos</div>
             <div class="gal-nav content-desktop" onclick="vFunc()" id="walkthrough">Walkthrough</div>
         </div>
         
-        <div class="gal content-mobile" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-        <div class="gallery-nav content-mobile" data-aos="fade-up" data-aos-delay="250">
+        <div class="gal content-mobile">Gallery</div>
+        <div class="gallery-nav content-mobile">
             <div class="gal-nav active-gal content-mobile" onclick="iMFunc()" id="photosM">Photos</div>
             <div class="gal-nav content-mobile" onclick="vMFunc()" id="walkthroughM">Walkthrough</div>
         </div>
 
-        <div class="gallery-view" data-aos="fade-up" data-aos-delay="300">
+        <div class="gallery-view" >
             <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
                 <div class="swiper-wrapper">
@@ -1122,27 +1130,30 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-            var mySwiper = new Swiper('#serenityCarousel', {
+            var mySwiperS = new Swiper('.swiper-containerSerenity', {
             navigation: {
                 nextEl: '#erSerenity',
                 prevEl: '#elSerenity',
             },
             })
-
-            var mySwiper = new Swiper('#blissCarousel', {
+</script>
+<script>
+            var mySwiper_1 = new Swiper('.swiper-containerBliss', {
             navigation: {
                 nextEl: '#erBliss',
                 prevEl: '#elBliss',
             },
             })
-
-            var mySwiper = new Swiper('#nirvanaCarousel', {
+</script>
+<script>
+            var mySwiper_2 = new Swiper('.swiper-containerNirvana', {
             navigation: {
                 nextEl: '#erNirvana',
                 prevEl: '#elNirvana',
             },
             })
-
+</script>
+<script>
             //#################################################
             var mySwiper = new Swiper('.gal-img', {
             // direction: 'vertical',
