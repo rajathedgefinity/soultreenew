@@ -872,7 +872,7 @@ body {
           align-items: center;
   background-color: #ffffff;
   font-family: Titillium Web, sans-serif;
-  z-index: 100;
+  z-index: 500;
   overflow: hidden;
 }
 
@@ -2117,6 +2117,8 @@ body {
   padding-left: 14.9vw;
   margin-top: 8vw;
   padding-bottom: 5vw;
+  height: 58vw;
+  overflow: hidden;
 }
 
 .floor-plans .floor-plans-title {
@@ -3198,10 +3200,11 @@ body {
 
 .gallery {
   padding-top: 6.56vw;
-  padding-bottom: 8vw;
+  padding-bottom: 12vw;
   background-color: #f8f8f8;
   color: #000000;
   font-family: Titillium Web, sans-serif;
+  z-index: 100;
 }
 
 .gallery .gallery-nav {
@@ -3519,15 +3522,16 @@ body {
 
 .amenities {
   padding-bottom: 18vw;
-  height: 55vw;
+  height: 65vw;
   font-family: Titillium Web, sans-serif;
+  z-index: 100;
 }
 
 .amenities .amenities-title {
-  margin-top: 10vw;
+  padding-top: 10vw;
   font-size: 3.125vw;
   font-weight: 600;
-  margin-left: 14.9vw;
+  padding-left: 14.9vw;
 }
 
 .amenities .carousel-3 {
