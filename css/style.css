@@ -523,7 +523,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .nav-bar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1014,7 +1014,7 @@ body {
   background-color: #e8e3db;
   width: 8.85vw;
   height: 2.6vw;
-  border-radius: .4vw;
+  border-radius: .4vw .4vw 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,7 +1072,7 @@ body {
     background-color: #e8e3db;
     width: 23vw;
     height: 6vw;
-    border-radius: 1vw;
+    border-radius: 1vw 1vw 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2322,7 +2322,7 @@ body {
   background-color: #ffffff;
   z-index: 10;
   margin-top: -21vw;
-  margin-left: 40vw;
+  margin-left: 41.5vw;
   color: #000000;
 }
 
@@ -2400,7 +2400,7 @@ body {
   background-color: #ffffff;
   z-index: 10;
   margin-top: -21vw;
-  margin-left: 40vw;
+  margin-left: 41.5vw;
   color: #000000;
 }
 
@@ -2478,347 +2478,7 @@ body {
   background-color: #ffffff;
   z-index: 10;
   margin-top: -21vw;
-  margin-left: 40vw;
-  color: #000000;
-}
-
-.floor-plans .planView .swiper-containerNirvana #erNirvana i {
-  margin-left: 2.2vw;
-  margin-top: 1vw;
-  font-size: 3vw;
-  z-index: 50;
-}
-
-.floor-plans .planView {
-  margin-left: 2.03vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4.3vw;
-  /* For IE10 */
-}
-
-.floor-plans .planView .selection {
-  display: block;
-  margin-right: 4.22vw;
-  margin-top: 6vw;
-}
-
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
-  margin-bottom: 2.03vw;
-}
-
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
-  font-size: 1.04vw;
-  font-weight: 600;
-}
-
-.floor-plans .planView .click-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: .5vw;
-}
-
-.floor-plans .planView .click-btn-1 {
-  font-size: 1vw;
-  font-weight: 300;
-  padding: 1vw 1.4vw;
-  border: 1px solid #e0e0e0;
-  background-color: #f8f8f8;
-}
-
-.floor-plans .planView .active, .floor-plans .planView .click-btn-1:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.floor-plans .planView select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
-}
-
-.floor-plans .planView select::-ms-expand {
-  display: none;
-}
-
-.floor-plans .planView .box11 {
-  margin-top: .5vw;
-  position: absolute;
-}
-
-.floor-plans .planView .box11 select {
-  text-align: center;
-  background-color: #ffffff;
-  color: #000000;
-  width: 10.5vw;
-  height: 3vw;
-  border-radius: 3px;
-  border: 1px solid;
-  font-size: 1.04vw;
-  font-weight: 300;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  outline: none;
-}
-
-.floor-plans .planView .box11::before {
-  content: "\f107";
-  background: #ffffff;
-  font-family: FontAwesome;
-  position: absolute;
-  top: 1px;
-  right: 3px;
-  width: 18%;
-  height: 80%;
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.5vw;
-  line-height: 45px;
-  pointer-events: none;
-  color: black;
-}
-
-.floor-plans .planView select option {
-  width: 70%;
-  margin: auto;
-}
-
-.floor-plans .planView .building-blocks p {
-  margin-top: 5.5vw;
-}
-
-.floor-plans .planView .swiper-containerBliss {
-  margin-left: 8vw;
-  width: 48vw;
-  height: 38vw;
-  padding-left: 1.5vw;
-  overflow: hidden;
-}
-
-.floor-plans .planView .swiper-containerBliss .swiper-slide {
-  width: 42.14vw;
-  height: 33.75vw;
-}
-
-.floor-plans .planView .swiper-containerBliss .swiper-slide img {
-  width: auto;
-  height: 100%;
-}
-
-.floor-plans .planView .swiper-containerBliss .swiper-slide p {
-  margin-top: 1vw;
-  text-align: center;
-  font-size: 1.2vw;
-  line-height: 1.43;
-  font-weight: 300;
-}
-
-.floor-plans .planView .swiper-containerBliss #elBliss {
-  position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  z-index: 10;
-  margin-top: -21vw;
-  margin-left: -1.5vw;
-  color: #000000;
-}
-
-.floor-plans .planView .swiper-containerBliss #elBliss i {
-  margin-left: 1.8vw;
-  margin-top: 1vw;
-  font-size: 3vw;
-  z-index: 50;
-}
-
-.floor-plans .planView .swiper-containerBliss #erBliss {
-  position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  z-index: 10;
-  margin-top: -21vw;
-  margin-left: 40vw;
-  color: #000000;
-}
-
-.floor-plans .planView .swiper-containerBliss #erBliss i {
-  margin-left: 2.2vw;
-  margin-top: 1vw;
-  font-size: 3vw;
-  z-index: 50;
-}
-
-.floor-plans .planView {
-  margin-left: 2.03vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4.3vw;
-  /* For IE10 */
-}
-
-.floor-plans .planView .selection {
-  display: block;
-  margin-right: 4.22vw;
-  margin-top: 6vw;
-}
-
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
-  margin-bottom: 2.03vw;
-}
-
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
-  font-size: 1.04vw;
-  font-weight: 600;
-}
-
-.floor-plans .planView .click-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: .5vw;
-}
-
-.floor-plans .planView .click-btn-1 {
-  font-size: 1vw;
-  font-weight: 300;
-  padding: 1vw 1.4vw;
-  border: 1px solid #e0e0e0;
-  background-color: #f8f8f8;
-}
-
-.floor-plans .planView .active, .floor-plans .planView .click-btn-1:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.floor-plans .planView select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
-}
-
-.floor-plans .planView select::-ms-expand {
-  display: none;
-}
-
-.floor-plans .planView .box11 {
-  margin-top: .5vw;
-  position: absolute;
-}
-
-.floor-plans .planView .box11 select {
-  text-align: center;
-  background-color: #ffffff;
-  color: #000000;
-  width: 10.5vw;
-  height: 3vw;
-  border-radius: 3px;
-  border: 1px solid;
-  font-size: 1.04vw;
-  font-weight: 300;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  outline: none;
-}
-
-.floor-plans .planView .box11::before {
-  content: "\f107";
-  background: #ffffff;
-  font-family: FontAwesome;
-  position: absolute;
-  top: 1px;
-  right: 3px;
-  width: 18%;
-  height: 80%;
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.5vw;
-  line-height: 45px;
-  pointer-events: none;
-  color: black;
-}
-
-.floor-plans .planView select option {
-  width: 70%;
-  margin: auto;
-}
-
-.floor-plans .planView .building-blocks p {
-  margin-top: 5.5vw;
-}
-
-.floor-plans .planView .swiper-containerNirvana {
-  margin-left: 8vw;
-  width: 48vw;
-  height: 38vw;
-  padding-left: 1.5vw;
-  overflow: hidden;
-}
-
-.floor-plans .planView .swiper-containerNirvana .swiper-slide {
-  width: 42.14vw;
-  height: 33.75vw;
-}
-
-.floor-plans .planView .swiper-containerNirvana .swiper-slide img {
-  width: auto;
-  height: 100%;
-}
-
-.floor-plans .planView .swiper-containerNirvana .swiper-slide p {
-  margin-top: 1vw;
-  text-align: center;
-  font-size: 1.2vw;
-  line-height: 1.43;
-  font-weight: 300;
-}
-
-.floor-plans .planView .swiper-containerNirvana #elNirvana {
-  position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  z-index: 10;
-  margin-top: -21vw;
-  margin-left: -1.5vw;
-  color: #000000;
-}
-
-.floor-plans .planView .swiper-containerNirvana #elNirvana i {
-  margin-left: 1.8vw;
-  margin-top: 1vw;
-  font-size: 3vw;
-  z-index: 50;
-}
-
-.floor-plans .planView .swiper-containerNirvana #erNirvana {
-  position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  z-index: 10;
-  margin-top: -21vw;
-  margin-left: 40vw;
+  margin-left: 41.5vw;
   color: #000000;
 }
 
@@ -2836,6 +2496,8 @@ body {
     padding-left: 0vw;
     margin-top: 8vw;
     padding-bottom: 15vw;
+    height: 110vw;
+    overflow: hidden;
   }
   .floor-plans .floor-plans-title {
     width: 86vw;
@@ -2872,7 +2534,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 6vw;
+    margin-top: 4.3vw;
+    overflow: hidden;
     /* For IE10 */
   }
   .floor-plans .planView .selection {
@@ -2944,7 +2607,7 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 4.5vw;
-    line-height: 30px;
+    line-height: 45px;
     pointer-events: none;
     color: black;
   }
@@ -2955,28 +2618,39 @@ body {
   .floor-plans .planView .building-blocks p {
     margin-top: 17.5vw;
   }
-  .floor-plans .planView .swiper-container {
+  .floor-plans .planView .swiper-containerSerenity {
     margin-left: 8vw;
     width: 58vw;
     height: 74vw;
     padding-left: 0vw;
+    overflow: hidden;
   }
-  .floor-plans .planView .swiper-container .swiper-slide {
+  .floor-plans .planView .swiper-containerSerenity .swiper-slide {
     width: 58vw;
-    height: 42vw;
+    height: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .floor-plans .planView .swiper-container .swiper-slide img {
+  .floor-plans .planView .swiper-containerSerenity .swiper-slide img {
     width: auto;
     height: 100%;
   }
-  .floor-plans .planView .swiper-container .swiper-slide p {
-    margin-top: 5.5vw;
+  .floor-plans .planView .swiper-containerSerenity .swiper-slide p {
+    margin-top: .5vw;
     text-align: center;
     font-size: 3.38vw;
     line-height: 1.5;
     font-weight: 300;
   }
-  .floor-plans .planView .swiper-container .ellipse1 {
+  .floor-plans .planView .swiper-containerSerenity #elSerenity {
     position: absolute;
     width: 5vw;
     height: 5vw;
@@ -2986,18 +2660,18 @@ body {
     background-color: #ffffff;
     z-index: 10;
     margin-top: -10vw;
-    margin-left: 21vw;
+    margin-left: 22vw;
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
   }
-  .floor-plans .planView .swiper-container .ellipse1 i {
+  .floor-plans .planView .swiper-containerSerenity #elSerenity i {
     margin-left: 1.8vw;
     margin-top: 1vw;
     font-size: 3vw;
     z-index: 50;
   }
-  .floor-plans .planView .swiper-container .ellipse2 {
+  .floor-plans .planView .swiper-containerSerenity #erSerenity {
     position: absolute;
     width: 5vw;
     height: 5vw;
@@ -3007,12 +2681,160 @@ body {
     background-color: #ffffff;
     z-index: 10;
     margin-top: -10vw;
-    margin-left: 32vw;
+    margin-left: 34vw;
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
   }
-  .floor-plans .planView .swiper-container .ellipse2 i {
+  .floor-plans .planView .swiper-containerSerenity #erSerenity i {
+    margin-left: 2.2vw;
+    margin-top: 1vw;
+    font-size: 3vw;
+    z-index: 50;
+  }
+  .floor-plans .planView .swiper-containerBliss {
+    margin-left: 8vw;
+    width: 58vw;
+    height: 74vw;
+    padding-left: 0vw;
+    overflow: hidden;
+  }
+  .floor-plans .planView .swiper-containerBliss .swiper-slide {
+    width: 58vw;
+    height: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .floor-plans .planView .swiper-containerBliss .swiper-slide img {
+    width: auto;
+    height: 100%;
+  }
+  .floor-plans .planView .swiper-containerBliss .swiper-slide p {
+    margin-top: .5vw;
+    text-align: center;
+    font-size: 3.38vw;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .floor-plans .planView .swiper-containerBliss #elBliss {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 10;
+    margin-top: -10vw;
+    margin-left: 22vw;
+    color: #000000;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .floor-plans .planView .swiper-containerBliss #elBliss i {
+    margin-left: 1.8vw;
+    margin-top: 1vw;
+    font-size: 3vw;
+    z-index: 50;
+  }
+  .floor-plans .planView .swiper-containerBliss #erBliss {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 10;
+    margin-top: -10vw;
+    margin-left: 34vw;
+    color: #000000;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .floor-plans .planView .swiper-containerBliss #erBliss i {
+    margin-left: 2.2vw;
+    margin-top: 1vw;
+    font-size: 3vw;
+    z-index: 50;
+  }
+  .floor-plans .planView .swiper-containerNirvana {
+    margin-left: 8vw;
+    width: 58vw;
+    height: 74vw;
+    padding-left: 0vw;
+    overflow: hidden;
+  }
+  .floor-plans .planView .swiper-containerNirvana .swiper-slide {
+    width: 58vw;
+    height: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .floor-plans .planView .swiper-containerNirvana .swiper-slide img {
+    width: auto;
+    height: 100%;
+  }
+  .floor-plans .planView .swiper-containerNirvana .swiper-slide p {
+    margin-top: .5vw;
+    text-align: center;
+    font-size: 3.38vw;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .floor-plans .planView .swiper-containerNirvana #elNirvana {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 10;
+    margin-top: -10vw;
+    margin-left: 22vw;
+    color: #000000;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .floor-plans .planView .swiper-containerNirvana #elNirvana i {
+    margin-left: 1.8vw;
+    margin-top: 1vw;
+    font-size: 3vw;
+    z-index: 50;
+  }
+  .floor-plans .planView .swiper-containerNirvana #erNirvana {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 10;
+    margin-top: -10vw;
+    margin-left: 34vw;
+    color: #000000;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .floor-plans .planView .swiper-containerNirvana #erNirvana i {
     margin-left: 2.2vw;
     margin-top: 1vw;
     font-size: 3vw;
@@ -3369,6 +3191,7 @@ body {
     background-color: #f8f8f8;
     color: #000000;
     font-family: Titillium Web, sans-serif;
+    z-index: 100;
   }
   .gallery .gal {
     font-size: 6.76vw;
@@ -3758,14 +3581,16 @@ body {
     padding-bottom: 18vw;
     height: 170vw;
     font-family: Titillium Web, sans-serif;
+    z-index: 800;
   }
   .amenities .amenities-title {
-    margin-top: 10vw;
-    font-size: 6.76vw;
-    font-weight: 600;
-    margin-left: 0vw;
     width: 86vw;
     margin: auto;
+    font-size: 6.76vw;
+    font-weight: 600;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
   }
   .amenities .carousel-3 {
     display: -webkit-box;

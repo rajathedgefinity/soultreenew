@@ -180,6 +180,15 @@ var header = document.getElementById("click-btn");
 
 
 
+function actFunc() {
+  var active = document.getElementById('elSerenity');
+  var deactivate = document.getElementById('erSerenity');
+    
+}
+
+
+
+
 
 // floor plan tab functions
         // function serenityFunc() {
