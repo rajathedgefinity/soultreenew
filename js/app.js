@@ -1,4 +1,4 @@
-// Hamburger Menu working
+// Hamburger Menu working ###########################################
 var btn = $('.btn11');
 
 btn.on('click', function() {
@@ -31,7 +31,7 @@ $('html, body').animate({
 });
 
 
-//Progress Bar
+//Progress Bar ##############################################################
 $(function(){
     var $ppc = $('.progress-pie-chart'),
       percent = parseInt($ppc.data('percent')),
@@ -43,7 +43,7 @@ $(function(){
     $('.ppc-percents span').html(percent+'%');
   });
 
-//Timeline
+//Timeline #####################################################################
 //Sample dates
 var dates = ["6/12/2020", "8/15/2021", "10/22/2021", "11/2/2021", "12/22/2021"];
 //For the purpose of stringifying MM/DD/YYYY date format
@@ -152,7 +152,7 @@ function selectDate(selector) {
 console.log()
 
 
-//floor plan selection
+//floor plan selection #################################################
 var header = document.getElementById("click-btn");
         var btns = header.getElementsByClassName("click-btn-1");
         for (var i = 0; i < btns.length; i++) {
@@ -163,7 +163,7 @@ var header = document.getElementById("click-btn");
         });
         }
 
-//sticky nav
+//sticky nav ###########################################################
 // window.onscroll = function() {myFunction()};
 
 // var navbar = document.getElementById("navbar2");
@@ -183,8 +183,110 @@ var header = document.getElementById("click-btn");
 function actFunc() {
   var active = document.getElementById('elSerenity');
   var deactivate = document.getElementById('erSerenity');
-    
+
 }
+
+
+
+// carousel images model #################################################
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+
+var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+
+var img7 = document.getElementById("myImg7");
+var img8 = document.getElementById("myImg8");
+var img9 = document.getElementById("myImg9");
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+img9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+/////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,7 +346,7 @@ function actFunc() {
 
 
 
-// Explore Soultree Starts
+// Explore Soultree Starts ################################################
 function fn22(id) 
 {
    
@@ -308,7 +410,7 @@ return diff1;
 }
 // Explore Soultree Ends
 
-// Amenities Carousel Starts
+// Amenities Carousel Starts #############################################################
 function fn_33(id) 
         {
            
