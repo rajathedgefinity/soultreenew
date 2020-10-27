@@ -1,3 +1,16 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    document.getElementById("navbar").style.marginTop = "-10vw";
+    document.getElementById("navbar2").style.marginTop = "-4.84vw";
+    // document.getElementsByClassName("menu-pages").style.top = "animate__fadeOutDown";
+  }
+  //  else {
+  //   document.getElementById("navbar").style.display = "flex";
+  // }
+}
+
 // menu-pages active function ###########################################
 function menuFunc(evt, cityName) {
   // Declare all variables
