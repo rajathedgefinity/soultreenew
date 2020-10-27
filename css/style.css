@@ -2289,11 +2289,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerSerenity .swiper-slide img {
   width: auto;
   height: 100%;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerSerenity .swiper-slide p {
@@ -2473,11 +2475,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerBliss .swiper-slide img {
   width: auto;
   height: 100%;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerBliss .swiper-slide p {
@@ -2657,11 +2661,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerNirvana .swiper-slide img {
   width: auto;
   height: 100%;
+  border-radius: .5vw;
 }
 
 .floor-plans .planView .swiper-containerNirvana .swiper-slide p {
@@ -2869,10 +2875,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerSerenity .swiper-slide img {
     width: auto;
     height: 100%;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerSerenity .swiper-slide p {
     margin-top: .5vw;
@@ -3036,10 +3044,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerBliss .swiper-slide img {
     width: auto;
     height: 100%;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerBliss .swiper-slide p {
     margin-top: .5vw;
@@ -3203,10 +3213,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerNirvana .swiper-slide img {
     width: auto;
     height: 100%;
+    border-radius: 1vw;
   }
   .floor-plans .planView .swiper-containerNirvana .swiper-slide p {
     margin-top: .5vw;

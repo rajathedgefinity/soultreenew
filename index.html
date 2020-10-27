@@ -449,7 +449,7 @@
 
 
 
-        <div id="myModal modal-content" class="modal">
+        <div id="myModal" class="modal">
             <span class="close" style="opacity: 1;">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
@@ -667,30 +667,6 @@
         </div>
 
     <!-- </div> -->
-
-     <script>
-
-        
-
-        function serenityFunc(evt,blocks) {
-          var i, planView, tablinks;
-          planView = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < planView.length; i++) {
-            planView[i].style.display = "none";
-            planView[i].className = "planView tabcontent hidden";
-
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace("active-spec", " ");
-          }
-          document.getElementById(blocks).style.display = "block";
-        document.getElementById(blocks).className = "planView tabcontent";
-          evt.currentTarget.className += " active-spec";
-        }
-        
-       
-        </script> 
 
     <!-- #################################################################################### -->
     <div class="timeline" style="display: none;">

@@ -176,15 +176,15 @@ console.log()
 
 
 //floor plan selection #################################################
-var header = document.getElementById("click-btn");
-        var btns = header.getElementsByClassName("click-btn-1");
-        for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-        });
-        }
+// var header = document.getElementById("click-btn");
+//         var btns = header.getElementsByClassName("click-btn-1");
+//         for (var i = 0; i < btns.length; i++) {
+//         btns[i].addEventListener("click", function() {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//         });
+//         }
 
 //sticky nav ###########################################################
 // window.onscroll = function() {myFunction()};
@@ -200,15 +200,15 @@ var header = document.getElementById("click-btn");
 //   }
 // }
 
-function serActive() {
-  var act = document.getElementById('elSerenity');
-  var deactive = document.getElementById('erSerenity');
-  var sl1 = document.getElementById('slide1');
-  var sl3 = document.getElementById('slide3');
-  if (sl1.style.display === 'block') {
-    act.style.display = 'none';
-  }
-}
+// function serActive() {
+//   var act = document.getElementById('elSerenity');
+//   var deactive = document.getElementById('erSerenity');
+//   var sl1 = document.getElementById('slide1');
+//   var sl3 = document.getElementById('slide3');
+//   if (sl1.style.display === 'block') {
+//     act.style.display = 'none';
+//   }
+// }
 
 
 
@@ -297,28 +297,24 @@ span.onclick = function() {
 }
 
 
-/////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // floor plan tab functions
+function serenityFunc(evt,blocks) {
+  var i, planView, tablinks;
+  planView = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < planView.length; i++) {
+    planView[i].style.display = "none";
+    planView[i].className = "planView tabcontent hidden";
+
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active-spec", " ");
+  }
+  document.getElementById(blocks).style.display = "block";
+document.getElementById(blocks).className = "planView tabcontent";
+  evt.currentTarget.className += " active-spec";
+}
+
         // function serenityFunc() {
         //     var a = document.getElementById('serenity');
         //     var b = document.getElementById('bliss');
