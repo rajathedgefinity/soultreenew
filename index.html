@@ -160,7 +160,7 @@
 
     <div class="menu-pages content-desktop" id="navbar2">
         <div>
-            <a class="active-menu" href="#explore-soultree" id="Exp-explore">Explore Soultree</a>
+            <a href="#explore-soultree" id="Exp-explore">Explore Soultree</a>
             <a href="#master-plan" id="Mplan">Master Plan</a>
             <a href="#gallery" id="Gall-gallery">Gallery</a>
             <a href="#amenities" id="Amne">Amenities</a>
@@ -189,7 +189,7 @@
             <div class="project-form-popup animate__animated animate__fadeInRightBig" id="getInTouchId" style="display: none;">
                 <div class="common-toggler" onclick="document.getElementById('getInTouchId').style.display='none'">
                   <span>Get In Touch</span>
-                  <svg viewBox="0 0 32 32">
+                  <svg viewBox="0 0 32 32" style="margin-top:.25vw;">
                     <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
                   </svg>
                 </div>
@@ -200,7 +200,8 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-10">
                                     <div class="contact-title">
-                                        <h2 class="form_wrapper--title scroll-fade in-view" style="width: 10vw; font-family: Titillium Web, sans-serif;"> Get in touch</h2>
+                                        <h2 class="form_wrapper--title scroll-fade in-view content-desktop" style="width: 15vw; font-family: Titillium Web, sans-serif;"> Get in touch</h2>
+                                        <h2 class="content-mobile" style="width: 100%; font-family: Titillium Web, sans-serif;"> Get in touch</h2>
                                     </div>
                                 </div>
                             </div>      
@@ -448,7 +449,7 @@
 
 
 
-        <div id="myModal" class="modal">
+        <div id="myModal modal-content" class="modal">
             <span class="close" style="opacity: 1;">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
@@ -502,7 +503,7 @@
                     </div>
                     <div class="swiper-containerSerenity" id="serenityCarousel">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" id="slide1">
                                 <img id="myImg" class="myImg" src="images/floor-plan/floor-plan.jpg"
                                     srcset="images/floor-plan/floor-plan@2x.jpg 2x,
                                             images/floor-plan/floor-plan@3x.jpg 3x">
@@ -514,19 +515,19 @@
                                 <p>SBA 1345 Sft CA <br>
                                     945 Sft Flat no’s  A11, A12, A13</p>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" id="slide3">
                                 <img id="myImg3" class="myImg" src="images/section2/Mingle, Mix & Laugh.jpg">
                                 <p>SBA 1345 Sft CA <br>
                                     945 Sft Flat no’s  A11, A12, A13</p>
                             </div>
                         </div>
                 
-                        <div class="ellipse1" style="z-index: 100;" id="elSerenity">
+                        <a class="ellipse1" style="z-index: 100;" id="elSerenity">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="ellipse2" style="z-index: 100;" id="erSerenity">
+                        </a>
+                        <li class="ellipse2" style="z-index: 100;" id="erSerenity">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
+                        </li>
                     </div>
                 </div>
             </div>
@@ -669,6 +670,7 @@
 
      <script>
 
+        
 
         function serenityFunc(evt,blocks) {
           var i, planView, tablinks;

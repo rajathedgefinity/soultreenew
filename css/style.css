@@ -958,7 +958,7 @@ body {
 }
 
 .landing-container {
-  height: 100vh;
+  height: 40vw;
   font-family: Titillium Web, sans-serif;
 }
 
@@ -1041,8 +1041,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .landing-container {
+    height: 175vw;
+    padding-bottom: 4vw;
+  }
   .landing-container .overlay-content .soultree-logo {
-    margin-top: 25vw;
+    margin-top: 30vw;
     width: 20vw;
     -webkit-transform: scale(3.2);
             transform: scale(3.2);
@@ -1110,6 +1114,7 @@ body {
   margin-left: 14.9vw;
   color: #000000;
   line-height: 1.33;
+  padding-top: 10vw;
 }
 
 .main-subtitle {
@@ -1321,6 +1326,8 @@ body {
   margin-top: 18vw;
   margin-left: 26vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .carousel-1 .carousel-flex .ellipse i {
@@ -1544,6 +1551,8 @@ body {
   margin-top: 17vw;
   margin-left: 45.3vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .carousel-2 .carousel-flex .ellipse i {
@@ -1778,6 +1787,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .carousel-1 .carousel-flex .ellipse i {
     margin-left: 2vw;
@@ -1977,6 +1988,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .carousel-2 .carousel-flex .ellipse i {
     margin-left: 2vw;
@@ -2303,6 +2316,8 @@ body {
   margin-top: -21vw;
   margin-left: -1.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerSerenity #elSerenity i {
@@ -2324,6 +2339,8 @@ body {
   margin-top: -21vw;
   margin-left: 41.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerSerenity #erSerenity i {
@@ -2483,6 +2500,8 @@ body {
   margin-top: -21vw;
   margin-left: -1.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerBliss #elBliss i {
@@ -2504,6 +2523,8 @@ body {
   margin-top: -21vw;
   margin-left: 41.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerBliss #erBliss i {
@@ -2663,6 +2684,8 @@ body {
   margin-top: -21vw;
   margin-left: -1.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerNirvana #elNirvana i {
@@ -2684,6 +2707,8 @@ body {
   margin-top: -21vw;
   margin-left: 41.5vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .floor-plans .planView .swiper-containerNirvana #erNirvana i {
@@ -2691,6 +2716,7 @@ body {
   margin-top: 1vw;
   font-size: 3vw;
   z-index: 50;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2869,6 +2895,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerSerenity #elSerenity i {
     margin-left: 1.8vw;
@@ -2890,6 +2918,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerSerenity #erSerenity i {
     margin-left: 2.2vw;
@@ -3032,6 +3062,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerBliss #elBliss i {
     margin-left: 1.8vw;
@@ -3053,6 +3085,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerBliss #erBliss i {
     margin-left: 2.2vw;
@@ -3195,6 +3229,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerNirvana #elNirvana i {
     margin-left: 1.8vw;
@@ -3216,6 +3252,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .floor-plans .planView .swiper-containerNirvana #erNirvana i {
     margin-left: 2.2vw;
@@ -3593,6 +3631,8 @@ body {
   border-radius: 2.08vw 0 0 2.08vw;
   -webkit-transition: width 700ms;
   transition: width 700ms;
+  border: none;
+  outline: none;
 }
 
 .gallery .gallery-view .gal-img .fillet-box .left-box a {
@@ -3637,6 +3677,8 @@ body {
   border-radius: 0 2.08vw 2.08vw 0;
   -webkit-transition: width 700ms;
   transition: width 700ms;
+  border: none;
+  outline: none;
 }
 
 .gallery .gallery-view .gal-img .fillet-box .right-box a {
@@ -3760,6 +3802,8 @@ body {
     border-radius: 2.08vw 0 0 2.08vw;
     -webkit-transition: width 700ms;
     transition: width 700ms;
+    border: none;
+    outline: none;
   }
   .gallery .gallery-view .gal-img .fillet-box .left-box a {
     height: 3.54vw;
@@ -3785,6 +3829,7 @@ body {
     height: 3.54vw;
     width: 3.54vw;
     border-radius: 2.08vw 0 0 2.08vw;
+    border: none;
   }
   .gallery .gallery-view .gal-img .fillet-box .left-box:hover a {
     color: #fff;
@@ -3799,6 +3844,8 @@ body {
     border-radius: 0 2.08vw 2.08vw 0;
     -webkit-transition: width 700ms;
     transition: width 700ms;
+    border: none;
+    outline: none;
   }
   .gallery .gallery-view .gal-img .fillet-box .right-box a {
     height: 3.54vw;
@@ -4032,6 +4079,8 @@ body {
   margin-top: 17vw;
   margin-left: 26vw;
   color: #000000;
+  border: none;
+  outline: none;
 }
 
 .amenities .carousel-3 .carousel-flex3 .ellipse3 i {
@@ -4245,6 +4294,8 @@ body {
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
+    border: none;
+    outline: none;
   }
   .amenities .carousel-3 .carousel-flex3 .ellipse3 i {
     margin-left: 2vw;
@@ -4700,6 +4751,8 @@ body {
   font-size: 1.04vw;
   font-weight: 300;
   margin-bottom: 3.57vw;
+  border: none;
+  outline: none;
 }
 
 .contact .buttn {
@@ -4796,6 +4849,8 @@ body {
     font-size: 3.38vw;
     font-weight: 300;
     margin-bottom: 6vw;
+    border: none;
+    outline: none;
   }
   .contact .buttn {
     height: 13.77vw;

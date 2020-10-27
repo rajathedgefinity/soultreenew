@@ -177,14 +177,16 @@ var header = document.getElementById("click-btn");
 //   }
 // }
 
-
-
-
-function actFunc() {
-  var active = document.getElementById('elSerenity');
-  var deactivate = document.getElementById('erSerenity');
-
+function serActive() {
+  var act = document.getElementById('elSerenity');
+  var deactive = document.getElementById('erSerenity');
+  var sl1 = document.getElementById('slide1');
+  var sl3 = document.getElementById('slide3');
+  if (sl1.style.display === 'block') {
+    act.style.display = 'none';
+  }
 }
+
 
 
 

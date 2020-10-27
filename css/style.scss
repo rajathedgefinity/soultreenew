@@ -727,7 +727,7 @@ body {
 
 //landing Container
 .landing-container {
-  height: 100vh;
+  height: 40vw;
   font-family: Titillium Web, sans-serif;
 
   .overlay-content {
@@ -795,9 +795,11 @@ body {
 
                                                         @media only screen and (max-width:768px) {
                                                           .landing-container {
+                                                            height: 175vw;
+                                                            padding-bottom: 4vw;;
                                                             .overlay-content {
                                                               .soultree-logo {
-                                                                margin-top: 25vw;
+                                                                margin-top: 30vw;
                                                                 width: 20vw;
                                                                 transform: scale(3.2);
                                                                 z-index: 10;
@@ -864,6 +866,7 @@ body {
     margin-left: 14.9vw;
     color: $black;
     line-height: 1.33;
+    padding-top: 10vw;
   }
 
   .main-subtitle {
@@ -1036,6 +1039,8 @@ body {
         margin-top: 18vw;
         margin-left: 26vw;
         color: $black;
+        border: none;
+        outline:none;
   
         i {
           margin-left: 2vw;
@@ -1222,6 +1227,8 @@ body {
         margin-top: 17vw;
         margin-left: 45.3vw;
         color: $black;
+        border: none;
+        outline:none;
   
         i {
           margin-left: 2vw;
@@ -1449,6 +1456,8 @@ body {
                                                                         margin-left: 55vw;
                                                                         color: $black;
                                                                         transform: scale(2);
+                                                                        border: none;
+                                                                        outline:none;
                                                                   
                                                                         i {
                                                                           margin-left: 2vw;
@@ -1640,6 +1649,8 @@ body {
                                                                         margin-left: 5vw;
                                                                         color: $black;
                                                                         transform: scale(2);
+                                                                        border: none;
+                                                                        outline:none;
                                                                   
                                                                         i {
                                                                           margin-left: 2vw;
@@ -1963,7 +1974,9 @@ body {
           margin-top: -21vw;
           margin-left: -1.5vw;
           color: $black;
-    
+          border: none;
+          outline:none;
+
           i {
             margin-left: 1.8vw;
             margin-top: 1vw;
@@ -1983,7 +1996,9 @@ body {
           margin-top: -21vw;
           margin-left: 41.5vw;
           color: $black;
-    
+          border: none;
+          outline:none;
+
           i {
             margin-left: 2.2vw;
             margin-top: 1vw;
@@ -2131,7 +2146,9 @@ body {
           margin-top: -21vw;
           margin-left: -1.5vw;
           color: $black;
-    
+          border: none;
+          outline:none;
+
           i {
             margin-left: 1.8vw;
             margin-top: 1vw;
@@ -2151,7 +2168,9 @@ body {
           margin-top: -21vw;
           margin-left: 41.5vw;
           color: $black;
-    
+          border: none;
+          outline:none;
+
           i {
             margin-left: 2.2vw;
             margin-top: 1vw;
@@ -2299,6 +2318,8 @@ body {
           margin-top: -21vw;
           margin-left: -1.5vw;
           color: $black;
+          border: none;
+          outline:none;
     
           i {
             margin-left: 1.8vw;
@@ -2319,12 +2340,15 @@ body {
           margin-top: -21vw;
           margin-left: 41.5vw;
           color: $black;
-    
+          border: none;
+          outline:none;
+
           i {
             margin-left: 2.2vw;
             margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
+            border: none;
           }
         }
       }
@@ -2513,6 +2537,8 @@ body {
                                                               margin-left: 22vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 1.8vw;
@@ -2534,6 +2560,8 @@ body {
                                                               margin-left: 34vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 2.2vw;
@@ -2684,6 +2712,8 @@ body {
                                                               margin-left: 22vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 1.8vw;
@@ -2705,6 +2735,8 @@ body {
                                                               margin-left: 34vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 2.2vw;
@@ -2855,6 +2887,8 @@ body {
                                                               margin-left: 22vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 1.8vw;
@@ -2876,6 +2910,8 @@ body {
                                                               margin-left: 34vw;
                                                               color: $black;
                                                               transform: scale(2);
+                                                              border: none;
+                                                              outline:none;
                                                         
                                                               i {
                                                                 margin-left: 2.2vw;
@@ -3225,6 +3261,8 @@ body {
           width: 0;
           border-radius: 2.08vw 0 0 2.08vw;
           transition: width 700ms;
+          border: none;
+          outline:none;
         
           a {
               height: 3.54vw;
@@ -3263,6 +3301,8 @@ body {
           width: 0;
           border-radius: 0 2.08vw 2.08vw 0;
           transition: width 700ms;
+          border: none;
+          outline:none;
         
           a {
               height: 3.54vw;
@@ -3377,7 +3417,9 @@ body {
                                                                 width: 0;
                                                                 border-radius: 2.08vw 0 0 2.08vw;
                                                                 transition: width 700ms;
-                                                              
+                                                                border: none;
+                                                                outline:none;
+                                                                                                                              
                                                                 a {
                                                                     height: 3.54vw;
                                                                     width: 3.54vw;
@@ -3399,6 +3441,7 @@ body {
                                                                 height: 3.54vw;
                                                                 width: 3.54vw;
                                                                 border-radius: 2.08vw 0 0 2.08vw;
+                                                                border: none;
                                                               
                                                                 a {
                                                                     color: #fff;
@@ -3415,6 +3458,8 @@ body {
                                                                 width: 0;
                                                                 border-radius: 0 2.08vw 2.08vw 0;
                                                                 transition: width 700ms;
+                                                                border: none;
+                                                                outline:none;
                                                               
                                                                 a {
                                                                     height: 3.54vw;
@@ -3611,6 +3656,8 @@ body {
         margin-top: 17vw;
         margin-left: 26vw;
         color: $black;
+        border: none;
+        outline:none;
   
         i {
           margin-left: 2vw;
@@ -3813,7 +3860,9 @@ body {
                                                                           margin-left: 115vw;
                                                                           color: $black;
                                                                           transform: scale(2);
-                                                                    
+                                                                          border: none;
+                                                                          outline:none;
+
                                                                           i {
                                                                             margin-left: 2vw;
                                                                             margin-top: 1vw;
@@ -4264,6 +4313,8 @@ body {
     font-size: $p;
     font-weight: $fontThin;
     margin-bottom: 3.57vw;
+    border: none;
+    outline:none;
   }
 
   .buttn {
@@ -4351,6 +4402,8 @@ body {
                                                           font-size: 3.38vw;
                                                           font-weight: $fontThin;
                                                           margin-bottom: 6vw;
+                                                          border: none;
+                                                          outline:none;
                                                         }
                                                       
                                                         .buttn {
