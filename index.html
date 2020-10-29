@@ -53,14 +53,6 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <style>
-        .sticky {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -76,8 +68,19 @@
     </div> -->
       
 
+
+
+    <div class="landing-img content-desktop">
+        <img src="images/Banner1.jpg">
+    </div>
+
+    <div class="landing-img content-mobile">
+        <img src="images/bannerMobile.png">
+    </div>
+
+
     <!-- Navbar Starts [Desktop]-->
-    <div class="nav-bar" id="navbar">
+    <div class="nav-bar content-desktop" id="navbar">
         <div class="logo-container">
             <div class="logo">
                 <div class="fillet-div">
@@ -87,14 +90,14 @@
         </div>
         <div class="social-icons">
             <ul>
-                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#" class="animate__animated animate__pulse"><i class="fa fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </div>
 
-        <div class="box" id="myHam">
+        <!-- <div class="box" id="myHam">
             <div class="btn11 not-active">
                 <span></span>
                 <span></span>
@@ -111,12 +114,12 @@
                 <li><a href="#amenities" class="nav-link">Amenities</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </div>
     <!-- Navbar Ends [Desktop]-->
 
     <!-- Navbar Starts [Mobile]-->
-    <div class="nav-bar content-mobile">
+    <div class="nav-bar content-mobile" id="navbarM">
         <div class="logo-container">
             <div class="logo">
                 <div class="fillet-div">
@@ -124,18 +127,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-            <path
-                  class="line top"
-                  d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-            <path
-                  class="line middle"
-                  d="m 30,50 h 40" />
-            <path
-                  class="line bottom"
-                  d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg> -->
 
         <div class="box" id="myHam">
             <div class="btn11 not-active">
@@ -168,9 +159,50 @@
         </div>
         <div class="brochure">
             <div class="call"><i class="fa fa-phone" aria-hidden="true"></i>+91 9008 288 288</div>
-            <div class="download-brochure">Download Brochure</div>
+            <div class="dropbtn" onclick="dropdown()">Download Brochure</div>
         </div>
     </div>
+
+    <div class="menu-pages content-mobile" id="navbar2M">
+        <div class="brochure">
+            <div class="call"><i class="fa fa-phone" aria-hidden="true"></i>+91 9008 288 288</div>
+            <button class="dropbtn" onclick="dropdown()">Download Brochure</button>
+        </div>
+    </div>
+
+    <div class="dropdown content-desktop">
+        <div class="dropdown-content" id="dropdown-content">
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Serenity</p>
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Bliss</p>
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Nirvana</p>
+        </div>
+    </div>
+    
+    <div class="dropdown content-mobile">
+        <div class="dropdown-content" id="dropdown-contentM">
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Serenity</p>
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Bliss</p>
+          <p onclick="document.getElementById('dropdown-content').style.display='none'">Nirvana</p>
+        </div>
+    </div>
+
+    <script>
+        function dropdown() {
+            var a = document.getElementById('dropdown-content');
+            if (a.style.display === 'none') {
+                a.style.display = 'block';
+            } else {
+                a.style.display ='none';
+            }
+        }
+
+        var dropD = document.getElementById('dropdown-content');
+        window.onclick = function(event) {
+            if (event.target == dropD) {
+                dropD.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- #################################################################################### -->
     <div class="landing-container">
@@ -183,13 +215,41 @@
                 Fully automated futuristic & intelligent luxury 1, 2 and 3 BHK apartments with a multitude of amenities located
                 amidst green cover at Sompura Gate, Sarjapur Road
             </p>
-            <div class="getIn-touch" onclick="document.getElementById('getInTouchId').style.display='block'">
+            <div class="getIn-touch" onclick="getInTouch()">
                 GET IN TOUCH
             </div>
-            <div class="project-form-popup animate__animated animate__fadeInRightBig" id="getInTouchId" style="display: none;">
+            <div class="git-container animate__animated" id="getInTouchId">
+                <svg viewBox="0 0 32 32" onclick="getInTouch()">
+                    <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
+                </svg>
+                <p>Get in touch</p>
+                <form action="">
+                    <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                    <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
+                    <input type="email" name="email" placeholder="Email ID">
+                    <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                    <div class="buttn">
+                        <button class="black-button" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                function getInTouch() {
+                    var touch = document.getElementById('getInTouchId');
+                    if (touch.style.display === 'none') {
+                        touch.style.display = 'block';
+                        touch.style.transition = '1s';
+                    } else {
+                        touch.style.display = 'none';
+                        touch.style.transition = '1s';
+                    }
+                }
+            </script>
+            <!-- <div class="project-form-popup animate__animated animate__fadeInRightBig" id="getInTouchId" style="display: none;">
                 <div class="common-toggler" onclick="document.getElementById('getInTouchId').style.display='none'">
                   <span>Get In Touch</span>
-                  <svg viewBox="0 0 32 32" style="margin-top:.25vw;">
+                  <svg viewBox="0 0 32 32">
                     <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
                   </svg>
                 </div>
@@ -240,17 +300,10 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
-
-        <div class="landing-img content-desktop">
-            <img src="images/Banner1.jpg">
-        </div>
-
-        <div class="landing-img content-mobile">
-            <img src="images/bannerMobile.png">
+            </div> -->
         </div>
     </div>
+
     <!-- #################################################################################### -->
         <div class="main-section"></div>
         <p class="main-title" data-aos="fade-up" data-aos-delay="200">
@@ -705,7 +758,7 @@
 
         <div class="gallery-view" data-aos="fade-up" data-aos-delay="600">
             <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="gal-img" style="display: block; overflow-x: hidden; width: 77vw; height: 44vw; cursor: pointer;" id="gal-I">
+            <div class="gal-img" style="display: block; overflow-x: hidden; cursor: pointer;" id="gal-I">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/gallery/gallery.jpg"
@@ -954,7 +1007,7 @@
     </script>
 
     <!-- #################################################################################### -->
-    <div class="otherProjects" style="display: none;">
+    <!-- <div class="otherProjects" style="display: none;">
         <p class="otherProjects-title">
             Other Projects
         </p>
@@ -970,7 +1023,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- #################################################################################### -->
     <div class="contact content-desktop" id="contact">
@@ -989,7 +1042,7 @@
                 <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="350">
                 <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="400">
             </div>
-            <div class="buttn" data-aos="fade-up" data-aos-delay="450">
+            <div class="buttn">
                 <button class="black-button" type="submit">SUBMIT</button>
             </div>
         </form>
@@ -1017,7 +1070,7 @@
 
     <!-- #################################################################################### -->
     <!-- Schedule Section Starts -->
-    <Section class="schedule content-desktop" hidden>
+    <!-- <Section class="schedule content-desktop" hidden>
         <div class="schedule-visit" data-aos="fade" data-aos-delay="200">
             <p>
                 We’re here to answer queries, and to guide and provide you with the information
@@ -1039,7 +1092,7 @@
                 <button>SCHEDULE A VISIT</button>
             </div>
         </div>
-    </Section>
+    </Section> -->
     <!-- Schedule Section Ends -->
 
     <!-- #################################################################################### -->
@@ -1104,6 +1157,7 @@
 
     <!-- Script Links -->
     <script src="js/app.js"></script>
+    <script src="js/lottie.min.js"></script>
 
     <!-- AOS(Animation On Scroll) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1167,65 +1221,58 @@
         ease: Expo.easeInOut
         });
 
-        // TweenMax.from('#Exp-explore', 1, {
-        // y: 20,
-        // delay: 0.8,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
+        TweenMax.from('#Exp-explore', 1, {
+        y: 20,
+        delay: 0.8,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
 
-        // TweenMax.from('#Mplan', 1, {
-        // y: 20,
-        // delay: 0.9,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
+        TweenMax.from('#Mplan', 1, {
+        y: 20,
+        delay: 0.9,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
 
-        // TweenMax.from('#Gall-gallery', 1, {
-        // y: 20,
-        // delay: 1,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        // TweenMax.from('#Amne', 1, {
-        // y: 20,
-        // delay: 1.1,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        // TweenMax.from('#Cont', 1, {
-        // y: 20,
-        // delay: 1.2,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        // TweenMax.from('#Cont', 1, {
-        // y: 20,
-        // delay: 1.3,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        // TweenMax.from('.call', 1, {
-        // y: 20,
-        // delay: 1.4,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        // TweenMax.from('.download-brochure', 1, {
-        // y: 20,
-        // delay: 1.5,
-        // opacity: 0,
-        // ease: Expo.easeInOut
-        // });
-
-        TweenMax.from('.soultree-logo', 1, {
-        y: 50,
+        TweenMax.from('#Gall-gallery', 1, {
+        y: 20,
         delay: 1,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('#Amne', 1, {
+        y: 20,
+        delay: 1.1,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('#Cont', 1, {
+        y: 20,
+        delay: 1.2,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('#Cont', 1, {
+        y: 20,
+        delay: 1.3,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.call', 1, {
+        y: 20,
+        delay: 1.4,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.dropbtn', 1, {
+        y: 20,
+        delay: 1.5,
         opacity: 0,
         ease: Expo.easeInOut
         });
@@ -1590,35 +1637,6 @@ $("a[href^='#']").click(function(e) {
 
 
     <script>  
-    
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-5vw";
-            }
-            prevScrollpos = currentScrollPos;
-            }
-    
-
-
-            //sticky nav
-            // window.onscroll = function() {myFunction()};
-            // var navbar = document.getElementById("navbar2");
-            // var sticky = navbar.offsetTop;
-
-            // function myFunction() {
-            // if (window.pageYOffset >= sticky) {
-            //     navbar.classList.add("sticky")
-            // } else {
-            //     navbar.classList.remove("sticky");
-            // }
-            // }
-
-           
-
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
          var element = document.getElementById('text');
          if (isMobile) {

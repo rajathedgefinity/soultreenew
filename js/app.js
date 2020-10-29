@@ -1,14 +1,23 @@
+// onscroll snap sticky navbar #########################################
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-    document.getElementById("navbar").style.marginTop = "-10vw";
+    document.getElementById("navbar").style.marginTop = "-4.84vw";
     document.getElementById("navbar2").style.marginTop = "-4.84vw";
-    // document.getElementsByClassName("menu-pages").style.top = "animate__fadeOutDown";
+    document.getElementById("dropdown-content").style.marginTop = "4vw";
+    document.getElementById("navbarM").style.marginTop = "-18vw";
+    document.getElementById("navbar2M").style.marginTop = "-18vw";
+    document.getElementById("dropdown-contentM").style.marginTop = "4vw";
   }
-  //  else {
-  //   document.getElementById("navbar").style.display = "flex";
-  // }
+   else {
+    document.getElementById("navbar").style.marginTop = "0";
+    document.getElementById("navbar2").style.marginTop = "4.84vw";
+    document.getElementById("dropdown-content").style.marginTop = "0vw";
+    document.getElementById("navbarM").style.marginTop = "0";
+    document.getElementById("navbar2M").style.marginTop = "18vw";
+    document.getElementById("dropdown-contentM").style.marginTop = "0vw";
+  }
 }
 
 // menu-pages active function ###########################################

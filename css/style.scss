@@ -45,7 +45,33 @@ body {
 
 
 
+// landing page banner image
+.landing-img {
+  position: absolute;
+  width: 100vw;
 
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+                                  @media only screen and (max-width:768px) {
+                                    .landing-img {
+                                      position: absolute;
+                                      width: 100vw;
+                                      margin-top: -12vw;
+                                    
+                                      img {
+                                        height: auto;
+                                        width: 100%;
+                                        object-fit: cover;
+                                      }
+                                    }
+                                  }
+
+// webpage onloading tranition
 .lines {
   font-family: 'Lemonada', cursive;
   position: fixed;
@@ -180,7 +206,7 @@ body {
 }
 
 .logo-container {
-  width: 70%;
+  width: 78%;
   z-index: 5;
 
   .logo {
@@ -404,7 +430,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to right, $brownish-orange-two, $army-green);
+  background: linear-gradient(to right, $cream, $cream);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -417,7 +443,7 @@ body {
 
                         @media only screen and (max-width:768px) {
                             .nav-bar {
-                                position: fixed;
+                                position: absolute;
                                 top: 0;
                                 left: 0;
                                 right: 0;
@@ -426,7 +452,6 @@ body {
                                 width: 100%;
                                 height: 18vw;
                                 z-index: 1000;
-                                // background: red;
                             }
 
                             .logo-container {
@@ -459,7 +484,7 @@ body {
                               .btn11 {
                                 position: absolute;
                                 width: 8vw;
-                                height: 8vw;
+                                height: 5vw;
                                 margin-left: 1vw;
                                 margin-top: 1.5vw;
                                 cursor: pointer;
@@ -472,15 +497,15 @@ body {
                                   width: 50%;
                                   // box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
                                   border-radius: 5px;
-                                  height: 1.8px;
+                                  height: 1px;
                                   background: $cream;
                                   transition: none;
                                   position: relative;
-                                  margin-top: .68vw;
+                                  margin-top: 1.2vw;
                                 }
                                 
                                 span + span {
-                                  margin-top: 8px;
+                                  margin-top: 2.1vw;
                                 }
                               }
                             }
@@ -635,9 +660,10 @@ body {
                             
                             .nav-link:hover,
                             .nav-link:focus {
-                              background: linear-gradient(to right, $brownish-orange-two, $army-green);
+                              background: linear-gradient(to right, $cream, $cream);
                               -webkit-background-clip: text;
                               -webkit-text-fill-color: transparent;
+                              transform: scale(1.1);
                             }
                             
                             .top-nav.open {
@@ -709,7 +735,7 @@ body {
       }
     }
 
-    .download-brochure {
+    .dropbtn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -721,9 +747,115 @@ body {
       border-radius: .4vw;
       background-color: $black;
       margin-left: -2vw;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      color: $cream;
+      font-size: 1vw;
     }
   }
 }
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-family: Titillium Web, sans-serif;
+  text-align: center;
+  display: none;
+  position: fixed;
+  color: $white-two;
+  background-color: black;
+  border-radius: .5vw;
+  min-width: 10.63vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 80.5vw;
+}
+
+.dropdown-content p {
+  font-size: .94vw;
+  font-weight: $fontThin;
+  color: $white-two;
+  padding: 1vw 1.2vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p:hover {
+  color: $cream;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+                                                        @media only screen and (max-width:768px) {
+                                                          .menu-pages {
+                                                            position: -webkit-sticky;
+                                                            position: sticky;
+                                                            top: 0;
+                                                            margin-top: 18vw;
+                                                            padding-top: 2vw;
+                                                            height: 14vw;
+                                                            width: 100vw;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            background-color: $white-two;
+                                                            font-family: Titillium Web, sans-serif;
+                                                            z-index: 500;
+                                                            overflow: hidden;
+                                                          
+                                                            .brochure {
+                                                              width: 100vw;
+                                                              display: flex;
+                                                              align-items: center;
+                                                              z-index: 100;
+                                                              margin-left: 0vw;
+                                                          
+                                                              .call {
+                                                                width: 36vw;
+                                                                font-size: 3vw;
+                                                                font-weight: $fontBold;
+                                                                color: $black;
+                                                                margin-left: 1vw;
+                                                          
+                                                                i {
+                                                                  display: flex;
+                                                                  align-items: center;
+                                                                  margin-top: .2vw;
+                                                                  margin-left: 8vw;
+                                                                }
+                                                              }
+                                                          
+                                                              .dropbtn {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                font-size: 3vw;
+                                                                font-weight: $fontThin;
+                                                                color: $white-two;
+                                                                height: 10vw;
+                                                                width: 36vw;
+                                                                border-radius: 1vw;
+                                                                background-color: $black;
+                                                                margin-left: 0vw;
+                                                                margin-right: 4vw;
+                                                                cursor: pointer;
+                                                              }
+                                                          
+                                                              .dropbtn:hover {
+                                                                color: $cream;
+                                                                font-size: 1vw;
+                                                              }
+                                                            }
+                                                          }
+                                                        }
 
 //landing Container
 .landing-container {
@@ -739,6 +871,7 @@ body {
     margin: auto;
 
     .soultree-logo {
+      margin-top: 4vw;
       width: 20vw;
       z-index: 10;
       // height: 8.23vw;
@@ -753,7 +886,7 @@ body {
       text-align: center;
       width: 58vw;
       z-index: 10;
-      margin-top: 8vw;
+      margin-top: 7vw;
       line-height: 1.43;
       font-size: 1.2vw;
       font-weight: $fontThin;
@@ -776,26 +909,100 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
-  }
 
-  .landing-img {
-    position: absolute;
-    width: 100vw;
-    margin-top: -31.6vw;
-    overflow: hidden;
+    .git-container {
+      display: none;
+      margin-top: 13vw;
+      margin-left: 68vw;      
+      position: fixed;
+      background:#fff;
+      color: #000;
+      height: 32vw;
+      width: 25vw;
+      z-index: 10;
+      padding: 2vw;
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
 
-    img {
-      height: auto;
-      width: 100%;
-      object-fit: cover;
+      svg {
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-left: 20vw;
+      }
+
+      svg:hover {
+        color: #a5a2a2;
+      }
+
+      p {
+        font-size: 2.1vw;
+        font-weight: $fontBold;
+      }
+
+      form {
+        padding-bottom: 1vw;
+
+        input {
+          border: none;
+          padding-bottom: .5vw;
+          width: 100%;
+          -webkit-border-bottom: 1px solid $black;
+          border-bottom: 1px solid $black;
+          font-size: $p;
+          font-weight: $fontThin;
+          margin-bottom: 2.2vw;
+          outline:none;
+        }
+
+        .buttn {
+          height: 3.54vw;
+          width: 12.4vw;
+          background-color: $black;
+          border-radius: 0.26vw;
+          transition: width 500ms;
+          // margin-left: 57.6vw;
+          
+          .black-button {
+              border: none;
+              height: 3.54vw;
+              width: 12.4vw;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 0.9vw;
+              letter-spacing: 3.44px;
+              border-radius: 0.26vw;
+              font-weight: $fontBold;
+              color: $white-two;
+          }
+        }
+      
+        .buttn:hover {
+          height: 3.54vw;
+          width: 0;
+      
+          .black-button {
+              color: $black;
+          }
+      
+          .black-button::after {
+              content: '\f105';
+              font-family: fontAwesome;
+              font-size: .9vw;
+              font-weight: $fontThin;
+              padding-left: .6vw;
+              color: $black;
+          }
+        }
+      }
     }
   }
 }
 
                                                         @media only screen and (max-width:768px) {
                                                           .landing-container {
-                                                            height: 175vw;
+                                                            height: 177vw;
                                                             padding-bottom: 4vw;;
                                                             .overlay-content {
                                                               .soultree-logo {
@@ -813,7 +1020,7 @@ body {
                                                               .sub-title {
                                                                 width: 78vw;
                                                                 z-index: 10;
-                                                                margin-top: 48vw;
+                                                                margin-top: 53vw;
                                                                 line-height: 1.5;
                                                                 font-size: 3.38vw;
                                                               }
@@ -835,20 +1042,107 @@ body {
                                                                 justify-content: center;
                                                                 align-items: center;
                                                               }
-                                                            }
+
+                                                              .git-container {
+                                                                display: none;
+                                                                margin-top: 30vw;
+                                                                margin-left: 0vw;      
+                                                                position: fixed;
+                                                                background:#fff;
+                                                                color: #000;
+                                                                height: 100vw;
+                                                                width: 80vw;
+                                                                z-index: 10;
+                                                                padding: 3vw;
+                                                                box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
                                                           
-                                                            .landing-img {
-                                                              position: absolute;
-                                                              width: 100vw;
-                                                              margin-top: -138vw;
-                                                              overflow: hidden;
+                                                                svg {
+                                                                  width: 4.5vw;
+                                                                  height: 4.5vw;
+                                                                  margin-left: 70vw;
+                                                                }
                                                           
-                                                              img {
-                                                                height: auto;
-                                                                width: 100%;
-                                                                object-fit: cover;
+                                                                svg:hover {
+                                                                  color: #a5a2a2;
+                                                                }
+                                                          
+                                                                p {
+                                                                  font-size: 6.76vw;
+                                                                  font-weight: $fontBold;
+                                                                }
+                                                          
+                                                                form {
+                                                                  padding-bottom: 1vw;
+                                                          
+                                                                  input {
+                                                                    border: none;
+                                                                    padding-bottom: 2.5vw;
+                                                                    width: 100%;
+                                                                    -webkit-border-bottom: 1px solid $black;
+                                                                    border-bottom: 1px solid $black;
+                                                                    font-size: 3.38vw;
+                                                                    font-weight: $fontThin;
+                                                                    margin-bottom: 5vw;
+                                                                    outline:none;
+                                                                  }
+                                                          
+                                                                  .buttn {
+                                                                    height: 13.77vw;
+                                                                    width: 45vw;
+                                                                    background-color: $black;
+                                                                    border-radius: 1vw;
+                                                                    transition: none;
+                                                                    margin-left: 0vw;
+                                                                    margin-top: 5vw;
+                                                                    
+                                                                    .black-button {
+                                                                        border: none;
+                                                                        height: 13.77vw;
+                                                                        width: 45vw;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        font-size: 3.38vw;
+                                                                        letter-spacing: 3.44px;
+                                                                        border-radius: 0.26vw;
+                                                                        font-weight: $fontBold;
+                                                                        color: $white-two;
+                                                                    }
+                                                                  }
+                                                                
+                                                                  .buttn:hover {
+                                                                    height: 13.77vw;
+                                                                    width: 0;
+                                                                
+                                                                    .black-button {
+                                                                        color: $black;
+                                                                    }
+                                                                
+                                                                    .black-button::after {
+                                                                        content: '\f105';
+                                                                        font-family: fontAwesome;
+                                                                        font-size: 4vw;
+                                                                        font-weight: $fontThin;
+                                                                        padding-left: 2vw;
+                                                                        color: $black;
+                                                                    }
+                                                                  }
+                                                                }
                                                               }
                                                             }
+                                                          
+                                                            // .landing-img {
+                                                            //   position: absolute;
+                                                            //   width: 100vw;
+                                                            //   margin-top: -138vw;
+                                                            //   overflow: hidden;
+                                                          
+                                                            //   img {
+                                                            //     height: auto;
+                                                            //     width: 100%;
+                                                            //     object-fit: cover;
+                                                            //   }
+                                                            // }
                                                           }
                                                         }
 
@@ -1041,10 +1335,11 @@ body {
         color: $black;
         border: none;
         outline:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
   
         i {
-          margin-left: 2vw;
-          margin-top: 1vw;
           font-size: 3vw;
           z-index: 50;
         }
@@ -1217,6 +1512,9 @@ body {
       }
 
       .ellipse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 5vw;
         height: 5vw;
@@ -1231,8 +1529,6 @@ body {
         outline:none;
   
         i {
-          margin-left: 2vw;
-          margin-top: 1vw;
           font-size: 3vw;
           z-index: 50;
         }
@@ -1458,10 +1754,11 @@ body {
                                                                         transform: scale(2);
                                                                         border: none;
                                                                         outline:none;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
                                                                   
                                                                         i {
-                                                                          margin-left: 2vw;
-                                                                          margin-top: 1vw;
                                                                           font-size: 3vw;
                                                                           z-index: 50;
                                                                         }
@@ -1651,10 +1948,11 @@ body {
                                                                         transform: scale(2);
                                                                         border: none;
                                                                         outline:none;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
                                                                   
                                                                         i {
-                                                                          margin-left: 2vw;
-                                                                          margin-top: 1vw;
                                                                           font-size: 3vw;
                                                                           z-index: 50;
                                                                         }
@@ -1806,6 +2104,7 @@ body {
     padding-left: 14.9vw;
     margin-top: 8vw;
     padding-bottom: 5vw;
+    margin-bottom: 3vw;
     height: 58vw;
     overflow: hidden;
 
@@ -1978,10 +2277,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           i {
-            margin-left: 1.8vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
           }
@@ -2000,10 +2300,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           i {
-            margin-left: 2.2vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
           }
@@ -2152,10 +2453,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           i {
-            margin-left: 1.8vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
           }
@@ -2174,10 +2476,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           i {
-            margin-left: 2.2vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
           }
@@ -2326,10 +2629,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
     
           i {
-            margin-left: 1.8vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
           }
@@ -2348,10 +2652,11 @@ body {
           color: $black;
           border: none;
           outline:none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           i {
-            margin-left: 2.2vw;
-            margin-top: 1vw;
             font-size: 3vw;
             z-index: 50;
             border: none;
@@ -2370,6 +2675,7 @@ body {
                                                         padding-left: 0vw;
                                                         margin-top: 8vw;
                                                         padding-bottom: 15vw;
+                                                        margin-bottom: 11vw;
                                                         height: 110vw;
                                                         overflow: hidden;
                                                     
@@ -2547,10 +2853,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 1.8vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -2570,10 +2877,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 2.2vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -2724,10 +3032,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 1.8vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -2747,10 +3056,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 2.2vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -2901,10 +3211,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 1.8vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -2924,10 +3235,11 @@ body {
                                                               transform: scale(2);
                                                               border: none;
                                                               outline:none;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
                                                         
                                                               i {
-                                                                margin-left: 2.2vw;
-                                                                margin-top: 1vw;
                                                                 font-size: 3vw;
                                                                 z-index: 50;
                                                               }
@@ -3197,6 +3509,7 @@ body {
 
 // ####################################################################################
 .gallery {
+  position: relative;
   padding-top: 6.56vw;
   padding-bottom: 12vw;
   background-color: #f8f8f8;
@@ -3272,7 +3585,8 @@ body {
           height: 3.54vw;
           width: 0;
           border-radius: 2.08vw 0 0 2.08vw;
-          transition: width 700ms;
+          // transition: width 700ms;
+          transition: border-radius 700ms;
           border: none;
           outline:none;
         
@@ -3297,6 +3611,7 @@ body {
           height: 3.54vw;
           width: 3.54vw;
           border-radius: 2.08vw 0 0 2.08vw;
+          
         
           a {
               color: #fff;
@@ -3312,7 +3627,7 @@ body {
           height: 3.54vw;
           width: 0;
           border-radius: 0 2.08vw 2.08vw 0;
-          transition: width 700ms;
+          // transition: width 700ms;
           border: none;
           outline:none;
         
@@ -3346,8 +3661,9 @@ body {
 
                                                     @media only screen and (max-width:768px) {
                                                       .gallery {
+                                                        position: relative;
                                                         padding-top: 12vw;
-                                                        padding-bottom: 14vw;
+                                                        padding-bottom: 24vw;
                                                         background-color: #f8f8f8;
                                                         color: $black;
                                                         font-family: Titillium Web, sans-serif;
@@ -3411,24 +3727,26 @@ body {
                                                             }
                                                       
                                                             .fillet-box {
+                                                              display: flex;
+                                                              justify-content: center;
                                                               width: 7.08vw;
                                                               height: 3.54vw;
                                                               z-index: 10;
                                                               margin: auto;
                                                               background-color: #fff;
                                                               margin-top: -1.77vw;
-                                                              margin-left: 34.96vw;
+                                                              margin-left: 39.46vw;
                                                               border-radius: 2.08vw;
                                                               box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                                               position: absolute;
-                                                              transform: scale(1.8);
+                                                              transform: scale(2);
                                                       
                                                               .left-box {
-                                                                background: #000;
+                                                                background: #fff;
                                                                 height: 3.54vw;
-                                                                width: 0;
+                                                                width: 3.54vw;
                                                                 border-radius: 2.08vw 0 0 2.08vw;
-                                                                transition: width 700ms;
+                                                                // transition: width 700ms;
                                                                 border: none;
                                                                 outline:none;
                                                                                                                               
@@ -3450,10 +3768,9 @@ body {
                                                               }
                                                               
                                                               .left-box:hover{
-                                                                height: 3.54vw;
-                                                                width: 3.54vw;
+                                                                background-color: #000;
                                                                 border-radius: 2.08vw 0 0 2.08vw;
-                                                                border: none;
+                                                                
                                                               
                                                                 a {
                                                                     color: #fff;
@@ -3463,13 +3780,13 @@ body {
                                                       
                                                       
                                                               .right-box {
-                                                                margin-top: -3.54vw;
-                                                                margin-left: 3.54vw;
-                                                                background: #000;
+                                                                margin-top: 0vw;
+                                                                margin-left: 0vw;
+                                                                background: #fff;
                                                                 height: 3.54vw;
-                                                                width: 0;
+                                                                width: 3.54vw;
                                                                 border-radius: 0 2.08vw 2.08vw 0;
-                                                                transition: width 700ms;
+                                                                // transition: width 700ms;
                                                                 border: none;
                                                                 outline:none;
                                                               
@@ -3489,8 +3806,7 @@ body {
                                                               }
                                                               
                                                               .right-box:hover{
-                                                                height: 3.54vw;
-                                                                width: 3.54vw;
+                                                                background-color: #000;
                                                               
                                                                 a {
                                                                     color: #fff;
@@ -3505,6 +3821,7 @@ body {
 
 // ##########################################ies##########################################
 .amenities {
+  position: relative;
   // margin-top: 10.3vw;
   padding-bottom: 18vw;
   height: 65vw;
@@ -3531,19 +3848,16 @@ body {
 
       #g2_c {
         display: flex;
-        width: 100%;
-        height: 100%;
         align-items: center;
-        font-family: Arial;
       
         .carousel_list2 {
           display: flex;
           list-style: none;
           position: relative;
           width: 100%;
-          height: 300px;
+          height: 15.625vw;
           justify-content: center;
-          perspective: 300px;
+          perspective: 15.625vw;
         }
         
         .carousel_item2 {
@@ -3552,9 +3866,9 @@ body {
           justify-content: center;
           color: #fff;
           font-size: 0px;
-          width: 150px;
-          height: 250px;
-          border-radius: 12px;
+          width: 25.8vw;
+          height: 33.8vw;
+          border-radius: 1vw;
           box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
           position: absolute;
           transition: all .3s ease-in;
@@ -3665,15 +3979,16 @@ body {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 17vw;
+        margin-top: 18vw;
         margin-left: 26vw;
         color: $black;
         border: none;
         outline:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
   
         i {
-          margin-left: 2vw;
-          margin-top: 1vw;
           font-size: 3vw;
           z-index: 50;
         }
@@ -3705,8 +4020,9 @@ body {
                                                                   .amenities {
                                                                     position: relative;
                                                                     // margin-top: 10.3vw;
-                                                                    padding-top: 10vw;
+                                                                    padding-top: 14vw;
                                                                     padding-bottom: 18vw;
+                                                                    margin-bottom: 10vw;
                                                                     height: 170vw;
                                                                     font-family: Titillium Web, sans-serif;
                                                                     background-color: $white-two;
@@ -3718,7 +4034,6 @@ body {
                                                                       font-size: 6.76vw;
                                                                       font-weight: $fontBold;
                                                                       padding-left: 0;
-                                                                      margin-top: 0;
                                                                       padding-top: 0;
                                                                     }
                                                                   
@@ -3730,24 +4045,21 @@ body {
                                                                         display: block;
                                                                         // justify-content: space-between;
                                                                         align-items: center;
-                                                                        margin-top: 10vw;
-                                                                        margin-left: -27vw;
+                                                                        margin-top: 16vw;
+                                                                        margin-left: 33vw;
                                                                   
                                                                         #g2_c {
                                                                           display: flex;
-                                                                          width: 100%;
-                                                                          height: 100%;
                                                                           align-items: center;
-                                                                          font-family: Arial;
-                                                                        
+
                                                                           .carousel_list2 {
                                                                             display: flex;
                                                                             list-style: none;
                                                                             position: relative;
                                                                             width: 100%;
-                                                                            height: 300px;
+                                                                            height: 15.625vw;
                                                                             justify-content: center;
-                                                                            perspective: 300px;
+                                                                            perspective: 15.625vw;
                                                                           }
                                                                           
                                                                           .carousel_item2 {
@@ -3756,9 +4068,9 @@ body {
                                                                             justify-content: center;
                                                                             color: #fff;
                                                                             font-size: 0px;
-                                                                            width: 150px;
-                                                                            height: 250px;
-                                                                            border-radius: 12px;
+                                                                            width: 86vw;
+                                                                            height: 68.12vw;
+                                                                            border-radius: 3vw;
                                                                             box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
                                                                             position: absolute;
                                                                             transition: all .3s ease-in;
@@ -3861,23 +4173,24 @@ body {
                                                                         }
                                                                   
                                                                         .ellipse3 {
-                                                                          position: relative;
+                                                                          position: absolute;
                                                                           width: 5vw;
                                                                           height: 5vw;
                                                                           border-radius: 50%;
                                                                           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                                                           background-color: $white-two;
                                                                           z-index: 10;
-                                                                          margin-top: -41vw;
-                                                                          margin-left: 115vw;
+                                                                          margin-top: 15.5vw;
+                                                                          margin-left: 55vw;
                                                                           color: $black;
                                                                           transform: scale(2);
                                                                           border: none;
                                                                           outline:none;
+                                                                          display: flex;
+                                                                          justify-content: center;
+                                                                          align-items: center;
 
                                                                           i {
-                                                                            margin-left: 2vw;
-                                                                            margin-top: 1vw;
                                                                             font-size: 3vw;
                                                                             z-index: 50;
                                                                           }
@@ -3887,8 +4200,9 @@ body {
                                                                           position: absolute;
                                                                           width: 82vw;
                                                                           // margin-right: 34vw;
-                                                                          margin-left: 34vw;
-                                                                          margin-top: 40vw;
+                                                                          margin-left: -26vw;
+                                                                          margin-top: 58vw;
+                                                                          margin-bottom: 20vw;
                                                                     
                                                                           .carousel-title {
                                                                             font-size: 5.31vw;
