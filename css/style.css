@@ -1107,7 +1107,7 @@ body {
   }
   .menu-pages .brochure .dropbtn:hover {
     color: #e8e3db;
-    font-size: 1vw;
+    font-size: 3vw;
   }
   .dropdown {
     position: fixed;
