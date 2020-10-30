@@ -5,10 +5,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     document.getElementById("navbar").style.marginTop = "-4.84vw";
     document.getElementById("navbar2").style.marginTop = "-4.84vw";
-    document.getElementById("dropdown-content").style.marginTop = "4vw";
+    document.getElementById("dropdown-content").style.marginTop = "4.84vw";
     document.getElementById("navbarM").style.marginTop = "-18vw";
     document.getElementById("navbar2M").style.marginTop = "-18vw";
-    document.getElementById("dropdown-contentM").style.marginTop = "4vw";
+    document.getElementById("dropdown-contentM").style.marginTop = "18vw";
+    document.getElementById("getInTouchId").style.marginTop = "26vw";
   }
    else {
     document.getElementById("navbar").style.marginTop = "0";
@@ -17,6 +18,7 @@ function scrollFunction() {
     document.getElementById("navbarM").style.marginTop = "0";
     document.getElementById("navbar2M").style.marginTop = "18vw";
     document.getElementById("dropdown-contentM").style.marginTop = "0vw";
+    document.getElementById("getInTouchId").style.marginTop = "10vw";
   }
 }
 
