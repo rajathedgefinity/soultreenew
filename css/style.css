@@ -1203,7 +1203,7 @@ body {
 }
 
 .landing-container .overlay-content .git-container p {
-  font-size: 3.125vw;
+  font-size: 2.1vw;
   font-weight: 600;
 }
 
@@ -1866,7 +1866,7 @@ body {
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   z-index: 10;
-  margin-top: 17vw;
+  margin-top: 18vw;
   margin-left: 45.3vw;
   color: #000000;
   border: none;
@@ -3984,6 +3984,7 @@ body {
   width: 77vw;
   margin: auto;
   margin-bottom: 4.79vw;
+  padding-bottom: .1vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
