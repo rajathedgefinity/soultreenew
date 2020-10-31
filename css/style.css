@@ -219,8 +219,8 @@ body {
   width: 2.8vw;
   height: 2.8vw;
   background: #000000;
-  -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 }
 
 .box .btn11 {
@@ -950,20 +950,22 @@ body {
   width: 12vw;
   color: #000000;
   margin-left: 13vw;
-}
-
-.menu-pages .brochure .call i {
-  font-family: Titillium Web, sans-serif;
-  font-size: 1.04vw;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-pages .brochure .call i {
   margin-top: .15vw;
   margin-left: 2.5vw;
+}
+
+.menu-pages .brochure .call p {
+  font-size: 1.04vw;
+  font-weight: 600;
 }
 
 .menu-pages .brochure .dropbtn {
@@ -1072,19 +1074,21 @@ body {
     width: 36vw;
     color: #000000;
     margin-left: 1vw;
-  }
-  .menu-pages .brochure .call i {
-    font-family: Titillium Web, sans-serif;
-    font-weight: 600;
-    font-size: 3vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu-pages .brochure .call i {
     margin-top: .2vw;
     margin-left: 8vw;
+    font-size: 3vw;
+  }
+  .menu-pages .brochure .call p {
+    font-size: 3vw;
+    font-weight: 600;
   }
   .menu-pages .brochure .dropbtn {
     display: -webkit-box;
@@ -1275,8 +1279,8 @@ body {
   width: 12.4vw;
   background-color: #000000;
   border-radius: 0.26vw;
-  -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 }
 
 .landing-container .overlay-content .git-container form .buttn .black-button {
@@ -5247,6 +5251,7 @@ body {
   border-radius: 0.26vw;
   -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 }
 
 .specBrand .btnFlex .buttn .black-button {
@@ -5557,8 +5562,8 @@ body {
   width: 12.4vw;
   background-color: #000000;
   border-radius: 0.26vw;
-  -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 }
 
 .otherProjects .otherProjects-Content .baseline-bttn .buttn .black-button {
@@ -5652,8 +5657,8 @@ body {
   width: 12.4vw;
   background-color: #000000;
   border-radius: 0.26vw;
-  -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
   margin-left: 57.6vw;
 }
 
@@ -5821,8 +5826,8 @@ body {
   height: 3.54vw;
   width: 14.9vw;
   border-radius: .2vw;
-  -webkit-transition: width 500ms;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 }
 
 .bttn button {
@@ -5884,8 +5889,8 @@ body {
     height: 3.54vw;
     width: 14.9vw;
     border-radius: .2vw;
-    -webkit-transition: width 500ms;
     transition: width 500ms;
+    -webkit-transition: width 500ms;
   }
   .bttn button {
     height: 3.54vw;

@@ -252,6 +252,7 @@ body {
   height: 2.8vw;
   background: $black;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 
   .btn11 {
     position: absolute;
@@ -724,15 +725,17 @@ body {
       width: 12vw;
       color: $black;
       margin-left: 13vw;
+      display: flex;
+      align-items: center;
 
       i {
-        font-family: Titillium Web, sans-serif;
-        font-size: 1.04vw;
-        font-weight: $fontBold;
-        display: flex;
-        align-items: center;
         margin-top: .15vw;
         margin-left: 2.5vw;
+      }
+
+      p {
+        font-size: 1.04vw;
+        font-weight: $fontBold;
       }
     }
 
@@ -823,21 +826,23 @@ body {
                                                               align-items: center;
                                                               z-index: 100;
                                                               margin-left: 0vw;
-                                                          
+
                                                               .call {
                                                                 width: 36vw;
-                                                                // font-size: 3vw;
                                                                 color: $black;
                                                                 margin-left: 1vw;
+                                                                display: flex;
+                                                                align-items: center;
                                                           
                                                                 i {
-                                                                  font-family: Titillium Web, sans-serif;
-                                                                  font-weight: $fontBold;
-                                                                  font-size: 3vw;
-                                                                  display: flex;
-                                                                  align-items: center;
                                                                   margin-top: .2vw;
                                                                   margin-left: 8vw;
+                                                                  font-size: 3vw;
+                                                                }
+                                                          
+                                                                p {
+                                                                  font-size: 3vw;
+                                                                  font-weight: $fontBold;
                                                                 }
                                                               }
                                                           
@@ -1013,6 +1018,7 @@ body {
           background-color: $black;
           border-radius: 0.26vw;
           transition: width 500ms;
+          -webkit-transition: width 500ms;
           // margin-left: 57.6vw;
           
           .black-button {
@@ -4898,6 +4904,7 @@ body {
       border-radius: 0.26vw;
       -webkit-transition: width 500ms;
       transition: width 500ms;
+      -webkit-transition: width 500ms;
       
       .black-button {
           border: none;
@@ -5212,6 +5219,7 @@ body {
         background-color: $black;
         border-radius: 0.26vw;
         transition: width 500ms;
+        -webkit-transition: width 500ms;
         
         .black-button {
             border: none;
@@ -5299,6 +5307,7 @@ body {
     background-color: $black;
     border-radius: 0.26vw;
     transition: width 500ms;
+    -webkit-transition: width 500ms;
     margin-left: 57.6vw;
     
     .black-button {
@@ -5461,6 +5470,7 @@ body {
   width: 14.9vw;
   border-radius: .2vw;
   transition: width 500ms;
+  -webkit-transition: width 500ms;
 
   button {
       height: 3.54vw;
@@ -5525,6 +5535,7 @@ body {
                                                     width: 14.9vw;
                                                     border-radius: .2vw;
                                                     transition: width 500ms;
+                                                    -webkit-transition: width 500ms;
                                                   
                                                     button {
                                                         height: 3.54vw;
