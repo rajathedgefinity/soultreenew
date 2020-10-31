@@ -722,14 +722,14 @@ body {
     margin-left: 10vw;
 
     .call {
-      width: 12vw;
-      margin-left: 13vw;
+      width: 1vw;
+      margin-left: 3vw;
       // display: flex;
       // align-items: center;
 
       i {
         margin-top: .15vw;
-        margin-left: 2.5vw;
+        margin-left: 11.4vw;
         color: $black;
       }
 
@@ -829,14 +829,15 @@ body {
                                                               margin-left: 0vw;
 
                                                               .call {
-                                                                width: 36vw;
+                                                                width: 0vw;
                                                                 margin-left: 1vw;
+                                                                background: red;
                                                                 // display: flex;
                                                                 // align-items: center;
                                                           
                                                                 i {
                                                                   margin-top: .2vw;
-                                                                  margin-left: 8vw;
+                                                                  margin-left: 7.5vw;
                                                                   font-size: 3vw;
                                                                   color: $black;
                                                                 }
