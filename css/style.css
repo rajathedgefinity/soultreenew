@@ -589,7 +589,7 @@ body {
   .box .btn11 {
     position: absolute;
     width: 8vw;
-    height: 5vw;
+    height: 2vw;
     margin-left: 1vw;
     margin-top: 1.5vw;
     cursor: pointer;
@@ -612,10 +612,10 @@ body {
     -webkit-transition: none;
     transition: none;
     position: relative;
-    margin-top: 1.2vw;
+    margin-top: 1vw;
   }
   .box .btn11 span + span {
-    margin-top: 2.1vw;
+    margin-top: 2.35vw;
   }
   .box:hover {
     width: 10vw;
@@ -950,12 +950,6 @@ body {
   width: 12vw;
   color: #000000;
   margin-left: 13vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu-pages .brochure .call i {
@@ -966,6 +960,7 @@ body {
 .menu-pages .brochure .call p {
   font-size: 1.04vw;
   font-weight: 600;
+  color: #000000;
 }
 
 .menu-pages .brochure .dropbtn {
@@ -1074,12 +1069,6 @@ body {
     width: 36vw;
     color: #000000;
     margin-left: 1vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .menu-pages .brochure .call i {
     margin-top: .2vw;
@@ -2702,7 +2691,6 @@ body {
   padding-left: 14.9vw;
   margin-top: 8vw;
   padding-bottom: 5vw;
-  margin-bottom: 3vw;
   height: 58vw;
   overflow: hidden;
 }
@@ -2745,21 +2733,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4.3vw;
+  padding-bottom: 10vw;
   /* For IE10 */
 }
 
 .floor-plans .planView .selection {
   display: block;
-  margin-right: 4.22vw;
-  margin-top: 6vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
 }
 
 .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
-  margin-bottom: 2.03vw;
+  margin-bottom: 3vw;
 }
 
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
+.floor-plans .planView .type-selection p, .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
   font-size: 1.04vw;
+  margin-bottom: .1vw;
   font-weight: 600;
 }
 
@@ -2950,16 +2940,17 @@ body {
 
 .floor-plans .planView .selection {
   display: block;
-  margin-right: 4.22vw;
-  margin-top: 6vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
 }
 
 .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
-  margin-bottom: 2.03vw;
+  margin-bottom: 3vw;
 }
 
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
+.floor-plans .planView .type-selection p, .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
   font-size: 1.04vw;
+  margin-bottom: .1vw;
   font-weight: 600;
 }
 
@@ -3150,16 +3141,17 @@ body {
 
 .floor-plans .planView .selection {
   display: block;
-  margin-right: 4.22vw;
-  margin-top: 6vw;
+  margin-right: 2vw;
+  margin-top: 2vw;
 }
 
 .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
-  margin-bottom: 2.03vw;
+  margin-bottom: 3vw;
 }
 
-.floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
+.floor-plans .planView .type-selection p, .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
   font-size: 1.04vw;
+  margin-bottom: .1vw;
   font-weight: 600;
 }
 
@@ -3398,8 +3390,9 @@ body {
   .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
     margin-bottom: 6.03vw;
   }
-  .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks p {
+  .floor-plans .planView .type-selection p, .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
     font-size: 3.38vw;
+    margin-bottom: 1.2vw;
     font-weight: 600;
   }
   .floor-plans .planView .click-btn {
@@ -3462,6 +3455,13 @@ body {
     line-height: 45px;
     pointer-events: none;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: .5vw;
   }
   .floor-plans .planView select option {
     width: 70%;
@@ -3646,6 +3646,13 @@ body {
     line-height: 45px;
     pointer-events: none;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: .5vw;
   }
   .floor-plans .planView select option {
     width: 70%;
@@ -3829,6 +3836,13 @@ body {
     line-height: 45px;
     pointer-events: none;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: .5vw;
   }
   .floor-plans .planView select option {
     width: 70%;
@@ -4549,10 +4563,12 @@ body {
   padding-bottom: 18vw;
   height: 65vw;
   font-family: Titillium Web, sans-serif;
-  z-index: 200;
+  z-index: 100;
+  background-color: #ffffff;
 }
 
 .amenities .amenities-title {
+  position: relative;
   padding-top: 10vw;
   font-size: 3.125vw;
   font-weight: 600;

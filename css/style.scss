@@ -485,7 +485,7 @@ body {
                               .btn11 {
                                 position: absolute;
                                 width: 8vw;
-                                height: 5vw;
+                                height: 2vw;
                                 margin-left: 1vw;
                                 margin-top: 1.5vw;
                                 cursor: pointer;
@@ -502,11 +502,11 @@ body {
                                   background: $cream;
                                   transition: none;
                                   position: relative;
-                                  margin-top: 1.2vw;
+                                  margin-top: 1vw;
                                 }
                                 
                                 span + span {
-                                  margin-top: 2.1vw;
+                                  margin-top: 2.35vw;
                                 }
                               }
                             }
@@ -725,8 +725,8 @@ body {
       width: 12vw;
       color: $black;
       margin-left: 13vw;
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
 
       i {
         margin-top: .15vw;
@@ -736,6 +736,7 @@ body {
       p {
         font-size: 1.04vw;
         font-weight: $fontBold;
+        color: $black;
       }
     }
 
@@ -831,8 +832,8 @@ body {
                                                                 width: 36vw;
                                                                 color: $black;
                                                                 margin-left: 1vw;
-                                                                display: flex;
-                                                                align-items: center;
+                                                                // display: flex;
+                                                                // align-items: center;
                                                           
                                                                 i {
                                                                   margin-top: .2vw;
@@ -2555,7 +2556,7 @@ body {
     padding-left: 14.9vw;
     margin-top: 8vw;
     padding-bottom: 5vw;
-    margin-bottom: 3vw;
+    // margin-bottom: 3vw;
     height: 58vw;
     overflow: hidden;
 
@@ -2591,19 +2592,21 @@ body {
       margin-left: 2.03vw;
       display: flex;
       margin-top: 4.3vw;
+      padding-bottom: 10vw;
 
       .selection {
         display: block;
-        margin-right: 4.22vw;
-        margin-top: 6vw;
+        margin-right: 2vw;
+        margin-top: 2vw;
       }
     
       .type-selection, .facing, .building-blocks {
-          margin-bottom: 2.03vw;
+          margin-bottom: 3vw;
       }
       
-      .type-selection, .facing, .building-blocks p {
+      .type-selection p, .facing p, .building-blocks p {
           font-size: $p;
+          margin-bottom: .1vw;
           font-weight: $fontBold;
       }
       
@@ -2770,16 +2773,17 @@ body {
 
       .selection {
         display: block;
-        margin-right: 4.22vw;
-        margin-top: 6vw;
+        margin-right: 2vw;
+        margin-top: 2vw;
       }
     
       .type-selection, .facing, .building-blocks {
-          margin-bottom: 2.03vw;
+          margin-bottom: 3vw;
       }
       
-      .type-selection, .facing, .building-blocks p {
+      .type-selection p, .facing p, .building-blocks p {
           font-size: $p;
+          margin-bottom: .1vw;
           font-weight: $fontBold;
       }
       
@@ -2946,16 +2950,17 @@ body {
 
       .selection {
         display: block;
-        margin-right: 4.22vw;
-        margin-top: 6vw;
+        margin-right: 2vw;
+        margin-top: 2vw;
       }
     
       .type-selection, .facing, .building-blocks {
-          margin-bottom: 2.03vw;
+          margin-bottom: 3vw;
       }
       
-      .type-selection, .facing, .building-blocks p {
+      .type-selection p, .facing p, .building-blocks p {
           font-size: $p;
+          margin-bottom: .1vw;
           font-weight: $fontBold;
       }
       
@@ -3176,8 +3181,9 @@ body {
                                                               margin-bottom: 6.03vw;
                                                           }
                                                           
-                                                          .type-selection, .facing, .building-blocks p {
+                                                          .type-selection p, .facing p, .building-blocks p {
                                                               font-size: 3.38vw;
+                                                              margin-bottom: 1.2vw;
                                                               font-weight: $fontBold;
                                                           }
                                                           
@@ -3248,6 +3254,9 @@ body {
                                                               line-height: 45px;
                                                               pointer-events: none;
                                                               color: black;
+                                                              display: flex;
+                                                              align-items: center;
+                                                              margin-top: .5vw;
                                                             }
                                                             
                                                             select option {
@@ -3428,6 +3437,9 @@ body {
                                                               line-height: 45px;
                                                               pointer-events: none;
                                                               color: black;
+                                                              display: flex;
+                                                              align-items: center;
+                                                              margin-top: .5vw;
                                                             }
                                                             
                                                             select option {
@@ -3607,6 +3619,9 @@ body {
                                                               line-height: 45px;
                                                               pointer-events: none;
                                                               color: black;
+                                                              display: flex;
+                                                              align-items: center;
+                                                              margin-top: .5vw;
                                                             }
                                                             
                                                             select option {
@@ -4278,9 +4293,11 @@ body {
   padding-bottom: 18vw;
   height: 65vw;
   font-family: Titillium Web, sans-serif;
-  z-index: 200;
+  z-index: 100;
+  background-color: $white-two;
 
   .amenities-title{
+    position: relative;
     padding-top: 10vw;
     font-size: 3.125vw;
     font-weight: $fontBold;
