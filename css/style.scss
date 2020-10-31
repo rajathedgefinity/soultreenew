@@ -722,12 +722,13 @@ body {
 
     .call {
       width: 12vw;
-      font-size: 1.04vw;
-      font-weight: $fontBold;
       color: $black;
       margin-left: 13vw;
 
       i {
+        font-family: Titillium Web, sans-serif;
+        font-size: 1.04vw;
+        font-weight: $fontBold;
         display: flex;
         align-items: center;
         margin-top: .15vw;
@@ -825,12 +826,14 @@ body {
                                                           
                                                               .call {
                                                                 width: 36vw;
-                                                                font-size: 3vw;
-                                                                font-weight: $fontBold;
+                                                                // font-size: 3vw;
                                                                 color: $black;
                                                                 margin-left: 1vw;
                                                           
                                                                 i {
+                                                                  font-family: Titillium Web, sans-serif;
+                                                                  font-weight: $fontBold;
+                                                                  font-size: 3vw;
                                                                   display: flex;
                                                                   align-items: center;
                                                                   margin-top: .2vw;
