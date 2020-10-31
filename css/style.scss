@@ -723,7 +723,6 @@ body {
 
     .call {
       width: 12vw;
-      color: $black;
       margin-left: 13vw;
       // display: flex;
       // align-items: center;
@@ -731,6 +730,7 @@ body {
       i {
         margin-top: .15vw;
         margin-left: 2.5vw;
+        color: $black;
       }
 
       p {
@@ -830,7 +830,6 @@ body {
 
                                                               .call {
                                                                 width: 36vw;
-                                                                color: $black;
                                                                 margin-left: 1vw;
                                                                 // display: flex;
                                                                 // align-items: center;
@@ -839,11 +838,13 @@ body {
                                                                   margin-top: .2vw;
                                                                   margin-left: 8vw;
                                                                   font-size: 3vw;
+                                                                  color: $black;
                                                                 }
                                                           
                                                                 p {
                                                                   font-size: 3vw;
                                                                   font-weight: $fontBold;
+                                                                  color: $black;
                                                                 }
                                                               }
                                                           

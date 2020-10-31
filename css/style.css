@@ -948,13 +948,13 @@ body {
 
 .menu-pages .brochure .call {
   width: 12vw;
-  color: #000000;
   margin-left: 13vw;
 }
 
 .menu-pages .brochure .call i {
   margin-top: .15vw;
   margin-left: 2.5vw;
+  color: #000000;
 }
 
 .menu-pages .brochure .call p {
@@ -1067,17 +1067,18 @@ body {
   }
   .menu-pages .brochure .call {
     width: 36vw;
-    color: #000000;
     margin-left: 1vw;
   }
   .menu-pages .brochure .call i {
     margin-top: .2vw;
     margin-left: 8vw;
     font-size: 3vw;
+    color: #000000;
   }
   .menu-pages .brochure .call p {
     font-size: 3vw;
     font-weight: 600;
+    color: #000000;
   }
   .menu-pages .brochure .dropbtn {
     display: -webkit-box;
