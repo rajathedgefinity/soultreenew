@@ -1473,7 +1473,7 @@ body {
   color: #000000;
 }
 
-@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   /*
       Define here the CSS styles applied only to Safari browsers
       (any version and any device)
@@ -1672,7 +1672,7 @@ body {
     position: absolute;
     width: 27.24vw;
     margin-left: 34vw;
-    margin-top: 18vw;
+    margin-top: 10vw;
   }
   .carousel-1 .carousel-flex .carousel-descrip_t .carousel-title {
     font-size: 2.34vw;

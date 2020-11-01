@@ -1437,7 +1437,7 @@ body {
   //   }
   // }
 
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+  @media screen and (-webkit-min-device-pixel-ratio:0)
 {
     /*
       Define here the CSS styles applied only to Safari browsers
@@ -1628,7 +1628,7 @@ body {
           width: 27.24vw;
           // margin-right: 34vw;
           margin-left: 34vw;
-          margin-top: 18vw;
+          margin-top: 10vw;
     
           .carousel-title {
             font-size: 2.34vw;

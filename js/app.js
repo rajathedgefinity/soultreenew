@@ -393,128 +393,128 @@ document.getElementById(blocks).className = "planView tabcontent";
 
 
 // Explore Soultree Starts ################################################
-function fn22(id) 
-{
+// function fn22(id) 
+// {
    
-    var id_1 = "car"+id;
+//     var id_1 = "car"+id;
   
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("carousel-descrip_t1");
+//     var i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("carousel-descrip_t1");
    
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+//     for (i = 0; i < tabcontent.length; i++) {
+//         tabcontent[i].style.display = "none";
+//     }
    
-    document.getElementById(id_1).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+//     document.getElementById(id_1).style.display = "block";
+//     evt.currentTarget.className += " active";
+// }
 
 
 
-const state1 = {};
-const carouselList1 = document.querySelector('.carousel_list');
-const carouselItems1 = document.querySelectorAll('.carousel_item1');
-const elems1 = Array.from(carouselItems1);
+// const state1 = {};
+// const carouselList1 = document.querySelector('.carousel_list');
+// const carouselItems1 = document.querySelectorAll('.carousel_item1');
+// const elems1 = Array.from(carouselItems1);
 
-carouselList1.addEventListener('click', function (event) {
-var newActive1 = event.target;
-var isItem1 = newActive1.closest('.carousel_item1');
+// carouselList1.addEventListener('click', function (event) {
+// var newActive1 = event.target;
+// var isItem1 = newActive1.closest('.carousel_item1');
 
-if (!isItem1 || newActive1.classList.contains('carousel_item1_active1')) {
-return;
-};
+// if (!isItem1 || newActive1.classList.contains('carousel_item1_active1')) {
+// return;
+// };
 
-update1(newActive1);
-});
+// update1(newActive1);
+// });
 
-const update1 = function(newActive1) {
-const newActivePos1 = newActive1.dataset.pos;
+// const update1 = function(newActive1) {
+// const newActivePos1 = newActive1.dataset.pos;
 
-const current1 = elems1.find((elem) => elem.dataset.pos == -2);
-const prev1 = elems1.find((elem) => elem.dataset.pos == -1);
-const next1 = elems1.find((elem) => elem.dataset.pos == 0);
-const first1 = elems1.find((elem) => elem.dataset.pos == 1);
-const last1 = elems1.find((elem) => elem.dataset.pos == 2);
+// const current1 = elems1.find((elem) => elem.dataset.pos == -2);
+// const prev1 = elems1.find((elem) => elem.dataset.pos == -1);
+// const next1 = elems1.find((elem) => elem.dataset.pos == 0);
+// const first1 = elems1.find((elem) => elem.dataset.pos == 1);
+// const last1 = elems1.find((elem) => elem.dataset.pos == 2);
 
-current1.classList.remove('carousel_item1_active1');
+// current1.classList.remove('carousel_item1_active1');
 
-[current1, prev1, next1, first1, last1].forEach(item => {
-var itemPos1 = item.dataset.pos;
+// [current1, prev1, next1, first1, last1].forEach(item => {
+// var itemPos1 = item.dataset.pos;
 
-item.dataset.pos = getPos1(itemPos1, newActivePos1)
-});
-};
+// item.dataset.pos = getPos1(itemPos1, newActivePos1)
+// });
+// };
 
-const getPos1 = function (current1, active1) {
-const diff1 = current1 - active1;
+// const getPos1 = function (current1, active1) {
+// const diff1 = current1 - active1;
 
-if (Math.abs(current1 - active1) > 2) {
-return -current1
-}
+// if (Math.abs(current1 - active1) > 2) {
+// return -current1
+// }
 
-return diff1;
-}
+// return diff1;
+// }
 // Explore Soultree Ends
 
 // Amenities Carousel Starts #############################################################
-function fn_33(id) 
-        {
+// function fn_33(id) 
+//         {
            
-            var id_1 = "car"+id;
+//             var id_1 = "car"+id;
           
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("carousel-descrip_tb");
+//             var i, tabcontent, tablinks;
+//             tabcontent = document.getElementsByClassName("carousel-descrip_tb");
           
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
+//             for (i = 0; i < tabcontent.length; i++) {
+//                 tabcontent[i].style.display = "none";
+//             }
            
-            document.getElementById(id_1).style.display = "block";
+//             document.getElementById(id_1).style.display = "block";
             
-        }
+//         }
 
 
-const state2 = {};
-const carouselList2 = document.querySelector('.carousel_list2');
-const carouselItems2 = document.querySelectorAll('.carousel_item2');
-const elems2 = Array.from(carouselItems2);
+// const state2 = {};
+// const carouselList2 = document.querySelector('.carousel_list2');
+// const carouselItems2 = document.querySelectorAll('.carousel_item2');
+// const elems2 = Array.from(carouselItems2);
 
-carouselList2.addEventListener('click', function (event) {
-  var newActive2 = event.target;
-  var isItem2 = newActive2.closest('.carousel_item2');
+// carouselList2.addEventListener('click', function (event) {
+//   var newActive2 = event.target;
+//   var isItem2 = newActive2.closest('.carousel_item2');
 
-  if (!isItem2 || newActive2.classList.contains('.carousel_item2_active2')) {
-    return;
-  };
+//   if (!isItem2 || newActive2.classList.contains('.carousel_item2_active2')) {
+//     return;
+//   };
   
-  update2(newActive2);
-});
+//   update2(newActive2);
+// });
 
-const update2 = function(newActive2) {
-  const newActivePos2 = newActive2.dataset.pos;
+// const update2 = function(newActive2) {
+//   const newActivePos2 = newActive2.dataset.pos;
 
-  const current2 = elems2.find((elem) => elem.dataset.pos == -2);
-  const prev2 = elems2.find((elem) => elem.dataset.pos == -1);
-  const next2 = elems2.find((elem) => elem.dataset.pos == 0);
-  const first2 = elems2.find((elem) => elem.dataset.pos == 1);
-  const last2 = elems2.find((elem) => elem.dataset.pos == 2);
+//   const current2 = elems2.find((elem) => elem.dataset.pos == -2);
+//   const prev2 = elems2.find((elem) => elem.dataset.pos == -1);
+//   const next2 = elems2.find((elem) => elem.dataset.pos == 0);
+//   const first2 = elems2.find((elem) => elem.dataset.pos == 1);
+//   const last2 = elems2.find((elem) => elem.dataset.pos == 2);
   
-  current2.classList.remove('.carousel_item2_active2');
+//   current2.classList.remove('.carousel_item2_active2');
   
-  [current2, prev2, next2, first2, last2].forEach(item => {
-    var itemPos2 = item.dataset.pos;
+//   [current2, prev2, next2, first2, last2].forEach(item => {
+//     var itemPos2 = item.dataset.pos;
 
-    item.dataset.pos = getPos2(itemPos2, newActivePos2)
-  });
-};
+//     item.dataset.pos = getPos2(itemPos2, newActivePos2)
+//   });
+// };
 
-const getPos2 = function (current2, active2) {
-  const diff2 = current2 - active2;
+// const getPos2 = function (current2, active2) {
+//   const diff2 = current2 - active2;
 
-  if (Math.abs(current2 - active2) > 2) {
-    return -current2
-  }
+//   if (Math.abs(current2 - active2) > 2) {
+//     return -current2
+//   }
 
-  return diff2;
-}
+//   return diff2;
+// }
 // Amenities Carousel Ends
