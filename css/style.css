@@ -1068,7 +1068,6 @@ body {
   .menu-pages .brochure .call {
     width: 0vw;
     margin-left: 1vw;
-    background: red;
   }
   .menu-pages .brochure .call i {
     margin-top: .2vw;
@@ -1147,6 +1146,7 @@ body {
 .landing-container {
   height: 40vw;
   font-family: Titillium Web, sans-serif;
+  background: red;
 }
 
 .landing-container .overlay-content {
@@ -1941,6 +1941,7 @@ body {
     font-family: Titillium Web, sans-serif;
   }
   .carousel-2 .carousel-flex {
+    display: -webkit-flex;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
